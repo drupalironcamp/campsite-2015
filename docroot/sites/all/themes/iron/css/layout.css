@@ -1,12 +1,15 @@
 html,
 body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
     position: relative;
     height: 100%;
 }
+
 .ironcamp-logo {
     position: absolute;
     display: block;
