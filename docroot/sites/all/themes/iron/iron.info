@@ -1,0 +1,6 @@
+name = DrupalIronCamp
+description = only static temponary version.
+core = 7.x
+engine = phptemplate
+
+stylesheets[screen][] = css/layout.css
