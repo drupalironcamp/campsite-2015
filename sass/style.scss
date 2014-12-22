@@ -12,6 +12,8 @@
 @import "_base.scss";
 
 // Responsive desktop
+@import 'mobile';
+
 @media only screen and (min-width: $screen-desktop) {
   @import '_desktop.scss';
 }
