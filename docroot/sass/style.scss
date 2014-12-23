@@ -11,6 +11,9 @@
 // Import base formatting.
 @import "_base.scss";
 
+// Responsive mobile
+@import 'mobile';
+
 // Responsive desktop
 @media only screen and (min-width: $screen-desktop) {
   @import '_desktop.scss';

@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
 
 /* line 26, ../sass/_base.scss */
 .info {
-  color: white;
+  color: #ffffff;
 }
 /* line 29, ../sass/_base.scss */
 .info * {
@@ -79,12 +79,12 @@ h1, h2, h3, h4 {
 
 /* line 56, ../sass/_base.scss */
 .social {
-  background-color: #a60e64;
+  background-color: #A60E64;
 }
 /* line 59, ../sass/_base.scss */
 .social h2, .social span {
   font-size: 67px;
-  color: white;
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
 }
 /* line 64, ../sass/_base.scss */
@@ -121,6 +121,23 @@ h1, h2, h3, h4 {
   background-position: -76px -279px;
 }
 
+/**
+ * Small screens.
+ */
+/* line 4, ../sass/_mobile.scss */
+.jumbotron {
+  padding-bottom: 183px;
+}
+
+/* line 8, ../sass/_mobile.scss */
+.info {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 380px;
+  margin-left: -72px;
+}
+
 @media only screen and (min-width: 992px) {
   /**
    * Style only desktop screens.
@@ -128,9 +145,10 @@ h1, h2, h3, h4 {
   /* line 5, ../sass/_desktop.scss */
   .info {
     position: absolute;
-    left: 57%;
+    left: 50%;
     top: 281px;
-    border-left: 2px solid white;
+    border-left: 2px solid #ffffff;
     padding-left: 15px;
+    margin-left: 90px;
   }
 }
