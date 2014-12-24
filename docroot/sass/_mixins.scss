@@ -1,3 +1,10 @@
+// Gradients
+
+@mixin gradient-radial($inner-color: #f7f9fb, $outer-color: #dde2e8) {
+  background-image: -webkit-radial-gradient(circle, $inner-color, $outer-color);
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
 
 @mixin ic-img-retina($file-1x, $file-2x, $width-1x: false, $height-1x: false) {
   background-image: url("#{$file-1x}");
