@@ -12,9 +12,12 @@
 @import "_base.scss";
 
 // Responsive mobile
-@import 'mobile';
+@media only screen and (max-width: ($screen-tablet - 1px)) {
+    @import 'mobile';
+}
 
 // Responsive desktop
 @media only screen and (min-width: $screen-desktop) {
   @import '_desktop.scss';
 }
+
