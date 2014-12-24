@@ -3,9 +3,21 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|Open+Sans:400,300|Oswald:400,300&subset=latin,latin-ext);
 
+@font-face {
+  font-family: 'Dense';
+  src: url('../_assets/fonts/dense/dense-regular-webfont.eot');
+  src: url('../_assets/fonts/dense/dense-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../_assets/fonts/dense/dense-regular-webfont.woff2') format('woff2'),
+  url('../_assets/fonts/dense/dense-regular-webfont.woff') format('woff'),
+  url('../_assets/fonts/dense/dense-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
 $base_font_open:    'Open Sans', sans-serif;
 $base_font_oswald:  'Oswald', sans-serif;
 $base_font_sanspro: 'Source Sans Pro', sans-serif;;
+$base_font_dense:   'Dense', sans-serif;;
 
 /**
  * Colors
