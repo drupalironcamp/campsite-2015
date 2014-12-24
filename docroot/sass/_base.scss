@@ -7,7 +7,13 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 .section {
-  padding: 80px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-title {
+  font-size: 35px;
+  margin-bottom: 25px;
+  margin-top: 20px;
 }
 .jumbotron {
   @include gradient-radial;
@@ -39,9 +45,9 @@ h1, h2, h3, h4 {
 
 .newsletter {
   #mc_embed_signup {
-    h2 {
-      margin-top: 0;
-      font-size: 35px;
+
+    form {
+      padding: 0;
     }
     .mc-field-group label {
       font-size: 20px;
@@ -52,13 +58,19 @@ h1, h2, h3, h4 {
       padding: 10px 32px;
       height: 50px;
     }
+    h2 {
+      font-size: 35px;
+      font-weight: 500;
+      @extend .section-title;
+    }
   }
 }
 .social {
   background-color: $ic_red;
+  text-align: center;
 
   h2, span {
-    font-size: 67px;
+    font-size: 44px;
     color: $white;
     font-family: $base_font_oswald;
   }
@@ -73,10 +85,72 @@ h1, h2, h3, h4 {
     @include ic-sprite-background();
 
     &.twitter {
-      @include ic-sprite(72px, 59px, 0px -282px);
+      @include ic-sprite(51px, 44px, 0px -283px);
     }
     &.facebook {
-      @include ic-sprite(37px, 65px, -76px -279px);
+      @include ic-sprite(24px, 42px, -58px -283px);
     }
+  }
+}
+
+// Button
+.btn-ironcamp {
+  @include box-shadow(0px 6px 0px $ic_red_50);
+  @include text-shadow(0 1px 0 #fff);
+  @include transition(all ease .3s);
+  background-color: $ic_red;
+  color: $white;
+  padding: 10px 25px;
+  font-family: $base_font_oswald;
+  font-size: 24px;
+  font-weight: 100;
+
+  &:hover {
+    color: $white;
+    background-color: $ic_red_50;
+    @include box-shadow(0px 6px 0px $ic_red);
+  }
+}
+
+// Override .flexslider style.
+.flexslider {
+  box-shadow: none;
+  border: 0;
+
+  p {
+    line-height: 160%;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  &:before,
+  &:after{
+    width: 10px;
+    height: 100%;
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+  }
+  &:before {
+    left: 0;
+    @include gradient-horizontal(#ffffff, rgba(0,0,0,0));
+  }
+  &:after {
+    right: 0;
+    @include gradient-horizontal(rgba(0,0,0,0), #ffffff);
+  }
+  .slides li {
+  }
+}
+.flex-control-paging li a {
+  background-color: $ic_red_50;
+  box-shadow: none;
+  width: 16px;
+  height: 16px;
+
+  &.flex-active,
+  &:hover {
+    background-color: $ic_red;
   }
 }
