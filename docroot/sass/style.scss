@@ -16,8 +16,7 @@
     @import 'mobile';
 }
 
-// Responsive desktop
-@media only screen and (min-width: $screen-desktop) {
-  @import '_desktop.scss';
+// Above mobile style
+@media only screen and (min-width: $screen-tablet) {
+  @import '_above_mobile.scss';
 }
-
