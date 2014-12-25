@@ -9,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /**
  * Colors
  */
@@ -108,7 +107,7 @@ h1, h2, h3, h4 {
 /* line 72, ../sass/_base.scss */
 .social h2, .social span {
   font-size: 44px;
-  color: white;
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
 }
 /* line 77, ../sass/_base.scss */
@@ -147,17 +146,16 @@ h1, h2, h3, h4 {
 
 /* line 97, ../sass/_base.scss */
 .btn-ironcamp {
-  -webkit-box-shadow: 0px 6px 0px #f5a09e;
   -moz-box-shadow: 0px 6px 0px #f5a09e;
+  -webkit-box-shadow: 0px 6px 0px #f5a09e;
   box-shadow: 0px 6px 0px #f5a09e;
-  text-shadow: 0 1px 0 white;
-  -webkit-transition: all ease;
-  -webkit-transition-delay: 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  text-shadow: 0 1px 0 #fff;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #ee4036;
-  color: white;
+  color: #ffffff;
   padding: 10px 25px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -165,10 +163,10 @@ h1, h2, h3, h4 {
 }
 /* line 108, ../sass/_base.scss */
 .btn-ironcamp:hover {
-  color: white;
+  color: #ffffff;
   background-color: #f5a09e;
-  -webkit-box-shadow: 0px 6px 0px #ee4036;
   -moz-box-shadow: 0px 6px 0px #ee4036;
+  -webkit-box-shadow: 0px 6px 0px #ee4036;
   box-shadow: 0px 6px 0px #ee4036;
 }
 
@@ -176,8 +174,9 @@ h1, h2, h3, h4 {
 .flexslider {
   box-shadow: none;
   border: 0;
+  margin: 0;
 }
-/* line 120, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 .flexslider p {
   line-height: 160%;
   font-size: 18px;
@@ -193,33 +192,37 @@ h1, h2, h3, h4 {
   top: 0;
   z-index: 100;
 }
-/* line 135, ../sass/_base.scss */
+/* line 136, ../sass/_base.scss */
 .flexslider:before {
   left: 0;
-  background-image: -webkit-linear-gradient(left, white 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, white 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(to right, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#00000000', GradientType=1);
 }
-/* line 139, ../sass/_base.scss */
+/* line 140, ../sass/_base.scss */
 .flexslider:after {
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, white 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, white 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #ffffff 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#FFFFFFFF', GradientType=1);
+}
+/* line 144, ../sass/_base.scss */
+.flexslider .slides li {
+  display: block;
+  width: 50%;
+  padding: 0 15px 0 0;
+  float: left;
+}
+/* line 150, ../sass/_base.scss */
+.flexslider .slides li p {
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: justify;
+  width: 96%;
 }
 
-/* line 146, ../sass/_base.scss */
+/* line 158, ../sass/_base.scss */
 .flex-control-paging li a {
   background-color: #f5a09e;
   box-shadow: none;
   width: 16px;
   height: 16px;
 }
-/* line 153, ../sass/_base.scss */
+/* line 164, ../sass/_base.scss */
 .flex-control-paging li a.flex-active, .flex-control-paging li a:hover {
   background-color: #ee4036;
 }
@@ -240,6 +243,17 @@ h1, h2, h3, h4 {
     left: 50%;
     top: 380px;
     margin-left: -72px;
+  }
+
+  /* line 16, ../sass/_mobile.scss */
+  .flexslider li {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 21, ../sass/_mobile.scss */
+  .btn-ironcamp {
+    white-space: normal;
   }
 }
 @media only screen and (min-width: 992px) {

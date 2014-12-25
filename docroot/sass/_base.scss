@@ -116,6 +116,7 @@ h1, h2, h3, h4 {
 .flexslider {
   box-shadow: none;
   border: 0;
+  margin: 0;
 
   p {
     line-height: 160%;
@@ -134,13 +135,24 @@ h1, h2, h3, h4 {
   }
   &:before {
     left: 0;
-    @include gradient-horizontal(#ffffff, rgba(0,0,0,0));
+//    @include gradient-horizontal(#ffffff, rgba(0,0,0,0));
   }
   &:after {
     right: 0;
-    @include gradient-horizontal(rgba(0,0,0,0), #ffffff);
+//    @include gradient-horizontal(rgba(0,0,0,0), #ffffff);
   }
   .slides li {
+    display: block;
+    width: 50%;
+    padding: 0 15px 0 0;
+    float: left;
+
+    p {
+      padding: 0;
+      margin-bottom: 30px;
+      text-align: justify;
+      width: 96%;
+    }
   }
 }
 .flex-control-paging li a {
