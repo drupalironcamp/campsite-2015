@@ -1,10 +1,10 @@
 /**
  * Small screens.
  */
+
 .jumbotron {
   padding-bottom: 183px;
 }
-
 .info {
   display: block;
   position: absolute;
@@ -12,12 +12,9 @@
   top: 380px;
   margin-left: -72px;
 }
-
-.flexslider li {
-  float: none;
-  width: 100%;
-}
-
 .btn-ironcamp {
   white-space: normal;
+}
+.scroll-down {
+  display: none;
 }
