@@ -88,90 +88,89 @@ h1, h2, h3, h4 {
 .summary li {
   display: block;
   width: 50%;
-  padding: 0 15px 0 0;
   float: left;
 }
-/* line 58, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .summary li p {
   padding: 0;
   margin-bottom: 30px;
   text-align: justify;
   width: 96%;
 }
-/* line 65, ../sass/_base.scss */
+/* line 64, ../sass/_base.scss */
 .summary p {
   line-height: 160%;
   font-size: 18px;
   padding: 0 10px;
 }
 
-/* line 75, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 .newsletter #mc_embed_signup form {
   padding: 0;
 }
-/* line 78, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 .newsletter #mc_embed_signup .mc-field-group label {
   font-size: 20px;
 }
-/* line 81, ../sass/_base.scss */
+/* line 80, ../sass/_base.scss */
 .newsletter #mc_embed_signup .button {
   background-color: #03782B;
   font-size: 18px;
   padding: 10px 32px;
   height: 50px;
 }
-/* line 87, ../sass/_base.scss */
+/* line 86, ../sass/_base.scss */
 .newsletter #mc_embed_signup h2 {
   font-size: 35px;
   font-weight: 500;
 }
 
-/* line 94, ../sass/_base.scss */
+/* line 93, ../sass/_base.scss */
 .social {
   background-color: #ee4036;
   text-align: center;
 }
-/* line 98, ../sass/_base.scss */
+/* line 97, ../sass/_base.scss */
 .social h2, .social span {
   font-size: 44px;
   color: white;
   font-family: "Oswald", sans-serif;
 }
-/* line 103, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 .social h2 {
   padding: 0 15px;
 }
-/* line 106, ../sass/_base.scss */
+/* line 105, ../sass/_base.scss */
 .social span {
   color: #A30B03;
 }
-/* line 109, ../sass/_base.scss */
+/* line 108, ../sass/_base.scss */
 .social i {
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url("../_assets/img/sprite.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 109, ../sass/_base.scss */
+  /* line 108, ../sass/_base.scss */
   .social i {
     background-image: url("../_assets/img/sprite-2x.png");
     background-size: 150px 347px;
   }
 }
-/* line 113, ../sass/_base.scss */
+/* line 112, ../sass/_base.scss */
 .social i.twitter {
   width: 51px;
   height: 44px;
   background-position: 0px -283px;
 }
-/* line 116, ../sass/_base.scss */
+/* line 115, ../sass/_base.scss */
 .social i.facebook {
   width: 24px;
   height: 42px;
   background-position: -58px -283px;
 }
 
-/* line 123, ../sass/_base.scss */
+/* line 122, ../sass/_base.scss */
 .btn-ironcamp {
   -webkit-box-shadow: 0px 6px 0px #f5a09e;
   -moz-box-shadow: 0px 6px 0px #f5a09e;
@@ -189,7 +188,7 @@ h1, h2, h3, h4 {
   font-size: 24px;
   font-weight: 100;
 }
-/* line 134, ../sass/_base.scss */
+/* line 133, ../sass/_base.scss */
 .btn-ironcamp:hover {
   color: white;
   background-color: #f5a09e;
@@ -207,13 +206,13 @@ h1, h2, h3, h4 {
   }
 }*/
 @-moz-keyframes bounce {
-  /* line 150, ../sass/_base.scss */
+  /* line 149, ../sass/_base.scss */
   50% {
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 154, ../sass/_base.scss */
+  /* line 153, ../sass/_base.scss */
   100% {
     -moz-transform: translateY(0px);
     transform: translateY(0px);
@@ -221,13 +220,13 @@ h1, h2, h3, h4 {
 }
 
 @-webkit-keyframes bounce {
-  /* line 160, ../sass/_base.scss */
+  /* line 159, ../sass/_base.scss */
   50% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 164, ../sass/_base.scss */
+  /* line 163, ../sass/_base.scss */
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -235,7 +234,7 @@ h1, h2, h3, h4 {
 }
 
 @keyframes bounce {
-  /* line 170, ../sass/_base.scss */
+  /* line 169, ../sass/_base.scss */
   50% {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -243,7 +242,7 @@ h1, h2, h3, h4 {
     transform: translateY(-10px);
   }
 
-  /* line 176, ../sass/_base.scss */
+  /* line 175, ../sass/_base.scss */
   100% {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -252,21 +251,38 @@ h1, h2, h3, h4 {
   }
 }
 
-/* line 183, ../sass/_base.scss */
+/* line 182, ../sass/_base.scss */
 .scroll-down {
   position: absolute;
   top: 76vh;
   left: 50%;
-  margin-left: -18px;
-  width: 36px;
-  height: 24px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"><g class="arrow"><polygon fill="#FFFFFF" points="23.9,2.8 21.1,0 12,9.2 2.8,0 0,2.8 12,14.8 "></polygon></g></svg>');
-  background-size: contain;
-  text-indent: 50px;
+  margin-left: -25px;
   overflow: hidden;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+/* line 193, ../sass/_base.scss */
+.scroll-down span {
+  text-indent: 50px;
+  display: none;
+}
+/* line 197, ../sass/_base.scss */
+.scroll-down i {
+  background-repeat: no-repeat;
+  background-image: url("../_assets/img/sprite.png");
+  width: 50px;
+  height: 28px;
+  background-position: -87px -288px;
+  background-size: contain;
+  display: block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 197, ../sass/_base.scss */
+  .scroll-down i {
+    background-image: url("../_assets/img/sprite-2x.png");
+    background-size: 150px 347px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
