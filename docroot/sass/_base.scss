@@ -1,3 +1,4 @@
+
 * {
   font-family: $base_font_sanspro;
 }
@@ -41,6 +42,30 @@ h1, h2, h3, h4 {
     margin: 0;
     letter-spacing: -0.5px;
     font-size: 42px;
+  }
+}
+
+.summary {
+  ul {
+    padding: 0;
+  }
+  li {
+    display: block;
+    width: 50%;
+    padding: 0 15px 0 0;
+    float: left;
+
+    p {
+      padding: 0;
+      margin-bottom: 30px;
+      text-align: justify;
+      width: 96%;
+    }
+  }
+  p {
+    line-height: 160%;
+    font-size: 18px;
+    padding: 0 10px;
   }
 }
 
@@ -121,10 +146,43 @@ h1, h2, h3, h4 {
     @include transform(translateY(0px));
   }
 }*/
-
+@-moz-keyframes bounce {
+  50% {
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes bounce {
+  50% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
 .scroll-down {
   position: absolute;
-  top: 95vh;
+  top: 76vh;
   left: 50%;
   margin-left:-18px;
   width: 36px;
@@ -133,5 +191,8 @@ h1, h2, h3, h4 {
   background-size: contain;
   text-indent: 50px;
   overflow: hidden;
-  @include animation(bounce 2s infinite);
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  //@include animation(bounce 2s infinite);
 }
