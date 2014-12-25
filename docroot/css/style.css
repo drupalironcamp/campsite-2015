@@ -81,96 +81,82 @@ h1, h2, h3, h4 {
 }
 
 /* line 49, ../sass/_base.scss */
-.summary ul {
-  padding: 0;
-}
-/* line 52, ../sass/_base.scss */
-.summary li {
-  display: block;
-  width: 50%;
-  float: left;
-}
-/* line 57, ../sass/_base.scss */
-.summary li p {
+.summary p {
   padding: 0;
   margin-bottom: 30px;
   text-align: justify;
   width: 96%;
-}
-/* line 64, ../sass/_base.scss */
-.summary p {
   line-height: 160%;
   font-size: 18px;
-  padding: 0 10px;
 }
 
-/* line 74, ../sass/_base.scss */
+/* line 62, ../sass/_base.scss */
 .newsletter #mc_embed_signup form {
   padding: 0;
 }
-/* line 77, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 .newsletter #mc_embed_signup .mc-field-group label {
   font-size: 20px;
 }
-/* line 80, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
 .newsletter #mc_embed_signup .button {
   background-color: #03782B;
   font-size: 18px;
   padding: 10px 32px;
   height: 50px;
 }
-/* line 86, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 .newsletter #mc_embed_signup h2 {
   font-size: 35px;
   font-weight: 500;
 }
 
-/* line 93, ../sass/_base.scss */
+/* line 81, ../sass/_base.scss */
 .social {
   background-color: #ee4036;
   text-align: center;
 }
-/* line 97, ../sass/_base.scss */
+/* line 85, ../sass/_base.scss */
 .social h2, .social span {
   font-size: 44px;
   color: white;
   font-family: "Oswald", sans-serif;
 }
-/* line 102, ../sass/_base.scss */
+/* line 90, ../sass/_base.scss */
 .social h2 {
   padding: 0 15px;
 }
-/* line 105, ../sass/_base.scss */
+/* line 93, ../sass/_base.scss */
 .social span {
   color: #A30B03;
 }
-/* line 108, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .social i {
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url("../_assets/img/sprite.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 108, ../sass/_base.scss */
+  /* line 96, ../sass/_base.scss */
   .social i {
     background-image: url("../_assets/img/sprite-2x.png");
     background-size: 150px 347px;
   }
 }
-/* line 112, ../sass/_base.scss */
+/* line 100, ../sass/_base.scss */
 .social i.twitter {
   width: 51px;
   height: 44px;
   background-position: 0px -283px;
 }
-/* line 115, ../sass/_base.scss */
+/* line 103, ../sass/_base.scss */
 .social i.facebook {
   width: 24px;
   height: 42px;
   background-position: -58px -283px;
 }
 
-/* line 122, ../sass/_base.scss */
+/* line 110, ../sass/_base.scss */
 .btn-ironcamp {
   -webkit-box-shadow: 0px 6px 0px #f5a09e;
   -moz-box-shadow: 0px 6px 0px #f5a09e;
@@ -188,7 +174,7 @@ h1, h2, h3, h4 {
   font-size: 24px;
   font-weight: 100;
 }
-/* line 133, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 .btn-ironcamp:hover {
   color: white;
   background-color: #f5a09e;
@@ -206,13 +192,13 @@ h1, h2, h3, h4 {
   }
 }*/
 @-moz-keyframes bounce {
-  /* line 149, ../sass/_base.scss */
+  /* line 137, ../sass/_base.scss */
   50% {
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 153, ../sass/_base.scss */
+  /* line 141, ../sass/_base.scss */
   100% {
     -moz-transform: translateY(0px);
     transform: translateY(0px);
@@ -220,13 +206,13 @@ h1, h2, h3, h4 {
 }
 
 @-webkit-keyframes bounce {
-  /* line 159, ../sass/_base.scss */
+  /* line 147, ../sass/_base.scss */
   50% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 163, ../sass/_base.scss */
+  /* line 151, ../sass/_base.scss */
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -234,7 +220,7 @@ h1, h2, h3, h4 {
 }
 
 @keyframes bounce {
-  /* line 169, ../sass/_base.scss */
+  /* line 157, ../sass/_base.scss */
   50% {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -242,7 +228,7 @@ h1, h2, h3, h4 {
     transform: translateY(-10px);
   }
 
-  /* line 175, ../sass/_base.scss */
+  /* line 163, ../sass/_base.scss */
   100% {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -251,7 +237,7 @@ h1, h2, h3, h4 {
   }
 }
 
-/* line 182, ../sass/_base.scss */
+/* line 170, ../sass/_base.scss */
 .scroll-down {
   position: absolute;
   top: 76vh;
@@ -262,12 +248,12 @@ h1, h2, h3, h4 {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-/* line 193, ../sass/_base.scss */
+/* line 181, ../sass/_base.scss */
 .scroll-down span {
   text-indent: 50px;
   display: none;
 }
-/* line 197, ../sass/_base.scss */
+/* line 185, ../sass/_base.scss */
 .scroll-down i {
   background-repeat: no-repeat;
   background-image: url("../_assets/img/sprite.png");
@@ -278,7 +264,7 @@ h1, h2, h3, h4 {
   display: block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 197, ../sass/_base.scss */
+  /* line 185, ../sass/_base.scss */
   .scroll-down i {
     background-image: url("../_assets/img/sprite-2x.png");
     background-size: 150px 347px;
@@ -289,7 +275,7 @@ h1, h2, h3, h4 {
   /**
    * Small screens.
    */
-  /* line 4, ../sass/_mobile.scss */
+  /* line 5, ../sass/_mobile.scss */
   .jumbotron {
     padding-bottom: 183px;
   }
@@ -303,28 +289,27 @@ h1, h2, h3, h4 {
     margin-left: -72px;
   }
 
-  /* line 16, ../sass/_mobile.scss */
-  .flexslider li {
-    float: none;
-    width: 100%;
-  }
-
-  /* line 21, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   .btn-ironcamp {
     white-space: normal;
   }
+
+  /* line 18, ../sass/_mobile.scss */
+  .scroll-down {
+    display: none;
+  }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   /**
-   * Style only desktop screens.
+   *
    */
-  /* line 5, ../sass/_desktop.scss */
+  /* line 5, ../sass/_above_mobile.scss */
   .jumbotron {
     padding-top: 140px;
     padding-bottom: 140px;
   }
 
-  /* line 9, ../sass/_desktop.scss */
+  /* line 9, ../sass/_above_mobile.scss */
   .info {
     position: absolute;
     left: 50%;
