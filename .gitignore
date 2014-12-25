@@ -3,3 +3,4 @@ docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
 
+.idea

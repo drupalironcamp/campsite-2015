@@ -42,9 +42,10 @@ h1, h2, h3, h4 {
   background-image: radial-gradient(circle, #f7f9fb, #dde2e8);
   background-repeat: no-repeat;
   margin-bottom: 0;
+  position: relative;
 }
 
-/* line 24, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 .logo i {
   background-repeat: no-repeat;
   background-image: url("../_assets/img/sprite.png");
@@ -55,96 +56,96 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 24, ../sass/_base.scss */
+  /* line 26, ../sass/_base.scss */
   .logo i {
     background-image: url("../_assets/img/sprite-2x.png");
     background-size: 150px 347px;
   }
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 34, ../sass/_base.scss */
 .info {
   color: #ee4036;
 }
-/* line 35, ../sass/_base.scss */
+/* line 37, ../sass/_base.scss */
 .info * {
   line-height: 100%;
   font-family: "Dense", sans-serif;
 }
-/* line 39, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 .info p {
   margin: 0;
   letter-spacing: -0.5px;
   font-size: 42px;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 .newsletter #mc_embed_signup form {
   padding: 0;
 }
-/* line 52, ../sass/_base.scss */
+/* line 54, ../sass/_base.scss */
 .newsletter #mc_embed_signup .mc-field-group label {
   font-size: 20px;
 }
-/* line 55, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .newsletter #mc_embed_signup .button {
   background-color: #03782B;
   font-size: 18px;
   padding: 10px 32px;
   height: 50px;
 }
-/* line 61, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 .newsletter #mc_embed_signup h2 {
   font-size: 35px;
   font-weight: 500;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 .social {
   background-color: #ee4036;
   text-align: center;
 }
-/* line 72, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 .social h2, .social span {
   font-size: 44px;
   color: #ffffff;
   font-family: "Oswald", sans-serif;
 }
-/* line 77, ../sass/_base.scss */
+/* line 79, ../sass/_base.scss */
 .social h2 {
   padding: 0 15px;
 }
-/* line 80, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 .social span {
   color: #A30B03;
 }
-/* line 83, ../sass/_base.scss */
+/* line 85, ../sass/_base.scss */
 .social i {
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url("../_assets/img/sprite.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 83, ../sass/_base.scss */
+  /* line 85, ../sass/_base.scss */
   .social i {
     background-image: url("../_assets/img/sprite-2x.png");
     background-size: 150px 347px;
   }
 }
-/* line 87, ../sass/_base.scss */
+/* line 89, ../sass/_base.scss */
 .social i.twitter {
   width: 51px;
   height: 44px;
   background-position: 0px -283px;
 }
-/* line 90, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 .social i.facebook {
   width: 24px;
   height: 42px;
   background-position: -58px -283px;
 }
 
-/* line 97, ../sass/_base.scss */
+/* line 99, ../sass/_base.scss */
 .btn-ironcamp {
   -moz-box-shadow: 0px 6px 0px #f5a09e;
   -webkit-box-shadow: 0px 6px 0px #f5a09e;
@@ -161,7 +162,7 @@ h1, h2, h3, h4 {
   font-size: 24px;
   font-weight: 100;
 }
-/* line 108, ../sass/_base.scss */
+/* line 110, ../sass/_base.scss */
 .btn-ironcamp:hover {
   color: #ffffff;
   background-color: #f5a09e;
@@ -170,19 +171,19 @@ h1, h2, h3, h4 {
   box-shadow: 0px 6px 0px #ee4036;
 }
 
-/* line 116, ../sass/_base.scss */
+/* line 118, ../sass/_base.scss */
 .flexslider {
   box-shadow: none;
   border: 0;
   margin: 0;
 }
-/* line 121, ../sass/_base.scss */
+/* line 123, ../sass/_base.scss */
 .flexslider p {
   line-height: 160%;
   font-size: 18px;
   padding: 0 10px;
 }
-/* line 126, ../sass/_base.scss */
+/* line 128, ../sass/_base.scss */
 .flexslider:before, .flexslider:after {
   width: 10px;
   height: 100%;
@@ -192,22 +193,22 @@ h1, h2, h3, h4 {
   top: 0;
   z-index: 100;
 }
-/* line 136, ../sass/_base.scss */
+/* line 138, ../sass/_base.scss */
 .flexslider:before {
   left: 0;
 }
-/* line 140, ../sass/_base.scss */
+/* line 142, ../sass/_base.scss */
 .flexslider:after {
   right: 0;
 }
-/* line 144, ../sass/_base.scss */
+/* line 146, ../sass/_base.scss */
 .flexslider .slides li {
   display: block;
   width: 50%;
   padding: 0 15px 0 0;
   float: left;
 }
-/* line 150, ../sass/_base.scss */
+/* line 152, ../sass/_base.scss */
 .flexslider .slides li p {
   padding: 0;
   margin-bottom: 30px;
@@ -215,16 +216,67 @@ h1, h2, h3, h4 {
   width: 96%;
 }
 
-/* line 158, ../sass/_base.scss */
+/* line 160, ../sass/_base.scss */
 .flex-control-paging li a {
   background-color: #f5a09e;
   box-shadow: none;
   width: 16px;
   height: 16px;
 }
-/* line 164, ../sass/_base.scss */
+/* line 166, ../sass/_base.scss */
 .flex-control-paging li a.flex-active, .flex-control-paging li a:hover {
   background-color: #ee4036;
+}
+
+@-moz-keyframes bounce {
+  50% {
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes bounce {
+  50% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+/* line 182, ../sass/_base.scss */
+.scroll-down {
+  position: absolute;
+  top: 95vh;
+  left: 50%;
+  margin-left: -18px;
+  width: 36px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"><g class="arrow"><polygon fill="#FFFFFF" points="23.9,2.8 21.1,0 12,9.2 2.8,0 0,2.8 12,14.8 "></polygon></g></svg>');
+  background-size: contain;
+  text-indent: 50px;
+  overflow: hidden;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @media only screen and (max-width: 767px) {

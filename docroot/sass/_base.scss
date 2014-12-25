@@ -18,6 +18,8 @@ h1, h2, h3, h4 {
 .jumbotron {
   @include gradient-radial;
   margin-bottom: 0;
+  position: relative;
+//  height: 100vh;
 }
 
 .logo {
@@ -165,4 +167,28 @@ h1, h2, h3, h4 {
   &:hover {
     background-color: $ic_red;
   }
+}
+
+@include keyframes(bounce) {
+  50% {
+    @include transform(translateY(-10px));
+  }
+  100% {
+    @include transform(translateY(0px));
+  }
+}
+
+
+.scroll-down {
+  position: absolute;
+  top: 95vh;
+  left: 50%;
+  margin-left:-18px;
+  width: 36px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"><g class="arrow"><polygon fill="#FFFFFF" points="23.9,2.8 21.1,0 12,9.2 2.8,0 0,2.8 12,14.8 "></polygon></g></svg>');
+  background-size: contain;
+  text-indent: 50px;
+  overflow: hidden;
+  @include animation(bounce 2s infinite);
 }
