@@ -19,7 +19,6 @@ h1, h2, h3, h4 {
   @include gradient-radial;
   margin-bottom: 0;
   position: relative;
-//  height: 100vh;
 }
 
 .logo {
@@ -114,70 +113,14 @@ h1, h2, h3, h4 {
   }
 }
 
-// Override .flexslider style.
-.flexslider {
-  box-shadow: none;
-  border: 0;
-  margin: 0;
-
-  p {
-    line-height: 160%;
-    font-size: 18px;
-    padding: 0 10px;
-  }
-  &:before,
-  &:after{
-    width: 10px;
-    height: 100%;
-    content: ' ';
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 100;
-  }
-  &:before {
-    left: 0;
-//    @include gradient-horizontal(#ffffff, rgba(0,0,0,0));
-  }
-  &:after {
-    right: 0;
-//    @include gradient-horizontal(rgba(0,0,0,0), #ffffff);
-  }
-  .slides li {
-    display: block;
-    width: 50%;
-    padding: 0 15px 0 0;
-    float: left;
-
-    p {
-      padding: 0;
-      margin-bottom: 30px;
-      text-align: justify;
-      width: 96%;
-    }
-  }
-}
-.flex-control-paging li a {
-  background-color: $ic_red_50;
-  box-shadow: none;
-  width: 16px;
-  height: 16px;
-
-  &.flex-active,
-  &:hover {
-    background-color: $ic_red;
-  }
-}
-
-@include keyframes(bounce) {
+/*@include keyframes(bounce) {
   50% {
     @include transform(translateY(-10px));
   }
   100% {
     @include transform(translateY(0px));
   }
-}
-
+}*/
 
 .scroll-down {
   position: absolute;
