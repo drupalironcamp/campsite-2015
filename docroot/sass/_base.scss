@@ -52,7 +52,6 @@ h1, h2, h3, h4 {
   li {
     display: block;
     width: 50%;
-    padding: 0 15px 0 0;
     float: left;
 
     p {
@@ -184,15 +183,21 @@ h1, h2, h3, h4 {
   position: absolute;
   top: 76vh;
   left: 50%;
-  margin-left:-18px;
-  width: 36px;
-  height: 24px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"><g class="arrow"><polygon fill="#FFFFFF" points="23.9,2.8 21.1,0 12,9.2 2.8,0 0,2.8 12,14.8 "></polygon></g></svg>');
-  background-size: contain;
-  text-indent: 50px;
+  margin-left:-25px;
   overflow: hidden;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
   //@include animation(bounce 2s infinite);
+
+  span {
+    text-indent: 50px;
+    display: none;
+  }
+  i {
+    @include ic-sprite-background();
+    @include ic-sprite(50px, 28px, -87px -288px);
+    background-size: contain;
+    display: block;
+  }
 }
