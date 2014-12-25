@@ -46,25 +46,13 @@ h1, h2, h3, h4 {
 }
 
 .summary {
-  ul {
-    padding: 0;
-  }
-  li {
-    display: block;
-    width: 50%;
-    float: left;
-
-    p {
-      padding: 0;
-      margin-bottom: 30px;
-      text-align: justify;
-      width: 96%;
-    }
-  }
   p {
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: justify;
+    width: 96%;
     line-height: 160%;
     font-size: 18px;
-    padding: 0 10px;
   }
 }
 
