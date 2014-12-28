@@ -125,46 +125,12 @@ h1, h2, h3, h4 {
   }
 }
 
-/*@include keyframes(bounce) {
+@include keyframes(bounce) {
   50% {
     @include transform(translateY(-10px));
   }
   100% {
     @include transform(translateY(0px));
-  }
-}*/
-@-moz-keyframes bounce {
-  50% {
-    -moz-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-@-webkit-keyframes bounce {
-  50% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-@keyframes bounce {
-  50% {
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
   }
 }
 .scroll-down {
@@ -173,10 +139,7 @@ h1, h2, h3, h4 {
   left: 50%;
   margin-left:-25px;
   overflow: hidden;
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-  //@include animation(bounce 2s infinite);
+  @include animation(bounce 2s infinite);
 
   span {
     text-indent: 50px;
