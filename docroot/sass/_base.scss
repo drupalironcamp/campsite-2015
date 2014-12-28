@@ -169,7 +169,7 @@ h1, h2, h3, h4 {
 }
 .scroll-down {
   position: absolute;
-  top: 76vh;
+  top: 480px;
   left: 50%;
   margin-left:-25px;
   overflow: hidden;
@@ -185,7 +185,6 @@ h1, h2, h3, h4 {
   i {
     @include ic-sprite-background();
     @include ic-sprite(50px, 28px, -87px -288px);
-    background-size: contain;
     display: block;
   }
 }
