@@ -4,3 +4,5 @@ docroot/sites/*/files
 docroot/sites/*/private
 
 .idea
+docroot/.bundle
+docroot/vendor
