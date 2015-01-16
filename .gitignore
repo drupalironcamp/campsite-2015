@@ -6,3 +6,6 @@ docroot/sites/*/private
 .idea
 docroot/.bundle
 docroot/vendor
+
+# Ignore sass cache
+.sass-cache
