@@ -105,6 +105,17 @@ h1, h2, h3, h4 {
     }
   }
 }
+#footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  p {
+    margin: 1em 0;
+  }
+  #acquia_logo {
+    margin-bottom: 1em;
+  }
+}
 
 // Button
 .btn-ironcamp {
