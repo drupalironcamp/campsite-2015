@@ -1,0 +1,8 @@
+.DS_Store
+build/reports
+node_modules
+*.css
+*.sass-cache*
+themes/contrib*
+modules/contrib*
+themes/campsite_theme/lib/respond*

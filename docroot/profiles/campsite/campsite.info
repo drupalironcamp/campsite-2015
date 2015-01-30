@@ -1,0 +1,47 @@
+name = campsite
+description = Install profile for campsite sites.
+version = VERSION
+
+api = 2
+core = 7.x
+
+; core
+dependencies[] = block
+dependencies[] = translation
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = entity
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = simpletest
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+
+; contrib
+dependencies[] = admin_menu
+dependencies[] = features
+dependencies[] = jquery_update
+dependencies[] = i18n
+dependencies[] = i18n_menu
+dependencies[] = i18n_string
+dependencies[] = i18n_taxonomy
+dependencies[] = i18n_field
+dependencies[] = l10n_update
+dependencies[] = module_filter
+dependencies[] = strongarm
+dependencies[] = views

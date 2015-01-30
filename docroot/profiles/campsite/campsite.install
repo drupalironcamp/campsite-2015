@@ -1,0 +1,39 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the Campsite install profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function campsite_install() {
+  $default_theme = 'campsite_theme';
+  theme_enable(array('seven', $default_theme));
+  variable_set('admin_theme', 'seven');
+  variable_set('node_admin_theme', '1');
+  variable_set('theme_default', $default_theme);
+
+  variable_set('clean_url', 1);
+  variable_set('jquery_update_jquery_version', '1.7');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function campsite_form_install_configure_form_alter(&$form, $form_state) {
+  // Pre-populate the site name with the server name.
+  $form['site_information']['site_name']['#default_value'] = 'campsite';
+
+  // Set default site email.
+  $form['site_information']['site_mail']['#default_value'] = 'not@integralvision.hu';
+
+  // Set default admin values.
+  $form['admin_account']['account']['name']['#default_value'] = 'admin';
+  $form['admin_account']['account']['mail']['#default_value'] = 'all@integralvision.hu';
+
+  // Set default location.
+  $form['server_settings']['site_default_country']['#default_value'] = 'HU';
+  $form['server_settings']['date_default_timezone']['#default_value'] = 'Europe/Budapest';
+  $form['update_notifications']['update_status_module'][2]['#default_value'] = 0;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "campsite",
+  "description": "Campsite",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-phpcs": "~0.2.1",
+    "grunt-phplint": "0.0.5",
+    "grunt-search": "~0.1.3",
+    "grunt-shell": "~0.6.4"
+  }
+}
