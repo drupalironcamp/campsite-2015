@@ -9,10 +9,13 @@
  */
 function campsite_install() {
   $default_theme = 'campsite_theme';
-  theme_enable(array('seven', $default_theme));
+  theme_enable(array($default_theme));
+  variable_set('theme_default', $default_theme);
+
+  theme_disable(array('seven', 'bartik'));
+
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
-  variable_set('theme_default', $default_theme);
 
   variable_set('clean_url', 1);
   variable_set('jquery_update_jquery_version', '1.7');
