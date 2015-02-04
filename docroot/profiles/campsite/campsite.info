@@ -5,7 +5,7 @@ version = 7.x-1.0-dev
 api = 2
 core = 7.x
 
-; core
+; Core.
 dependencies[] = contextual
 dependencies[] = dblog
 dependencies[] = entity
@@ -18,7 +18,10 @@ dependencies[] = rdf
 dependencies[] = system
 dependencies[] = user
 
-; contrib
+; Contrib.
 dependencies[] = admin_menu
 dependencies[] = features
 dependencies[] = jquery_update
+
+; Custom.
+dependencies[] = campsite_core
