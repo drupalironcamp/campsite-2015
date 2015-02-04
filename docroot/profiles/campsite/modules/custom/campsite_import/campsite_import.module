@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CampSite - Import feature.
+ */
+
+include_once 'campsite_import.features.inc';
