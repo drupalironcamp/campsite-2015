@@ -1,6 +1,6 @@
 name = Roles
 core = 7.x
-package = Camsite
+package = Campsite
 version = 7.x-1.0
 project = roles
 dependencies[] = admin_menu
@@ -106,4 +106,4 @@ features[user_permission][] = view the administration theme
 features[user_role][] = Attendee
 features[user_role][] = Editor
 features[user_role][] = Manager admin
-project path = profile/campsitemodules/features
+project path = profiles/campsite/modules/features
