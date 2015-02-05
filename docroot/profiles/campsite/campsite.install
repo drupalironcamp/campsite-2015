@@ -19,9 +19,6 @@ function campsite_install() {
 
   variable_set('clean_url', 1);
   variable_set('jquery_update_jquery_version', '1.7');
-
-  ckeditor_profile_delete('Advanced');
-  ckeditor_profile_delete('Full');
 }
 
 /**
