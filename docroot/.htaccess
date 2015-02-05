@@ -5,6 +5,9 @@
 # to the main server config file (usually called `httpd.conf`), you should add
 # this logic there: http://httpd.apache.org/docs/current/howto/htaccess.html.
 
+# set default file in directory
+  DirectoryIndex index.php index.html index.htm
+
 # ##############################################################################
 # # CROSS-ORIGIN RESOURCE SHARING (CORS)                                       #
 # ##############################################################################
@@ -209,9 +212,15 @@ AddDefaultCharset utf-8
 
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
-  # Options +SymLinksIfOwnerMatch
+  #  Options +SymLinksIfOwnerMatch
     RewriteEngine On
-  # RewriteBase /
+  #  RewriteBase /
+  # Pass all requests not referring directly to files in the filesystem to
+  # index.php. Clean URLs are handled in drupal_environment_initialize().
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !=/favicon.ico
+    RewriteRule ^ index.php [L]
 </IfModule>
 
 # ------------------------------------------------------------------------------
