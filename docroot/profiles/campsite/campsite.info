@@ -25,3 +25,4 @@ dependencies[] = jquery_update
 
 ; Custom.
 dependencies[] = campsite_core
+dependencies[] = campsite_flag_volunteer
