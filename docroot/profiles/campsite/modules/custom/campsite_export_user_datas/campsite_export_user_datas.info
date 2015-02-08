@@ -1,0 +1,11 @@
+name = Export user datas
+core = 7.x
+package = CampSite
+version = 7.x-1.0
+project = campsite_export_user_datas
+dependencies[] = views
+dependencies[] = views_data_export
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = user_export
+features_exclude[dependencies][ctools] = ctools
