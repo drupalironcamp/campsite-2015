@@ -4,4 +4,4 @@
  * Code for the Page feature.
  */
 
-include_once 'campsite_node_page.features.inc';
+include_once 'campsite_page.features.inc';

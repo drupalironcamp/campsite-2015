@@ -31,5 +31,5 @@ dependencies[] = campsite_flag_volunteer
 dependencies[] = campsite_flag_featured
 dependencies[] = campsite_flag_individual
 dependencies[] = campsite_export_user_datas
-dependencies[] = campsite_node_page
-dependencies[] = campsite_node_session
+dependencies[] = campsite_page
+dependencies[] = campsite_session

@@ -7,7 +7,7 @@
 /**
  * Implements hook_node_info().
  */
-function campsite_node_page_node_info() {
+function campsite_page_node_info() {
   $items = array(
     'page' => array(
       'name' => t('Page'),
