@@ -1,5 +1,5 @@
-parent,tid,name
-0,1,short presentation (20 min)
-0,2,standard presentation (40 min)
-0,3,short workshop (2 hours)
-0,4,long workshop (4 hours)
+parent,tid,weight,name
+0,1,1,short presentation (20 min)
+0,2,2,standard presentation (40 min)
+0,3,3,short workshop (2 hours)
+0,4,4,long workshop (4 hours)

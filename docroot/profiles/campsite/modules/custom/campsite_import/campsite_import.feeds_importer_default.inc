@@ -52,6 +52,11 @@ function campsite_import_feeds_importer_default() {
             'unique' => 1,
           ),
           2 => array(
+            'source' => 'weight',
+            'target' => 'weight',
+            'unique' => FALSE,
+          ),
+          3 => array(
             'source' => 'name',
             'target' => 'name',
             'unique' => FALSE,
@@ -114,6 +119,11 @@ function campsite_import_feeds_importer_default() {
             'unique' => 1,
           ),
           2 => array(
+            'source' => 'weight',
+            'target' => 'weight',
+            'unique' => FALSE,
+          ),
+          3 => array(
             'source' => 'name',
             'target' => 'name',
             'unique' => FALSE,
@@ -176,6 +186,11 @@ function campsite_import_feeds_importer_default() {
             'unique' => 1,
           ),
           2 => array(
+            'source' => 'weight',
+            'target' => 'weight',
+            'unique' => FALSE,
+          ),
+          3 => array(
             'source' => 'name',
             'target' => 'name',
             'unique' => FALSE,
@@ -238,6 +253,11 @@ function campsite_import_feeds_importer_default() {
             'unique' => 1,
           ),
           2 => array(
+            'source' => 'weight',
+            'target' => 'weight',
+            'unique' => FALSE,
+          ),
+          3 => array(
             'source' => 'name',
             'target' => 'name',
             'unique' => FALSE,
