@@ -80,3 +80,14 @@ function campsite_install_task_import_taxonomy_terms() {
 function campsite_install_task_disable_modules() {
   module_disable(array('job_scheduler', 'feeds', 'campsite_import'));
 }
+
+/**
+ * Implements hook_update_projects_alter().
+ */
+function campsite_update_projects_alter(&$projects) {
+  foreach (array_keys($projects) as $project_name) {
+    if (strpos($project_name, 'campsite') === 0) {
+      unset($projects[$project_name]);
+    }
+  }
+}
