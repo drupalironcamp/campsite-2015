@@ -25,6 +25,7 @@ dependencies[] = features
 dependencies[] = jquery_update
 
 ; Custom.
+dependencies[] = campsite_codesprint
 dependencies[] = campsite_core
 dependencies[] = campsite_account
 dependencies[] = campsite_export_user_datas

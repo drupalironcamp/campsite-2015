@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CampSite - Codesprint feature.
+ */
+
+include_once 'campsite_codesprint.features.inc';
