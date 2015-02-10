@@ -6,3 +6,7 @@ base theme = bootstrap
 ; Stylesheets
 stylesheets[all][] = css/bootstrap.css
 stylesheets[all][] = css/style.css
+
+; Tooltips
+settings[bootstrap_tooltip_enabled] = 0
+settings[bootstrap_tooltip_descriptions] = 0

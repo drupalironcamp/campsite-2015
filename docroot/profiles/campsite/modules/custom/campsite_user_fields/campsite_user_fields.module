@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campsite - User fields feature.
+ */
+
+include_once 'campsite_user_fields.features.inc';
