@@ -29,3 +29,4 @@ dependencies[] = campsite_user_fields
 dependencies[] = campsite_flag_volunteer
 dependencies[] = campsite_flag_featured
 dependencies[] = campsite_flag_individual
+dependencies[] = campsite_export_user_datas
