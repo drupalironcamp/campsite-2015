@@ -31,3 +31,4 @@ dependencies[] = campsite_export_user_datas
 dependencies[] = campsite_news
 dependencies[] = campsite_page
 dependencies[] = campsite_session
+dependencies[] = campsite_sponsor
