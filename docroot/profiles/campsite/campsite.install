@@ -20,6 +20,9 @@ function campsite_install() {
   variable_set('clean_url', 1);
   variable_set('jquery_update_jquery_version', '1.7');
 
+  $conf_path = conf_path();
+  variable_set('file_private_path', "$conf_path/private");
+
   module_load_include('inc', 'ckeditor', 'includes/ckeditor.admin');
   ckeditor_profile_delete('Advanced');
   ckeditor_profile_delete('Full');
