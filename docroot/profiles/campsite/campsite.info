@@ -27,3 +27,4 @@ dependencies[] = jquery_update
 dependencies[] = campsite_core
 dependencies[] = campsite_user_fields
 dependencies[] = campsite_flag_volunteer
+dependencies[] = campsite_flag_featured
