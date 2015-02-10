@@ -20,6 +20,7 @@ dependencies[] = user
 
 ; Contrib.
 dependencies[] = admin_menu
+dependencies[] = ckeditor
 dependencies[] = features
 dependencies[] = jquery_update
 
