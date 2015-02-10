@@ -11,6 +11,7 @@ dependencies[] = taxonomy
 features[ckeditor_profile][] = Flat
 features[ckeditor_profile][] = Rich
 features[features_api][] = api:2
+features[field_base][] = body
 features[filter][] = flat
 features[filter][] = plain_text
 features[filter][] = rich
