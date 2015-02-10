@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * campsite_node_session.features.field_instance.inc
+ * campsite_session.features.field_instance.inc
  */
 
 /**
@@ -10,8 +10,8 @@
 function campsite_session_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-session-field_session_abstract'
-  $field_instances['node-session-field_session_abstract'] = array(
+  // Exported field_instance: 'node-session-body'
+  $field_instances['node-session-body'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
     'deleted' => 0,
@@ -22,17 +22,20 @@ function campsite_session_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_session_abstract',
+    'field_name' => 'body',
     'label' => 'Abstract',
     'required' => 0,
     'settings' => array(
@@ -48,7 +51,7 @@ function campsite_session_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 1,
     ),
   );
 
@@ -69,12 +72,19 @@ function campsite_session_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
         'weight' => 0,
       ),
     ),
@@ -101,7 +111,7 @@ function campsite_session_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 2,
+      'weight' => 8,
     ),
   );
 
@@ -119,13 +129,13 @@ function campsite_session_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -145,7 +155,7 @@ function campsite_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -2,
+      'weight' => 4,
     ),
   );
 
@@ -166,7 +176,7 @@ function campsite_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -187,7 +197,7 @@ function campsite_session_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 4,
+      'weight' => 10,
     ),
   );
 
@@ -205,13 +215,13 @@ function campsite_session_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -235,7 +245,7 @@ function campsite_session_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete_tags',
-      'weight' => 0,
+      'weight' => 6,
     ),
   );
 
@@ -253,13 +263,13 @@ function campsite_session_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -279,7 +289,7 @@ function campsite_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 7,
     ),
   );
 
@@ -297,13 +307,16 @@ function campsite_session_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -322,7 +335,7 @@ function campsite_session_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => -3,
+      'weight' => 3,
     ),
   );
 
@@ -340,13 +353,13 @@ function campsite_session_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -366,7 +379,7 @@ function campsite_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -1,
+      'weight' => 5,
     ),
   );
 
@@ -384,13 +397,13 @@ function campsite_session_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -410,7 +423,7 @@ function campsite_session_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 9,
     ),
   );
 
