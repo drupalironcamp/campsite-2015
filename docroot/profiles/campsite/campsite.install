@@ -25,6 +25,70 @@ function campsite_install() {
 }
 
 /**
+ * Implements hook_install_tasks().
+ */
+function campsite_install_tasks() {
+  return array(
+    'campsite_add_taxonomy_terms' => array(),
+  );
+}
+
+/**
+ * Create taxonomy terms to specific vocabulary.
+ */
+function campsite_add_taxonomy_terms() {
+  campsite_save_terms(
+    'experience_level',
+    array(
+      'Beginner',
+      'Intermediate',
+      'Advanced',
+    )
+  );
+  campsite_save_terms(
+    'session_type',
+    array(
+      'short presentation (20 min)',
+      'standard presentation (40 min)',
+      'short workshop (2 hours)',
+      'long workshop (4 hours)',
+    )
+  );
+  campsite_save_terms(
+    'track',
+    array(
+      'Development',
+      'Documentation',
+      'Devops',
+      'Frontend & mobile',
+      'Performance',
+      'Site building & case studies',
+      'Other',
+    )
+  );
+}
+
+/**
+ * Save terms in to vocabulary
+ *
+ * @retrun array of terms object
+ */
+function campsite_save_terms($vocabulary_machine_name, $terms) {
+  $vid = db_select('taxonomy_vocabulary', 'tv')
+    ->fields('tv', array('vid'))
+    ->condition('machine_name', $vocabulary_machine_name)
+    ->execute()
+    ->fetchField();
+  if ($vid !== FALSE) {
+    $term_objects = array();
+    foreach ($terms as $term_name) {
+      $term_objects = taxonomy_term_save((object) array('name' => $term_name, 'vid' => $vid));
+    }
+    return $term_objects;
+  }
+}
+
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function campsite_form_install_configure_form_alter(&$form, $form_state) {
