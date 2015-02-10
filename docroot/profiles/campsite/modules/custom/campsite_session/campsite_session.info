@@ -4,6 +4,7 @@ core = 7.x
 package = CampSite
 version = 7.x-1.0
 project = campsite_session
+dependencies[] = campsite_core
 dependencies[] = date
 dependencies[] = date_popup
 dependencies[] = entityreference

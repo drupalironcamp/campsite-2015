@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Individulal sponsor flag feature.
- */
-
-include_once 'campsite_flag_individual.features.inc';

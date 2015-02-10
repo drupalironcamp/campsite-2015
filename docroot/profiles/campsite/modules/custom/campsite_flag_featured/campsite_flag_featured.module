@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Featured attendees flag feature.
- */
-
-include_once 'campsite_flag_featured.features.inc';

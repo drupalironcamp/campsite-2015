@@ -1,9 +1,0 @@
-name = Individulal sponsor flag
-description = Create a flag to users, called Individulal sponsor.
-core = 7.x
-package = CampSite
-version = 7.x-1.0
-project = campsite_flag_individual
-dependencies[] = flag
-features[features_api][] = api:2
-features[flag][] = individulal_sponsor
