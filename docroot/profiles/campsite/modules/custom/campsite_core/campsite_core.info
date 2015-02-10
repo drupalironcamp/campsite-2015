@@ -13,6 +13,7 @@ features[features_api][] = api:2
 features[filter][] = flat
 features[filter][] = plain_text
 features[filter][] = rich
+features[user_role][] = Attendee
 features[user_role][] = Editor
 features[user_role][] = Manager
 project path = profiles/campsite/modules/custom
