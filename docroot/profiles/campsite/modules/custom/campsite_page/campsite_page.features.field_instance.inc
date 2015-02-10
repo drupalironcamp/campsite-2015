@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_field_instances().
  */
-function campsite_node_page_field_default_field_instances() {
+function campsite_page_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-page-body'

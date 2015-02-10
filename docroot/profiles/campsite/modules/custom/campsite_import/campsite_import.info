@@ -3,6 +3,7 @@ core = 7.x
 package = CampSite
 version = 7.x-1.0-dev
 project = campsite_import
+dependencies[] = campsite_core
 dependencies[] = ctools
 dependencies[] = feeds
 dependencies[] = taxonomy

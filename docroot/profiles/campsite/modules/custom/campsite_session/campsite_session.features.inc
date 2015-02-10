@@ -7,7 +7,7 @@
 /**
  * Implements hook_node_info().
  */
-function campsite_node_session_node_info() {
+function campsite_session_node_info() {
   $items = array(
     'session' => array(
       'name' => t('Session'),

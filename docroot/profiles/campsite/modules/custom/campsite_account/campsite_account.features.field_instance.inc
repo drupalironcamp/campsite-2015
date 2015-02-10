@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_field_instances().
  */
-function campsite_user_fields_field_default_field_instances() {
+function campsite_account_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'user-user-field_user_about_me'

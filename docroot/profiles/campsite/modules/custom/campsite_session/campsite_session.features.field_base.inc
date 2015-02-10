@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_field_bases().
  */
-function campsite_node_session_field_default_field_bases() {
+function campsite_session_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_session_abstract'

@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_field_instances().
  */
-function campsite_node_session_field_default_field_instances() {
+function campsite_session_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-session-field_session_abstract'

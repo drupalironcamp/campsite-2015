@@ -1,9 +1,10 @@
-name = Page
+name = CampSite - Page
 description = Basic page node type
 core = 7.x
-package = CampSite node
+package = CampSite
 version = 7.x-1.0
-project = campsite_node_page
+project = campsite_page
+dependencies[] = campsite_core
 dependencies[] = features
 dependencies[] = text
 features[features_api][] = api:2

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Volunteer flag feature.
- */
-
-include_once 'campsite_flag_volunteer.features.inc';

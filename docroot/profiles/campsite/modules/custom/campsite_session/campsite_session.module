@@ -4,4 +4,4 @@
  * Code for the session feature.
  */
 
-include_once 'campsite_node_session.features.inc';
+include_once 'campsite_session.features.inc';

@@ -1,9 +1,10 @@
-name = Session
+name = CampSite - Session
 description = Sesison node type and its vocabulary's
 core = 7.x
-package = CampSite node
+package = CampSite
 version = 7.x-1.0
-project = campsite_node_session
+project = campsite_session
+dependencies[] = campsite_core
 dependencies[] = date
 dependencies[] = date_popup
 dependencies[] = entityreference

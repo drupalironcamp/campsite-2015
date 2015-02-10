@@ -1,9 +1,0 @@
-name = Volunteer flag
-description = Create a flag to users, called Volunteer.
-core = 7.x
-package = CampSite
-version = 7.x-1.0
-project = campsite_flag_volunteer
-dependencies[] = flag
-features[features_api][] = api:2
-features[flag][] = volunteer
