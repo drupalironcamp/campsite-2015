@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the session feature.
+ */
+
+include_once 'campsite_node_session.features.inc';
