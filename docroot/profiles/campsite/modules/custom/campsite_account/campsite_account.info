@@ -1,8 +1,9 @@
-name = CampSite - User fields
+name = CampSite - Account
 core = 7.x
 package = CampSite
 version = 7.x-1.0
-project = campsite_user_fields
+project = campsite_account
+dependencies[] = campsite_account
 dependencies[] = countries
 dependencies[] = features
 dependencies[] = field_group

@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_group_info().
  */
-function campsite_user_fields_field_group_info() {
+function campsite_account_field_group_info() {
   $export = array();
 
   $field_group = new stdClass();
