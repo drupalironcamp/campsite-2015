@@ -64,7 +64,7 @@ function campsite_node_session_field_default_field_bases() {
       'tz_handling' => 'site',
     ),
     'translatable' => 0,
-    'type' => 'datestamp',
+    'type' => 'datetime',
   );
 
   // Exported field_base: 'field_session_experience_level'
