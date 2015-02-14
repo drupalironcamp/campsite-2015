@@ -24,6 +24,18 @@ function campsite_sponsor_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'list' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'sponsor_logo' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -70,6 +82,18 @@ function campsite_sponsor_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 1,
       ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'sponsor_logo' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -111,6 +135,18 @@ function campsite_sponsor_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 3,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'sponsor_logo' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -170,6 +206,26 @@ function campsite_sponsor_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'list' => array(
+        'label' => 'hidden',
+        'module' => 'image_link_formatter',
+        'settings' => array(
+          'image_link' => 'field_sponsor_link',
+          'image_style' => '',
+        ),
+        'type' => 'image_link_formatter',
+        'weight' => 0,
+      ),
+      'sponsor_logo' => array(
+        'label' => 'hidden',
+        'module' => 'image_link_formatter',
+        'settings' => array(
+          'image_link' => 'field_sponsor_link',
+          'image_style' => '',
+        ),
+        'type' => 'image_link_formatter',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',

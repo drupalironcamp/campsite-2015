@@ -1,16 +1,26 @@
 <?php
 /**
  * @file
- * campsite_user_fields.features.inc
+ * campsite_account.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
 function campsite_account_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function campsite_account_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
@@ -34,19 +44,21 @@ function campsite_account_flag_default_flags() {
     'link_type' => 'normal',
     'weight' => 0,
     'show_in_links' => array(
-      'full' => 0,
+      'full' => 'full',
+      'diff_standard' => 0,
+      'attendee' => 0,
     ),
     'show_as_field' => 0,
     'show_on_form' => 0,
     'access_author' => '',
     'show_contextual_link' => 0,
-    'show_on_profile' => 1,
+    'show_on_profile' => 0,
     'access_uid' => '',
-    'api_version' => 3,
     'module' => 'campsite_account',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   // Exported flag: "Individual sponsor".
   $flags['individual_sponsor'] = array(
@@ -64,19 +76,21 @@ function campsite_account_flag_default_flags() {
     'link_type' => 'normal',
     'weight' => 0,
     'show_in_links' => array(
-      'full' => 0,
+      'full' => 'full',
+      'diff_standard' => 0,
+      'attendee' => 0,
     ),
     'show_as_field' => 0,
     'show_on_form' => 0,
     'access_author' => '',
     'show_contextual_link' => 0,
-    'show_on_profile' => 1,
+    'show_on_profile' => 0,
     'access_uid' => '',
-    'api_version' => 3,
     'module' => 'campsite_account',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   // Exported flag: "Volunteer".
   $flags['volunteer'] = array(
@@ -94,19 +108,21 @@ function campsite_account_flag_default_flags() {
     'link_type' => 'normal',
     'weight' => 0,
     'show_in_links' => array(
-      'full' => 0,
+      'full' => 'full',
+      'diff_standard' => 0,
+      'attendee' => 0,
     ),
     'show_as_field' => 0,
     'show_on_form' => 0,
     'access_author' => '',
     'show_contextual_link' => 0,
-    'show_on_profile' => 1,
+    'show_on_profile' => 0,
     'access_uid' => '',
-    'api_version' => 3,
     'module' => 'campsite_account',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   return $flags;
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * campsite_user_fields.features.field_base.inc
+ * campsite_account.features.field_base.inc
  */
 
 /**
@@ -37,6 +37,59 @@ function campsite_account_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_user_country'
+  $field_bases['field_user_country'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_user_country',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'iso2' => array(
+        0 => 'iso2',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'countries',
+    'settings' => array(
+      'continents' => array(),
+      'countries' => array(),
+      'enabled' => 1,
+      'size' => 5,
+    ),
+    'translatable' => 0,
+    'type' => 'country',
+  );
+
+  // Exported field_base: 'field_user_dietary_needs'
+  $field_bases['field_user_dietary_needs'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_user_dietary_needs',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'Vegetarian' => 'Vegetarian',
+        'Vegan' => 'Vegan',
+        'Dairy free' => 'Dairy free',
+        'Gluten free' => 'Gluten free',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_user_first_name'
   $field_bases['field_user_first_name'] = array(
     'active' => 1,
@@ -64,6 +117,32 @@ function campsite_account_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_user_job_speeding_date'
+  $field_bases['field_user_job_speeding_date'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_user_job_speeding_date',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => '',
+        1 => '',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
   );
 
   // Exported field_base: 'field_user_job_title'
@@ -151,85 +230,6 @@ function campsite_account_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_user_country'
-  $field_bases['field_user_country'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_user_country',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'iso2' => array(
-        0 => 'iso2',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'countries',
-    'settings' => array(
-      'continents' => array(),
-      'countries' => array(),
-      'enabled' => 1,
-      'size' => 5,
-    ),
-    'translatable' => 0,
-    'type' => 'country',
-  );
-
-  // Exported field_base: 'field_user_dietary_needs'
-  $field_bases['field_user_dietary_needs'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_user_dietary_needs',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'Vegetarian' => 'Vegetarian',
-        'Vegan' => 'Vegan',
-        'Dairy free' => 'Dairy free',
-        'Gluten free' => 'Gluten free',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_user_job_speeding_date'
-  $field_bases['field_user_job_speeding_date'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_user_job_speeding_date',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => '',
-        1 => '',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
   );
 
   // Exported field_base: 'field_user_participate_days'
