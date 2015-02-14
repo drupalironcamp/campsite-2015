@@ -120,7 +120,7 @@ function campsite_codesprint_field_default_field_instances() {
     'bundle' => 'codesprint',
     'default_value' => array(
       0 => array(
-        'tid' => 1,
+        'target_id' => 1,
       ),
     ),
     'deleted' => 0,
@@ -128,10 +128,12 @@ function campsite_codesprint_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -145,6 +147,11 @@ function campsite_codesprint_field_default_field_instances() {
     'label' => 'Experience level',
     'required' => 1,
     'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
