@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * campsite_user_fields.field_group.inc
+ * campsite_account.field_group.inc
  */
 
 /**
