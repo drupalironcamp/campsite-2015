@@ -80,6 +80,70 @@ function campsite_import_feeds_importer_default() {
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
+  $feeds_importer->id = 'campsite_page';
+  $feeds_importer->config = array(
+    'name' => 'CampSite - Page',
+    'description' => '',
+    'fetcher' => array(
+      'plugin_key' => 'FeedsFileFetcher',
+      'config' => array(
+        'allowed_extensions' => 'txt csv tsv xml opml',
+        'direct' => FALSE,
+        'directory' => 'private://feeds',
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
+      ),
+    ),
+    'parser' => array(
+      'plugin_key' => 'FeedsCSVParser',
+      'config' => array(
+        'delimiter' => ',',
+        'no_headers' => 0,
+      ),
+    ),
+    'processor' => array(
+      'plugin_key' => 'FeedsNodeProcessor',
+      'config' => array(
+        'expire' => '-1',
+        'author' => '1',
+        'authorize' => 1,
+        'mappings' => array(
+          0 => array(
+            'source' => 'nid',
+            'target' => 'nid',
+            'unique' => 1,
+          ),
+          1 => array(
+            'source' => 'title',
+            'target' => 'title',
+            'unique' => FALSE,
+          ),
+          2 => array(
+            'source' => 'body',
+            'target' => 'body',
+            'unique' => FALSE,
+          ),
+        ),
+        'update_existing' => '2',
+        'input_format' => 'flat',
+        'skip_hash_check' => 0,
+        'bundle' => 'page',
+      ),
+    ),
+    'content_type' => '',
+    'update' => 0,
+    'import_period' => '-1',
+    'expire_period' => 3600,
+    'import_on_create' => 0,
+    'process_in_background' => 0,
+  );
+  $export['campsite_page'] = $feeds_importer;
+
+  $feeds_importer = new stdClass();
+  $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
+  $feeds_importer->api_version = 1;
   $feeds_importer->id = 'campsite_session_type';
   $feeds_importer->config = array(
     'name' => 'CampSite - Session type',

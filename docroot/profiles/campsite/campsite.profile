@@ -17,6 +17,13 @@ function campsite_install_tasks(&$install_state) {
     'run' => INSTALL_TASK_RUN_IF_REACHED,
     'function' => 'campsite_install_task_import_taxonomy_terms',
   );
+  $task['campsite_import_node'] = array(
+    'display_name' => st('Import nodes'),
+    'display' => TRUE,
+    'type' => 'batch',
+    'run' => INSTALL_TASK_RUN_IF_REACHED,
+    'function' => 'campsite_install_task_import_nodes',
+  );
 
   $task['campsite_disable_modules'] = array(
     'display_name' => st('Disable modules'),
@@ -47,6 +54,44 @@ function campsite_install_task_import_taxonomy_terms() {
 
   $batch = array(
     'title' => t('Import taxonomy terms'),
+    'operations' => array(),
+  );
+
+  $path = drupal_get_path('module', 'campsite_import');
+  foreach ($importer_ids as $importer_id) {
+    /** @var FeedsSource $source */
+    $source = feeds_source($importer_id);
+
+    $file_name = "$path/source/$importer_id.csv";
+
+    $config = $source->config['FeedsFileFetcher'];
+    $config['source'] = $file_name;
+    $source->setConfigFor($source->importer->fetcher, $config);
+    $source->save();
+
+    // Copied from \FeedsSource::startBatchAPIJob().
+    $batch['operations'][] = array(
+      'feeds_batch',
+      array('import', $importer_id, 0),
+    );
+  }
+
+  return $batch;
+}
+
+/**
+ * Install task callback.
+ *
+ * @return array
+ *   Batch process definition.
+ */
+function campsite_install_task_import_nodes() {
+  $importer_ids = array(
+    'campsite_page',
+  );
+
+  $batch = array(
+    'title' => t('Import nodes'),
     'operations' => array(),
   );
 
