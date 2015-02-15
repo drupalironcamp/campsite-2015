@@ -92,6 +92,27 @@ function campsite_main_menu_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_code-of-conduct:node/16
+  $menu_links['main-menu_code-of-conduct:node/16'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/16',
+    'router_path' => 'node/%',
+    'link_title' => 'Code of conduct',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_code-of-conduct:node/16',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_community:<front>',
+  );
   // Exported menu link: main-menu_community:<front>
   $menu_links['main-menu_community:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -253,7 +274,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
     'customized' => 1,
     'parent_identifier' => 'main-menu_community:<front>',
   );
@@ -357,7 +378,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_community:<front>',
   );
@@ -472,6 +493,7 @@ function campsite_main_menu_menu_default_menu_links() {
   t('Accomodation');
   t('BoF');
   t('Budapest');
+  t('Code of conduct');
   t('Community');
   t('Going out');
   t('Home');

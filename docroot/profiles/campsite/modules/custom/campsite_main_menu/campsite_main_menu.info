@@ -12,6 +12,7 @@ features[menu_links][] = main-menu_about-iron-camp:node/1
 features[menu_links][] = main-menu_accomodation:node/9
 features[menu_links][] = main-menu_bof:node/4
 features[menu_links][] = main-menu_budapest:node/7
+features[menu_links][] = main-menu_code-of-conduct:node/16
 features[menu_links][] = main-menu_community:<front>
 features[menu_links][] = main-menu_going-out:node/11
 features[menu_links][] = main-menu_home:<front>
