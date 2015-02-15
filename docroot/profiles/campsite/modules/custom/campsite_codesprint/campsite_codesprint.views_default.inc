@@ -181,6 +181,7 @@ function campsite_codesprint_views_default_views() {
   $handler->display->display_options['filters']['field_codesprint_level_target_id']['id'] = 'field_codesprint_level_target_id';
   $handler->display->display_options['filters']['field_codesprint_level_target_id']['table'] = 'field_data_field_codesprint_level';
   $handler->display->display_options['filters']['field_codesprint_level_target_id']['field'] = 'field_codesprint_level_target_id';
+  $handler->display->display_options['filters']['field_codesprint_level_target_id']['operator'] = 'in';
   $handler->display->display_options['filters']['field_codesprint_level_target_id']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_codesprint_level_target_id']['expose']['operator_id'] = 'field_codesprint_level_target_id_op';
   $handler->display->display_options['filters']['field_codesprint_level_target_id']['expose']['label'] = 'Experience level';
