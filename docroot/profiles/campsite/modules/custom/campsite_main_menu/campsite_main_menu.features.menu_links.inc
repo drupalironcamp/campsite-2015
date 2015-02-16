@@ -51,6 +51,27 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_budapest:node/7',
   );
+  // Exported menu link: main-menu_attendees:community/attendees
+  $menu_links['main-menu_attendees:community/attendees'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'community/attendees',
+    'router_path' => 'community/%',
+    'link_title' => 'Attendees',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_attendees:community/attendees',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_community:community/attendees',
+  );
   // Exported menu link: main-menu_bof:node/4
   $menu_links['main-menu_bof:node/4'] = array(
     'menu_name' => 'main-menu',
@@ -109,25 +130,25 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -46,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_community:<front>',
+    'parent_identifier' => 'main-menu_community:community/attendees',
   );
-  // Exported menu link: main-menu_community:<front>
-  $menu_links['main-menu_community:<front>'] = array(
+  // Exported menu link: main-menu_community:community/attendees
+  $menu_links['main-menu_community:community/attendees'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
+    'link_path' => 'community/attendees',
+    'router_path' => 'community/%',
     'link_title' => 'Community',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_community:<front>',
+      'identifier' => 'main-menu_community:community/attendees',
     ),
     'module' => 'menu',
     'hidden' => 0,
-    'external' => 1,
+    'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
     'weight' => -45,
@@ -274,9 +295,9 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_community:<front>',
+    'parent_identifier' => 'main-menu_community:community/attendees',
   );
   // Exported menu link: main-menu_sessions:program/sessions
   $menu_links['main-menu_sessions:program/sessions'] = array(
@@ -378,9 +399,9 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_community:<front>',
+    'parent_identifier' => 'main-menu_community:community/attendees',
   );
   // Exported menu link: main-menu_sprints:program/code-sprints
   $menu_links['main-menu_sprints:program/code-sprints'] = array(
@@ -487,10 +508,32 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_budapest:node/7',
   );
+  // Exported menu link: main-menu_volunteers:community/volunteers
+  $menu_links['main-menu_volunteers:community/volunteers'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'community/volunteers',
+    'router_path' => 'community/%',
+    'link_title' => 'Volunteers',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_volunteers:community/volunteers',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_community:community/attendees',
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('About Iron Camp');
   t('Accomodation');
+  t('Attendees');
   t('BoF');
   t('Budapest');
   t('Code of conduct');
@@ -512,6 +555,7 @@ function campsite_main_menu_menu_default_menu_links() {
   t('Travel');
   t('Useful tips');
   t('Venue');
+  t('Volunteers');
 
 
   return $menu_links;
