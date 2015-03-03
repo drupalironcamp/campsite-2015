@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 
       &:hover,
       &:active {
-        background-color: lighten($ic_pink, 10%);
+        color: $ic_darkgrey;
       }
     }
     h2 {
@@ -121,6 +121,7 @@ h1, h2, h3, h4 {
   }
   h3 {
     font-family: $base_font_novecento_demibold;
+    line-height: 1.5em;
 
     a {
       color: $ic_orange;
@@ -154,8 +155,8 @@ h1, h2, h3, h4 {
   text-align: center;
   p {
     font-size: 1em;
-    line-height: 1em;
-    margin: 1em 0;
+    line-height: 1.5em;
+    margin: 1em;
   }
   #acquia_logo {
     margin-bottom: 1em;
@@ -166,44 +167,16 @@ h1, h2, h3, h4 {
 .btn-ironcamp {
   background-color: $ic_orange;
   color: $white;
-  padding: 10px 25px;
+  padding: 15px 25px;
   font-family: $base_font_novecento_demibold;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 40px;
-  height: 60px;
+  line-height: 30px;
+  min-height: 60px;
   border-radius: 0;
 
   &:hover,
   &:active {
-    color: $white;
-    background-color: lighten($ic_orange, 10%);
-  }
-}
-
-@include keyframes(bounce) {
-  50% {
-    @include transform(translateY(-10px));
-  }
-  100% {
-    @include transform(translateY(0px));
-  }
-}
-.scroll-down {
-  position: absolute;
-  top: 480px;
-  left: 50%;
-  margin-left:-25px;
-  overflow: hidden;
-  @include animation(bounce 2s infinite);
-
-  span {
-    text-indent: 50px;
-    display: none;
-  }
-  i {
-    @include ic-sprite-background();
-    @include ic-sprite(50px, 28px, -87px -288px);
-    display: block;
+    color: $ic-darkgrey;
   }
 }
