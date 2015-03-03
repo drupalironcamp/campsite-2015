@@ -90,10 +90,11 @@ h1, h2, h3, h4 {
     }
     .button {
       background-color: $ic_pink;
-      font-size: 22px;
+      font-size: 18px;
       padding: 10px 32px;
       height: 50px;
-      font-family: $base_font_novecento_book;
+      font-family: $base_font_novecento_demibold;
+      text-transform: uppercase;
       border-radius: 0;
 
       &:hover,
@@ -167,6 +168,7 @@ h1, h2, h3, h4 {
   color: $white;
   padding: 10px 25px;
   font-family: $base_font_novecento_demibold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 40px;
   height: 60px;
