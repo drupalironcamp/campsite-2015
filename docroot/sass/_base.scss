@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
     width: 298px;
     height: 60px;
     background: #FFF000;
-    color: #1D1D1D;
+    color: $ic_darkgrey;
     font-size: 22px;
     text-align: center;
     margin: 0 auto;
@@ -89,12 +89,17 @@ h1, h2, h3, h4 {
       font-size: 16px;
     }
     .button {
-      background-color: #d51653;
+      background-color: $ic_pink;
       font-size: 22px;
       padding: 10px 32px;
       height: 50px;
       font-family: $base_font_novecento_book;
       border-radius: 0;
+
+      &:hover,
+      &:active {
+        background-color: lighten($ic_pink, 10%);
+      }
     }
     h2 {
       @extend .section-title;
@@ -102,12 +107,12 @@ h1, h2, h3, h4 {
   }
 }
 .social {
-  background-color: #d8d8d8;
+  background-color: $ic_lightgray;
   text-align: center;
 
   h2, span {
     font-size: 44px;
-    color: #1D1D1D;
+    color: $ic_darkgrey;
     font-family: $base_font_novecento_demibold;
   }
   h2 {
@@ -117,8 +122,14 @@ h1, h2, h3, h4 {
     font-family: $base_font_novecento_demibold;
 
     a {
-      color: #fff;
+      color: $ic_orange;
       font-family: $base_font_novecento_demibold;
+
+      &:hover,
+      &:active {
+        color: lighten($ic_orange, 10%);
+        text-decoration: none;
+      }
     }
   }
   span {
@@ -152,7 +163,7 @@ h1, h2, h3, h4 {
 
 // Button
 .btn-ironcamp {
-  background-color: #ff841c;
+  background-color: $ic_orange;
   color: $white;
   padding: 10px 25px;
   font-family: $base_font_novecento_demibold;
@@ -160,6 +171,12 @@ h1, h2, h3, h4 {
   line-height: 40px;
   height: 60px;
   border-radius: 0;
+
+  &:hover,
+  &:active {
+    color: $white;
+    background-color: lighten($ic_orange, 10%);
+  }
 }
 
 @include keyframes(bounce) {
