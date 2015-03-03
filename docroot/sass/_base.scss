@@ -1,10 +1,10 @@
 
 * {
-  font-family: $base_font_sanspro;
+  font-family: $base_font_roboto;
 }
 
 h1, h2, h3, h4 {
-  font-family: $base_font_oswald;
+  font-family: $base_font_novecento_normal;
   text-transform: uppercase;
 }
 .section {
@@ -12,14 +12,37 @@ h1, h2, h3, h4 {
   padding-bottom: 60px;
 }
 .section-title {
-  font-size: 35px;
+  font-size: 32px;
+  line-height: 36px;
   margin-bottom: 25px;
   margin-top: 20px;
 }
 .jumbotron {
-  @include gradient-radial;
+  padding: 0;
   margin-bottom: 0;
   position: relative;
+  background: #D8D8D8;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .when {
+    width: 298px;
+    height: 60px;
+    background: #FFF000;
+    color: #1D1D1D;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    line-height: 60px;
+    font-family: $base_font_novecento_demibold;
+  }
 }
 
 .logo {
@@ -36,7 +59,7 @@ h1, h2, h3, h4 {
 
   * {
     line-height: 100%;
-    font-family: $base_font_dense;
+    font-family: $base_font_novecento_demibold;
   }
   p {
     margin: 0;
@@ -51,8 +74,8 @@ h1, h2, h3, h4 {
     margin-bottom: 30px;
     text-align: justify;
     width: 96%;
-    line-height: 160%;
-    font-size: 18px;
+    line-height: 26px;
+    font-size: 16px;
   }
 }
 
@@ -63,32 +86,40 @@ h1, h2, h3, h4 {
       padding: 0;
     }
     .mc-field-group label {
-      font-size: 20px;
+      font-size: 16px;
     }
     .button {
-      background-color: #03782B;
-      font-size: 18px;
+      background-color: #d51653;
+      font-size: 22px;
       padding: 10px 32px;
       height: 50px;
+      font-family: $base_font_novecento_book;
+      border-radius: 0;
     }
     h2 {
-      font-size: 35px;
-      font-weight: 500;
       @extend .section-title;
     }
   }
 }
 .social {
-  background-color: $ic_red;
+  background-color: #d8d8d8;
   text-align: center;
 
   h2, span {
     font-size: 44px;
-    color: $white;
-    font-family: $base_font_oswald;
+    color: #1D1D1D;
+    font-family: $base_font_novecento_demibold;
   }
   h2 {
     padding: 0 15px;
+  }
+  h3 {
+    font-family: $base_font_novecento_demibold;
+
+    a {
+      color: #fff;
+      font-family: $base_font_novecento_demibold;
+    }
   }
   span {
     color: #A30B03;
@@ -121,21 +152,14 @@ h1, h2, h3, h4 {
 
 // Button
 .btn-ironcamp {
-  @include box-shadow(0px 6px 0px $ic_red_50);
-  @include text-shadow(0 1px 0 #fff);
-  @include transition(all ease .3s);
-  background-color: $ic_red;
+  background-color: #ff841c;
   color: $white;
   padding: 10px 25px;
-  font-family: $base_font_oswald;
-  font-size: 24px;
-  font-weight: 100;
-
-  &:hover {
-    color: $white;
-    background-color: $ic_red_50;
-    @include box-shadow(0px 6px 0px $ic_red);
-  }
+  font-family: $base_font_novecento_demibold;
+  font-size: 18px;
+  line-height: 40px;
+  height: 60px;
+  border-radius: 0;
 }
 
 @include keyframes(bounce) {

@@ -1,23 +1,52 @@
 /**
  * Fonts
  */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|Open+Sans:400,300|Oswald:400,300&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 
 @font-face {
-  font-family: 'Dense';
-  src: url('../_assets/fonts/dense/dense-regular-webfont.eot');
-  src: url('../_assets/fonts/dense/dense-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../_assets/fonts/dense/dense-regular-webfont.woff2') format('woff2'),
-  url('../_assets/fonts/dense/dense-regular-webfont.woff') format('woff'),
-  url('../_assets/fonts/dense/dense-regular-webfont.ttf') format('truetype');
+  font-family: 'novecento_sans_widenormal';
+  src: url('../_assets/fonts/Novecento/Novecentosanswide-Normal-webfont.eot');
+  src: url('../_assets/fonts/Novecento/Novecentosanswide-Normal-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Normal-webfont.woff2') format('woff2'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Normal-webfont.woff') format('woff'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Normal-webfont.ttf') format('truetype'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Normal-webfont.svg#novecento_sans_widenormal') format('svg');
   font-weight: normal;
   font-style: normal;
 
 }
-$base_font_open:    'Open Sans', sans-serif;
-$base_font_oswald:  'Oswald', sans-serif;
-$base_font_sanspro: 'Source Sans Pro', sans-serif;;
-$base_font_dense:   'Dense', sans-serif;;
+
+@font-face {
+  font-family: 'novecento_sans_widedemibold';
+  src: url('../_assets/fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot');
+  src: url('../_assets/fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff2') format('woff2'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff') format('woff'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-DemiBold-webfont.ttf') format('truetype'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-DemiBold-webfont.svg#novecento_sans_widedemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'novecento_sans_widebook';
+  src: url('../_assets/fonts/Novecento/Novecentosanswide-Book-webfont.eot');
+  src: url('../_assets/fonts/Novecento/Novecentosanswide-Book-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Book-webfont.woff2') format('woff2'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Book-webfont.woff') format('woff'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Book-webfont.ttf') format('truetype'),
+  url('../_assets/fonts/Novecento/Novecentosanswide-Book-webfont.svg#novecento_sans_widebook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+$base_font_roboto:    'Roboto Slab', sans-serif;
+$base_font_novecento_book:   'novecento_sans_widebook', sans-serif;;
+$base_font_novecento_normal:   'novecento_sans_widenormal', sans-serif;;
+$base_font_novecento_demibold:   'novecento_sans_widedemibold', sans-serif;;
 
 /**
  * Colors
