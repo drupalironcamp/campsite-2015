@@ -85,8 +85,12 @@ h1, h2, h3, h4 {
     form {
       padding: 0;
     }
-    .mc-field-group label {
-      font-size: 16px;
+    .mc-field-group {
+      padding-bottom: 22px;
+
+      label {
+        font-size: 16px;
+      }
     }
     .button {
       background-color: $ic_pink;
@@ -120,6 +124,7 @@ h1, h2, h3, h4 {
     padding: 0 15px;
   }
   h3 {
+    padding: 0 15px;
     font-family: $base_font_novecento_demibold;
     line-height: 1.5em;
 
