@@ -1,0 +1,53 @@
+name = iron15
+description = Using Bootstrap with LESS, powered by Grunt.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+
+;;;;;;;;;;;;;;;;;;;;;;
+;;; Scripts
+;;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = 'svg/grunticon.loader.js'
+scripts[] = 'js/affix.js'
+scripts[] = 'js/alert.js'
+scripts[] = 'js/button.js'
+scripts[] = 'js/carousel.js'
+scripts[] = 'js/collapse.js'
+scripts[] = 'js/dropdown.js'
+scripts[] = 'js/modal.js'
+scripts[] = 'js/tooltip.js'
+scripts[] = 'js/popover.js'
+scripts[] = 'js/scrollspy.js'
+scripts[] = 'js/tab.js'
+scripts[] = 'js/transition.js'
+
+; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+settings[bootstrap_cdn] = ''
+
+
+; ;;;;;;;;;;;;;;;;;;;;;
+; ;; FOAD
+; ;;;;;;;;;;;;;;;;;;;;;
