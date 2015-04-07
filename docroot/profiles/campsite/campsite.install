@@ -8,7 +8,7 @@
  * Implements hook_install().
  */
 function campsite_install() {
-  $default_theme = 'campsite_theme';
+  $default_theme = 'iron15';
   theme_enable(array($default_theme));
   variable_set('theme_default', $default_theme);
 
