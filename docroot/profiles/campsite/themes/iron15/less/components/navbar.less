@@ -10,7 +10,7 @@
 
 .navbar {
   position: relative;
-  min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
 
@@ -270,8 +270,7 @@
     > li {
       float: left;
       > a {
-        padding-top:    @navbar-padding-vertical;
-        padding-bottom: @navbar-padding-vertical;
+        padding: 19px 24px;
       }
     }
   }
@@ -394,7 +393,6 @@
 // Default navbar
 .navbar-default {
   background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
 
   .navbar-brand {
     color: @navbar-default-brand-color;
@@ -411,6 +409,8 @@
 
   .navbar-nav {
     > li > a {
+      font-size: 22px;
+      font-family: @nsw-book;
       color: @navbar-default-link-color;
 
       &:hover,
@@ -435,6 +435,10 @@
         background-color: @navbar-default-link-disabled-bg;
       }
     }
+
+    &.secondary{
+        float: right;
+    }
   }
 
   .navbar-toggle {
@@ -451,6 +455,10 @@
   .navbar-collapse,
   .navbar-form {
     border-color: @navbar-default-border;
+    @media (max-width: @grid-float-breakpoint-max) {
+        background-color: rgba(27, 27, 27, 0.8);
+    }
+
   }
 
   // Dropdown menu items
@@ -494,6 +502,28 @@
         }
       }
     }
+
+    //secondary menu color
+    &.secondary .dropdown-menu > li > a:hover{
+        background: @brand-primary;
+    }
+
+    .caret{
+        display: none;
+    }
+
+    @media (min-width: @grid-float-breakpoint) {
+        .dropdown:hover{
+            > a {
+                background-color: black;
+            }
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+
+
   }
 
 
