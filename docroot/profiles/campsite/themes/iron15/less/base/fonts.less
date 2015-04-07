@@ -1,0 +1,25 @@
+
+// fontface mixin
+
+.font-face(@fontFamily, @fileName, @fontPath:  @font-path, @style: normal, @weight: normal) {
+  @font-face {
+    font-family: @fontFamily;
+    font-style: @style;
+    font-weight: @weight;
+    src: url('@{fileName}.eot');
+    src: local('@fontFamily'),
+        url('@{fontPath}@{fontFamily}/@{fileName}.eot?#iefix') format('embedded-opentype'),
+         url('@{fontPath}@{fontFamily}/@{fileName}.woff') format('woff'),
+         url('@{fontPath}@{fontFamily}/@{fileName}.ttf') format('truetype'),
+         url('@{fontPath}@{fontFamily}/@{fileName}.svg#@{fontFamily}') format('svg'),
+         url("@{fontPath}@{fontFamily}/@{fileName}.otf") format('opentype');
+  }
+}
+
+
+.font-face(@fontFamily: @nsw-light;     @fileName: 'Novecentosanswide-Light-webfont';);
+.font-face(@fontFamily: @nsw-normal;    @fileName: 'Novecentosanswide-Normal-webfont';);
+.font-face(@fontFamily: @nsw-medium;    @fileName: 'Novecentosanswide-Medium-webfont';);
+.font-face(@fontFamily: @nsw-book;      @fileName: 'Novecentosanswide-Book-webfont';);
+.font-face(@fontFamily: @nsw-demibold;  @fileName: 'Novecentosanswide-DemiBold-webfont';);
+.font-face(@fontFamily: @nsw-bookbold;  @fileName: 'Novecentosanswide-Bold-webfont';);
