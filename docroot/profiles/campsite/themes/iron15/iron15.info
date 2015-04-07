@@ -47,7 +47,11 @@ scripts[] = 'js/transition.js'
 ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''
 
+; Navbar
+; --------------
+settings[bootstrap_navbar_position] = 'static-top'
 
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; ;; FOAD
 ; ;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = views.css

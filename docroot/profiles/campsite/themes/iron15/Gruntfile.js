@@ -74,14 +74,6 @@ module.exports = function (grunt) {
 
     // minify images
     imagemin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: './images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
-          dest: './images'
-        }]
-      },
       pngfallbacks:{
         files: [{
             expand: true,

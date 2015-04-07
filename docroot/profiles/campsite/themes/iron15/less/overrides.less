@@ -127,12 +127,6 @@ body {
 .modal-backdrop {
   z-index: 1610;
 }
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
-}
 
 // Element invisible fix
 .element-invisible {
@@ -297,11 +291,6 @@ table tr.error {
 }
 
 // Lists
-.list-inline {
-  > li.first {
-    padding-left: 0;
-  }
-}
 .nav-tabs {
   margin-bottom: 10px;
 }
@@ -405,66 +394,6 @@ div.password-suggestions ul {
     font-size: 90%;
     margin: 0 -.25em 0 0.5em;
   }
-}
-
-.glyphicon-spin {
-  display: inline-block;
-  -moz-animation: spin 1s infinite linear;
-  -o-animation: spin 1s infinite linear;
-  -webkit-animation: spin 1s infinite linear;
-  animation: spin 1s infinite linear;
-}
-a .glyphicon-spin {
-  display: inline-block;
-  text-decoration: none;
-}
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  100% {
-    -moz-transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -o-transform: rotate(359deg);
-  }
-}
-@-ms-keyframes spin {
-  0% {
-    -ms-transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(359deg);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
-
-.glyphicon-refresh {
-  -webkit-transform-origin: 50% 45%;
-  -moz-transform-origin: 50% 45%;
-  -ms-transform-origin: 50% 45%;
-  -o-transform-origin: 50% 45%;
-  transform-origin: 50% 45%;
 }
 
 /**
@@ -648,4 +577,11 @@ table {
 }
 .alert-danger a {
   color: darken(@alert-danger-text, 10%);
+}
+
+
+ // links
+
+.links a{
+    color: @brand-info;
 }
