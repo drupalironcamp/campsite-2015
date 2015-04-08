@@ -3179,7 +3179,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #d8d8d8;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
@@ -5868,37 +5868,51 @@ button.close {
 }
 #page-header .container {
   position: relative;
-  height: 270px;
-  padding-top: 130px;
+  height: 250px;
+  padding-top: 90px;
 }
-#page-header .banner-img {
-  position: absolute;
-  top: -320px;
-  left: 50%;
-  margin-left: -280px;
+@media (min-width: 768px) {
+  #page-header .container {
+    height: 300px;
+    padding-top: 130px;
+  }
 }
 #page-header .logo {
-  width: 148px;
-  height: 148px;
+  width: 73px;
+  height: 73px;
   position: absolute;
   top: 8px;
   left: 50%;
-  margin-left: -74px;
+  margin-left: -30px;
   border-radius: 128px;
   text-align: center;
   z-index: 80;
 }
 #page-header .logo .icon-iron-logo {
-  width: 108px;
-  height: 108px;
+  width: 73px;
+  height: 73px;
   display: inline-block;
   background-size: 100%;
 }
 @media (min-width: 768px) {
-  #page-header .container {
-    height: 300px;
+  #page-header .logo {
+    width: 148px;
+    height: 148px;
+    margin-left: -74px;
   }
-  #page-header .banner-img {
+  #page-header .logo .icon-iron-logo {
+    width: 108px;
+    height: 108px;
+  }
+}
+.banner-img {
+  position: absolute;
+  top: -360px;
+  left: 50%;
+  margin-left: -280px;
+}
+@media (min-width: 768px) {
+  .banner-img {
     top: -220px;
     margin-left: -220px;
   }
@@ -5907,7 +5921,7 @@ button.close {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 560px;
+  max-width: 340px;
   font-family: 'novecento_sans_wide_bookbold';
   position: relative;
   z-index: 50;
@@ -5915,6 +5929,11 @@ button.close {
 .lead .btn {
   pointer-events: none;
   vertical-align: top;
+}
+@media (min-width: 768px) {
+  .lead {
+    max-width: 560px;
+  }
 }
 .site-name {
   font-size: 60px;
@@ -5945,7 +5964,7 @@ button.close {
   background: -o-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
   background: -ms-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
   background: linear-gradient(90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#d8d8d8', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='@gray', GradientType=1);
 }
 .footer .container {
   height: 380px;
