@@ -109,7 +109,7 @@
     <div class="container">
 
       <div class="logo">
-          <span class="icon-iron-logo"></span>
+          <a href="/" class="icon-iron-logo"></a>
       </div>
 
 
