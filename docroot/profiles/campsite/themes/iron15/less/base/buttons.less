@@ -10,6 +10,7 @@
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
+  font-family: @btn-font-family;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -17,8 +18,12 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @btn-font-size; @btn-line-height; @border-radius-base);
   .user-select(none);
+
+  // overrides for bad font
+  min-width: 160px;
+  padding-bottom: 8px;
 
   &,
   &:active,
@@ -51,6 +56,13 @@
     .opacity(.65);
     .box-shadow(none);
   }
+
+  // for the multiline buttons
+  span{
+      font-size: @font-size-base;
+      font-family: @nsw-book;
+  }
+
 }
 
 
@@ -123,17 +135,22 @@
 
 // Button Sizes
 // --------------------------------------------------
+// padding-vertical, padding-horizontal, font-size, line-height, border-radius
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .button-size(@padding-large-vertical; 42px; 30px; 30px; 0);
+  span{
+      font-size: 24px;
+      font-family: @nsw-book;
+  }
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .button-size(2px; 15px; @font-size-small; @line-height-small; 0);
 }
 .btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; 0);
 }
 
 

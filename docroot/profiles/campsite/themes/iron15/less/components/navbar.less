@@ -10,7 +10,7 @@
 
 .navbar {
   position: relative;
-  min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
 
@@ -192,14 +192,14 @@
 
 .navbar-toggle {
   position: relative;
-  float: right;
-  margin-right: @navbar-padding-horizontal;
+  float: left;
+  margin-left: @navbar-padding-horizontal;
   padding: 9px 10px;
-  .navbar-vertical-align(34px);
+  margin-top: 5px;
+  margin-bottom: 7px;
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
-  border-radius: @border-radius-base;
+  border: 0;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
@@ -210,12 +210,12 @@
   // Bars
   .icon-bar {
     display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
+    width: 44px;
+    height: 6px;
+    border-radius: 0;
   }
   .icon-bar + .icon-bar {
-    margin-top: 4px;
+    margin-top: 6px;
   }
 
   @media (min-width: @grid-float-breakpoint) {
@@ -270,8 +270,7 @@
     > li {
       float: left;
       > a {
-        padding-top:    @navbar-padding-vertical;
-        padding-bottom: @navbar-padding-vertical;
+        padding: 19px 24px;
       }
     }
   }
@@ -394,7 +393,6 @@
 // Default navbar
 .navbar-default {
   background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
 
   .navbar-brand {
     color: @navbar-default-brand-color;
@@ -411,6 +409,8 @@
 
   .navbar-nav {
     > li > a {
+      font-size: 22px;
+      font-family: @nsw-book;
       color: @navbar-default-link-color;
 
       &:hover,
@@ -435,6 +435,10 @@
         background-color: @navbar-default-link-disabled-bg;
       }
     }
+
+    &.secondary{
+        float: right;
+    }
   }
 
   .navbar-toggle {
@@ -451,6 +455,10 @@
   .navbar-collapse,
   .navbar-form {
     border-color: @navbar-default-border;
+    @media (max-width: @grid-float-breakpoint-max) {
+        background-color: rgba(27, 27, 27, 0.8);
+    }
+
   }
 
   // Dropdown menu items
@@ -494,6 +502,28 @@
         }
       }
     }
+
+    //secondary menu color
+    &.secondary .dropdown-menu > li > a:hover{
+        background: @brand-primary;
+    }
+
+    .caret{
+        display: none;
+    }
+
+    @media (min-width: @grid-float-breakpoint) {
+        .dropdown:hover{
+            > a {
+                background-color: black;
+            }
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+
+
   }
 
 
