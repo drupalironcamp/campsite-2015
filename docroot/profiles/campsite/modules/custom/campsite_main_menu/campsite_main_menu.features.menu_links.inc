@@ -10,26 +10,6 @@
 function campsite_main_menu_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_about-iron-camp:node/1
-  $menu_links['main-menu_about-iron-camp:node/1'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/1',
-    'router_path' => 'node/%',
-    'link_title' => 'About Iron Camp',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_about-iron-camp:node/1',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_accomodation:node/9
   $menu_links['main-menu_accomodation:node/9'] = array(
     'menu_name' => 'main-menu',
@@ -49,7 +29,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_budapest:node/7',
+    'parent_identifier' => 'main-menu_location:node/7',
   );
   // Exported menu link: main-menu_attendees:community/attendees
   $menu_links['main-menu_attendees:community/attendees'] = array(
@@ -108,10 +88,11 @@ function campsite_main_menu_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 1,
-    'weight' => -47,
+    'weight' => -50,
     'customized' => 1,
+    'parent_identifier' => 'main-menu_location:node/7',
   );
   // Exported menu link: main-menu_code-of-conduct:node/16
   $menu_links['main-menu_code-of-conduct:node/16'] = array(
@@ -151,7 +132,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -45,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_going-out:node/11
@@ -173,7 +154,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -46,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_budapest:node/7',
+    'parent_identifier' => 'main-menu_location:node/7',
   );
   // Exported menu link: main-menu_home:<front>
   $menu_links['main-menu_home:<front>'] = array(
@@ -231,11 +212,10 @@ function campsite_main_menu_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_budapest:node/7',
   );
   // Exported menu link: main-menu_our-sponsors:sponsors
   $menu_links['main-menu_our-sponsors:sponsors'] = array(
@@ -275,7 +255,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -48,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: main-menu_scholarship:node/14
@@ -464,7 +444,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_budapest:node/7',
+    'parent_identifier' => 'main-menu_location:node/7',
   );
   // Exported menu link: main-menu_useful-tips:node/12
   $menu_links['main-menu_useful-tips:node/12'] = array(
@@ -485,7 +465,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -45,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_budapest:node/7',
+    'parent_identifier' => 'main-menu_location:node/7',
   );
   // Exported menu link: main-menu_venue:node/8
   $menu_links['main-menu_venue:node/8'] = array(
@@ -506,7 +486,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_budapest:node/7',
+    'parent_identifier' => 'main-menu_location:node/7',
   );
   // Exported menu link: main-menu_volunteers:community/volunteers
   $menu_links['main-menu_volunteers:community/volunteers'] = array(
@@ -531,7 +511,6 @@ function campsite_main_menu_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('About Iron Camp');
   t('Accomodation');
   t('Attendees');
   t('BoF');
