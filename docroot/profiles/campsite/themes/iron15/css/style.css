@@ -3317,6 +3317,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0;
+    position: fixed;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -5862,7 +5864,6 @@ button.close {
 }
 #page-header {
   position: relative;
-  top: -60px;
   background-color: #d8d8d8;
 }
 #page-header .container {
@@ -5885,7 +5886,7 @@ button.close {
   margin-left: -30px;
   border-radius: 128px;
   text-align: center;
-  z-index: 80;
+  z-index: 1;
 }
 #page-header .logo .icon-iron-logo {
   width: 73px;
