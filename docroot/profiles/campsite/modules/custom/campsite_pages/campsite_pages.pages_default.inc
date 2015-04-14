@@ -43,7 +43,7 @@ function campsite_pages_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'twocol_stacked';
+  $display->layout = 'onecol';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -52,6 +52,7 @@ function campsite_pages_default_page_manager_pages() {
       'left' => NULL,
       'right' => NULL,
       'bottom' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
@@ -60,31 +61,8 @@ function campsite_pages_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-74b0bffe-5d3f-4b7b-87ef-42c849588a9d';
-    $pane->panel = 'bottom';
-    $pane->type = 'block';
-    $pane->subtype = 'block-1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Sign up for updates:',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '74b0bffe-5d3f-4b7b-87ef-42c849588a9d';
-    $display->content['new-74b0bffe-5d3f-4b7b-87ef-42c849588a9d'] = $pane;
-    $display->panels['bottom'][0] = 'new-74b0bffe-5d3f-4b7b-87ef-42c849588a9d';
-    $pane = new stdClass();
-    $pane->pid = 'new-727a1734-6b60-48a9-9d28-87cafaffbe27';
-    $pane->panel = 'top';
+    $pane->pid = 'new-1ff4b115-e8f3-4479-891d-1c4a2f81fb95';
+    $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'user_list-panel_pane_2';
     $pane->shown = TRUE;
@@ -98,11 +76,68 @@ function campsite_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '727a1734-6b60-48a9-9d28-87cafaffbe27';
-    $display->content['new-727a1734-6b60-48a9-9d28-87cafaffbe27'] = $pane;
-    $display->panels['top'][0] = 'new-727a1734-6b60-48a9-9d28-87cafaffbe27';
+    $pane->uuid = '1ff4b115-e8f3-4479-891d-1c4a2f81fb95';
+    $display->content['new-1ff4b115-e8f3-4479-891d-1c4a2f81fb95'] = $pane;
+    $display->panels['middle'][0] = 'new-1ff4b115-e8f3-4479-891d-1c4a2f81fb95';
+    $pane = new stdClass();
+    $pane->pid = 'new-abb862dd-b419-4579-aa1d-728697313f30';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'news-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'abb862dd-b419-4579-aa1d-728697313f30';
+    $display->content['new-abb862dd-b419-4579-aa1d-728697313f30'] = $pane;
+    $display->panels['middle'][1] = 'new-abb862dd-b419-4579-aa1d-728697313f30';
+    $pane = new stdClass();
+    $pane->pid = 'new-9593ff69-a59a-40e8-a4a4-f651d253534d';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'sponsor-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '9593ff69-a59a-40e8-a4a4-f651d253534d';
+    $display->content['new-9593ff69-a59a-40e8-a4a4-f651d253534d'] = $pane;
+    $display->panels['middle'][2] = 'new-9593ff69-a59a-40e8-a4a4-f651d253534d';
+    $pane = new stdClass();
+    $pane->pid = 'new-00bcd635-5eaa-41c3-9ae8-b8912b8515dc';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'sponsor-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '00bcd635-5eaa-41c3-9ae8-b8912b8515dc';
+    $display->content['new-00bcd635-5eaa-41c3-9ae8-b8912b8515dc'] = $pane;
+    $display->panels['middle'][3] = 'new-00bcd635-5eaa-41c3-9ae8-b8912b8515dc';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-727a1734-6b60-48a9-9d28-87cafaffbe27';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['front_page'] = $page;

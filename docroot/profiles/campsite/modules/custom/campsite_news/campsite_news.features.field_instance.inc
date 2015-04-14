@@ -17,6 +17,15 @@ function campsite_news_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -61,6 +70,13 @@ function campsite_news_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -70,9 +86,10 @@ function campsite_news_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -117,6 +134,16 @@ function campsite_news_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -129,9 +156,13 @@ function campsite_news_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',

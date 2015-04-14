@@ -1,0 +1,6 @@
+name = CampSite - View Modes
+description = View modes for CampSite
+core = 7.x
+package = CampSite
+version = 7.x-1.0
+project = campsite_view_modes

@@ -1,0 +1,24 @@
+<?php
+/*
+* Please register all new node view modes here.
+*
+*/
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function campsite_view_modes_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['another_teaser'] = array(
+    'label' => t('Another teaser'),
+    'custom settings' => TRUE,
+  );
+}
+
+function campsite_view_modes_preprocess_node(&$vars) {
+  if($vars['view_mode'] == 'another_teaser') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__another_teaser';
+  }
+  if($vars['view_mode'] == 'teaser') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__teaser';
+  }
+}
