@@ -1,0 +1,82 @@
+// Insert your styling here.
+#page-header{
+    position: relative;
+    background-color: @gray;
+
+    .container{
+        position: relative; // limiter
+        height: 250px;
+        padding-top: 90px;
+        @media (min-width: @grid-float-breakpoint){
+            height: 300px;
+            padding-top: 130px;
+        }
+    }
+
+    .logo{
+        .square(73px);
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        margin-left: -30px; // centering the element horizontally
+        border-radius: 128px;
+        text-align: center;
+        z-index: 1;
+
+        .icon-iron-logo{ //using background image - faster than inline svg
+            .square(73px);
+            display: inline-block;
+            background-size: 100%;
+        }
+
+        @media (min-width: @grid-float-breakpoint){
+            .square(148px);
+            margin-left: -74px;
+            .icon-iron-logo{
+                .square(108px);
+            }
+        }
+    }
+
+}
+
+//** Graphics
+.banner-img{
+    position: absolute;
+    top: -360px;
+    left: 50%;
+    margin-left: -280px;
+    @media (min-width: @grid-float-breakpoint) {
+        top: -220px;
+        margin-left: -220px;
+    }
+}
+
+//** hardcoded LEAD
+.lead{
+    .center-block;
+    max-width: 340px;
+    font-family: @nsw-bookbold;
+    position: relative;
+    z-index: 50;
+    .btn{
+        pointer-events: none;
+        vertical-align: top;
+    }
+    @media (min-width: @grid-float-breakpoint) {
+        max-width: 560px;
+    }
+}
+
+.site-name{
+    .fontzilla;
+    display: block;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.camp-location{
+    font-size: 24px;
+    line-height: 34px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "basicdev",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-grunticon": "~2.1.6",
+    "grunt-autoprefixer": "~2.2.0",
+    "load-grunt-tasks": "~3.1.0",
+    "grunt-contrib-imagemin": "~0.9.4",
+    "grunt-contrib-jshint": "~0.11.1",
+    "time-grunt": "~1.1.0",
+    "grunt-svgmin": "~2.0.1"
+  },
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  }
+}

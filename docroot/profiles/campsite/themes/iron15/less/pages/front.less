@@ -1,0 +1,31 @@
+.front{
+
+    // Header
+    #page-header{
+        @media (min-width: @grid-float-breakpoint){
+            .container{
+                height: 630px;
+                padding-top: 350px;
+            }
+            .banner-img{
+                position: absolute;
+                top: 10px;
+                padding-top: 15px; // adjust the image canvas
+            }
+            .logo{
+                top: 50%;
+                margin-top: -115px; // adjusting the logot to match the design
+                padding-top: 20px; // border spacing
+                margin-left: -60px;
+                z-index: 60;
+            }
+        }
+
+        .logo{
+            // border around the logo
+            @media (min-width: @screen-sm){
+                background-color: #1b1b1b;
+            }
+        }
+    }
+}
