@@ -1,7 +1,7 @@
 name = CampSite - Account
 core = 7.x
 package = CampSite
-version = 7.x-1.0
+version = 7.x-1.1
 project = campsite_account
 dependencies[] = countries
 dependencies[] = ctools
@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = field_group
 dependencies[] = flag
 dependencies[] = image
+dependencies[] = image_styles
 dependencies[] = link
 dependencies[] = list
 dependencies[] = options
