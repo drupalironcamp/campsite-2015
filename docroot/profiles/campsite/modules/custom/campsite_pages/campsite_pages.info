@@ -1,0 +1,11 @@
+name = Campsite - pages
+core = 7.x
+package = CampSite
+version = 7.x-1.0
+project = campsite_pages
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_pages][] = front_page
+project path = profiles/campsite/modules/custom
