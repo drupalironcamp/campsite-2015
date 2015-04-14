@@ -34,3 +34,4 @@ dependencies[] = campsite_news
 dependencies[] = campsite_page
 dependencies[] = campsite_session
 dependencies[] = campsite_sponsor
+dependencies[] = campsite_view_modes
