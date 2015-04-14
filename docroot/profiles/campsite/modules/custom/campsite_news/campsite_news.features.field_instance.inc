@@ -18,9 +18,12 @@ function campsite_news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'another_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
         'weight' => 2,
       ),
       'default' => array(
@@ -68,7 +71,7 @@ function campsite_news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'another_teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -132,9 +135,13 @@ function campsite_news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'another_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => '',
+        ),
+        'type' => 'image',
         'weight' => 1,
       ),
       'default' => array(
