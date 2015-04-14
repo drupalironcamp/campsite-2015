@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * campsite_node_page.features.field_base.inc
+ * campsite_core.features.field_base.inc
  */
 
 /**

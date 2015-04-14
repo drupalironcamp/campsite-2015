@@ -432,7 +432,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'users_attendee',
         ),
         'type' => 'image',
         'weight' => 0,

@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the CampSite - Core feature.
  */
+
+include_once 'campsite_core.features.inc';
