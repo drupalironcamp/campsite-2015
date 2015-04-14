@@ -1,0 +1,11 @@
+name = CampSite - Custom blocks
+description = Put your custom blocks here f.e. mailchimp sign up form
+core = 7.x
+package = CampSite
+version = 7.x-1.0
+project = campsite_custom_blocks
+dependencies[] = fe_block
+features[fe_block_boxes][] = mailchimp_signup
+features[fe_block_settings][] = block-mailchimp_signup
+features[features_api][] = api:2
+project path = profiles/campsite/modules/custom

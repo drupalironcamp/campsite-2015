@@ -4,6 +4,7 @@ core = 7.x
 package = CampSite
 version = 7.x-1.0
 project = campsite_core
+dependencies[] = campsite_custom_blocks
 dependencies[] = campsite_pages
 dependencies[] = ckeditor
 dependencies[] = ctools

@@ -60,6 +60,29 @@ function campsite_pages_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-74b0bffe-5d3f-4b7b-87ef-42c849588a9d';
+    $pane->panel = 'bottom';
+    $pane->type = 'block';
+    $pane->subtype = 'block-1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Sign up for updates:',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '74b0bffe-5d3f-4b7b-87ef-42c849588a9d';
+    $display->content['new-74b0bffe-5d3f-4b7b-87ef-42c849588a9d'] = $pane;
+    $display->panels['bottom'][0] = 'new-74b0bffe-5d3f-4b7b-87ef-42c849588a9d';
+    $pane = new stdClass();
     $pane->pid = 'new-727a1734-6b60-48a9-9d28-87cafaffbe27';
     $pane->panel = 'top';
     $pane->type = 'views_panes';
