@@ -1,5 +1,5 @@
 name = CampSite - News
-description = News content type
+description = News content type and related views
 core = 7.x
 package = CampSite
 version = 7.x-1.0
