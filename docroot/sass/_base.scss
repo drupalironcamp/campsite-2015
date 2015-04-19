@@ -31,17 +31,33 @@ h1, h2, h3, h4 {
   }
 
   .when {
-    width: 298px;
-    height: 60px;
-    background: #FFF000;
-    color: $ic_darkgrey;
-    font-size: 22px;
+    width: 210px;
+    height: 80px;
+    background: $ic_orange;
     text-align: center;
     margin: 0 auto;
     position: relative;
     top: 30px;
-    line-height: 60px;
-    font-family: $base_font_novecento_demibold;
+    line-height: 30px;
+	
+	a {
+		display: block;
+	    font-family: $base_font_novecento_book;		
+		color: $white;
+	    font-size: 24px;
+		text-decoration: none;
+		padding: 10px 0;
+
+		span {
+			display: block;
+		    font-family: $base_font_novecento_normal;			
+		    font-size: 30px;
+		}
+		
+		&:hover {
+			color: $black;
+		}
+	}
   }
 }
 
