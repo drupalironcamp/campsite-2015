@@ -26,6 +26,7 @@ function campsite_account_default_page_manager_pages() {
       'settings' => array(
         'use_tail' => 0,
       ),
+      'keyword' => 'user_list',
     ),
   );
   $page->conf = array(
