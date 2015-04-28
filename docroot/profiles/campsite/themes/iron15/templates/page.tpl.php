@@ -73,14 +73,54 @@
  * @ingroup themeable
  */
 ?>
+
+<!-- Push mobile menu -->
+<?php if (!empty($primary_nav)): ?>
+  <nav class="pmenu pmenu-left" id="pmenu-s1">
+    <div class="icon-white-comet"></div>
+    <?php print render($primary_nav); ?>
+    <?php if (!empty($secondary_nav)): ?>
+      <?php print render($secondary_nav); ?>
+    <?php endif; ?>
+  </nav>
+<?php endif; ?>
+
+
+<!-- Login Modal and login mobile menu -->
+<?php if (!user_is_logged_in()) : ?>
+  <nav class="pmenu pmenu-right" id="pmenu-s2">
+    <div class="icon-drupal"></div>
+    <p class="text-center"><?php print t("DRUPAL LOGIN") ?></p class="text-center">
+    <?php  $elements = drupal_get_form("user_login");
+      $form = drupal_render($elements);
+      print $form;
+    ?>
+  </nav>
+
+  <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3 class="pull-left">Drupal</h3><h3 class="pull-right">Login</h3>
+          <p>You need to <a href="#">buy a ticket</a> to be able to log in.</p>
+          <?php  $elements = drupal_get_form("user_login");
+            $form = drupal_render($elements);
+            print $form;
+          ?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
+
+
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
     <div class="navbar-header">
 
 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
+      <button id="showLeftPush" type="button" class="navbar-toggle nav-pmenu">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -88,7 +128,7 @@
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse">
+      <div class="navbar-collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
@@ -103,6 +143,28 @@
       </div>
     <?php endif; ?>
   </div>
+  <?php if (user_is_logged_in()) :
+    // $user = user_load($user->uid);
+    // if($user->picture){
+    //              print theme_image_style(
+    //              array(
+    //                  'style_name' => 'thumbnail',
+    //                  'path' => $user->picture->uri,
+    //                  'attributes' => array('class' => 'avatar')));
+    //            }else{
+    //           echo '<img src="replace with path to your default picture" />';
+    //       }
+      ?>
+    <!-- User picture -->
+    <?php else : ?>
+    <!-- Button trigger login modal -->
+    <button type="button" class="login-modal-button icon-login" data-toggle="modal" data-target="#loginModal">
+      Login Modal
+    </button>
+    <button id="showRightPush" type="button" class="login-pmenu icon-login">
+      Login Menu
+    </button>
+  <?php endif; ?>
 </header>
 
 <header role="banner" id="page-header">
@@ -141,6 +203,7 @@
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
+
 
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>

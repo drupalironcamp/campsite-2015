@@ -1,3 +1,7 @@
+.icon-caret { background-image: url('png/caret.png'); background-repeat: no-repeat; }
+
+.icon-drupal { background-image: url('png/drupal.png'); background-repeat: no-repeat; }
+
 .icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
 .icon-footer-background { background-image: url('png/footer-background.png'); background-repeat: no-repeat; }
@@ -6,7 +10,11 @@
 
 .icon-lines { background-image: url('png/lines.png'); background-repeat: no-repeat; }
 
+.icon-login { background-image: url('png/login.png'); background-repeat: no-repeat; }
+
 .icon-mail { background-image: url('png/mail.png'); background-repeat: no-repeat; }
 
 .icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
+
+.icon-white-comet { background-image: url('png/white-comet.png'); background-repeat: no-repeat; }
 

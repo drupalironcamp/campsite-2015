@@ -2,6 +2,11 @@
 #page-header{
     position: relative;
     background-color: @gray;
+    top: -60px;
+
+    @media (min-width: @grid-float-breakpoint){
+      top: 0;
+    }
 
     .container{
         position: relative; // limiter

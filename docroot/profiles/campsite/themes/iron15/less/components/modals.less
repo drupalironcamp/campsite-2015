@@ -10,6 +10,7 @@
 // Kill the scroll on the body
 .modal-open {
   overflow: hidden;
+  padding: 0!important;
 }
 
 // Container that the modal scrolls within
@@ -68,7 +69,9 @@
   bottom: 0;
   left: 0;
   z-index: @zindex-modal-background;
-  background-color: @modal-backdrop-bg;
+  background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0.50196) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0.50196) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0.50196) 100%);
   // Fade for backdrop
   &.fade { .opacity(0); }
   &.in { .opacity(@modal-backdrop-opacity); }
@@ -147,4 +150,13 @@
 
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
+}
+
+//
+// Login Modal
+// --------------------------------------------------
+.login-modal{
+  .modal-dialog{
+    margin-top: 300px;
+  }
 }

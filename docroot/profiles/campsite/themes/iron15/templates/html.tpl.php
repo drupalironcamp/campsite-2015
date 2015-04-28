@@ -64,7 +64,7 @@
                  "<?php print base_path() . path_to_theme() ?>/svg/icons.fallback.css"], grunticon.svgLoadedCallback );
   </script>
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body class="<?php print $classes; ?> pmenu-push" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
