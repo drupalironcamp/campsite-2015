@@ -21,5 +21,7 @@ jQuery(function ($) {
     };
   }
 
+ // removed tooltips in push menu
+  $('.pmenu [data-toggle=tooltip]').tooltip('destroy');
 
 });

@@ -73,172 +73,177 @@
  * @ingroup themeable
  */
 ?>
+<div id="wrapper">
 
-<!-- Push mobile menu -->
-<?php if (!empty($primary_nav)): ?>
-  <nav class="pmenu pmenu-left" id="pmenu-s1">
-    <div class="icon-white-comet"></div>
-    <?php print render($primary_nav); ?>
-    <?php if (!empty($secondary_nav)): ?>
-      <?php print render($secondary_nav); ?>
-    <?php endif; ?>
-  </nav>
-<?php endif; ?>
-
-
-<!-- Login Modal and login mobile menu -->
-<?php if (!user_is_logged_in()) : ?>
-  <nav class="pmenu pmenu-right" id="pmenu-s2">
-    <div class="icon-drupal"></div>
-    <p class="text-center"><?php print t("DRUPAL LOGIN") ?></p class="text-center">
-    <?php  $elements = drupal_get_form("user_login");
-      $form = drupal_render($elements);
-      print $form;
-    ?>
-  </nav>
-
-  <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <h3 class="pull-left">Drupal</h3><h3 class="pull-right">Login</h3>
-          <p>You need to <a href="#">buy a ticket</a> to be able to log in.</p>
-          <?php  $elements = drupal_get_form("user_login");
-            $form = drupal_render($elements);
-            print $form;
-          ?>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php endif; ?>
-
-
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
-    <div class="navbar-header">
-
-
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button id="showLeftPush" type="button" class="navbar-toggle nav-pmenu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
-        </nav>
-      </div>
-    <?php endif; ?>
-  </div>
-  <?php if (user_is_logged_in()) :
-    // $user = user_load($user->uid);
-    // if($user->picture){
-    //              print theme_image_style(
-    //              array(
-    //                  'style_name' => 'thumbnail',
-    //                  'path' => $user->picture->uri,
-    //                  'attributes' => array('class' => 'avatar')));
-    //            }else{
-    //           echo '<img src="replace with path to your default picture" />';
-    //       }
-      ?>
-    <!-- User picture -->
-    <?php else : ?>
-    <!-- Button trigger login modal -->
-    <button type="button" class="login-modal-button icon-login" data-toggle="modal" data-target="#loginModal">
-      Login Modal
-    </button>
-    <button id="showRightPush" type="button" class="login-pmenu icon-login">
-      Login Menu
-    </button>
+  <!-- Push mobile menu -->
+  <?php if (!empty($primary_nav)): ?>
+    <nav class="pmenu pmenu-left" id="pmenu-s1">
+      <div class="icon-white-comet"></div>
+      <?php print render($primary_nav); ?>
+      <?php if (!empty($secondary_nav)): ?>
+        <?php print render($secondary_nav); ?>
+      <?php endif; ?>
+    </nav>
   <?php endif; ?>
-</header>
 
-<header role="banner" id="page-header">
+
+  <!-- Login Modal and login mobile menu -->
+  <?php if (!user_is_logged_in()) : ?>
+    <nav class="pmenu pmenu-right" id="pmenu-s2">
+      <div class="icon-drupal"></div>
+      <p class="text-center"><?php print t("DRUPAL LOGIN") ?></p class="text-center">
+      <?php  $elements = drupal_get_form("user_login");
+        $form = drupal_render($elements);
+        print $form;
+      ?>
+    </nav>
+
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body clearfix">
+            <h3 class="pull-left">Drupal</h3><h3 class="pull-right">Login</h3>
+            <p>You need to <a href="#">buy a ticket</a> to be able to log in.</p>
+            <?php  $elements = drupal_get_form("user_login");
+              $form = drupal_render($elements);
+              print $form;
+            ?>
+            <a class="btn-link" href="#">Request a new password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+
+
+  <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
     <div class="container">
+      <div class="navbar-header">
 
-      <div class="logo">
-          <a href="/" class="icon-iron-logo"></a>
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button id="showLeftPush" type="button" class="navbar-toggle nav-pmenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
 
-
-      <div class="banner-img">
-          <img src="<?php print base_path() . path_to_theme() ?>/images/nga.png"/>
-      </div>
-
-      <?php if (!empty($site_name)): ?>
-        <div class="lead">
-            <span class="site-name"><?php print $site_name; ?></span>
-            <div class="divider"></div>
-            <div class="camp-location"><?php print t('Budapest, Hungary');?></div>
-            <div class="btn btn-sm btn-warning"><?php print t('26-30th October, 2015');?></div>
+      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+        <div class="navbar-collapse">
+          <nav role="navigation">
+            <?php if (!empty($primary_nav)): ?>
+              <?php print render($primary_nav); ?>
+            <?php endif; ?>
+            <?php if (!empty($secondary_nav)): ?>
+              <?php print render($secondary_nav); ?>
+            <?php endif; ?>
+            <?php if (!empty($page['navigation'])): ?>
+              <?php print render($page['navigation']); ?>
+            <?php endif; ?>
+          </nav>
         </div>
       <?php endif; ?>
+    </div>
+    <?php if (user_is_logged_in()) :
+      // $user = user_load($user->uid);
+      // if($user->picture){
+      //              print theme_image_style(
+      //              array(
+      //                  'style_name' => 'thumbnail',
+      //                  'path' => $user->picture->uri,
+      //                  'attributes' => array('class' => 'avatar')));
+      //            }else{
+      //           echo '<img src="replace with path to your default picture" />';
+      //       }
+        ?>
+      <!-- User picture -->
+      <?php else : ?>
+      <!-- Button trigger login modal -->
+      <button type="button" class="login-modal-button icon-login" data-toggle="modal" data-target="#loginModal">
+        Login Modal
+      </button>
+      <button id="showRightPush" type="button" class="login-pmenu icon-login">
+        Login Menu
+      </button>
+    <?php endif; ?>
+  </header>
+
+  <header role="banner" id="page-header">
+      <div class="container">
+
+        <div class="logo-wrap logo-border"></div>
+
+        <div class="logo-wrap logo">
+            <a href="/" class="icon-iron-logo"></a>
+        </div>
 
 
-      <?php print render($page['header']); ?>
+        <div class="banner-img">
+            <img src="<?php print base_path() . path_to_theme() ?>/images/nga.png"/>
+        </div>
+
+        <?php if (!empty($site_name)): ?>
+          <div class="lead">
+              <span class="site-name"><?php print $site_name; ?></span>
+              <div class="divider"></div>
+              <div class="camp-location"><?php print t('Budapest, Hungary');?></div>
+              <div class="btn btn-sm btn-warning"><?php print t('26-30th October, 2015');?></div>
+          </div>
+        <?php endif; ?>
+
+
+        <?php print render($page['header']); ?>
+
+      </div>
+  </header> <!-- /#page-header -->
+
+  <div class="main-container container">
+
+    <div class="row">
+
+      <?php if (!empty($page['sidebar_first'])): ?>
+        <aside class="col-sm-3" role="complementary">
+          <?php print render($page['sidebar_first']); ?>
+        </aside>  <!-- /#sidebar-first -->
+      <?php endif; ?>
+
+
+      <section<?php print $content_column_class; ?>>
+        <?php if (!empty($page['highlighted'])): ?>
+          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+        <?php endif; ?>
+        <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+        <a id="main-content"></a>
+        <?php print render($title_prefix); ?>
+        <?php if (!empty($title)): ?>
+          <h1 class="page-header"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+        <?php print $messages; ?>
+        <?php if (!empty($tabs)): ?>
+          <?php print render($tabs); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['help'])): ?>
+          <?php print render($page['help']); ?>
+        <?php endif; ?>
+        <?php if (!empty($action_links)): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+        <?php print render($page['content']); ?>
+      </section>
+
+      <?php if (!empty($page['sidebar_second'])): ?>
+        <aside class="col-sm-3" role="complementary">
+          <?php print render($page['sidebar_second']); ?>
+        </aside>  <!-- /#sidebar-second -->
+      <?php endif; ?>
 
     </div>
-</header> <!-- /#page-header -->
-
-<div class="main-container container">
-
-  <div class="row">
-
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
-
-    <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
-
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-
   </div>
+  <footer class="footer">
+      <div class="container icon-footer-background">
+         <?php print render($page['footer']); ?>
+      </div>
+  </footer>
 </div>
-<footer class="footer">
-    <div class="container icon-footer-background">
-       <?php print render($page['footer']); ?>
-    </div>
-</footer>

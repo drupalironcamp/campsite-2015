@@ -52,9 +52,6 @@
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
-  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid @modal-content-border-color;
-  border-radius: @border-radius-large;
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
@@ -158,5 +155,36 @@
 .login-modal{
   .modal-dialog{
     margin-top: 300px;
+  }
+  p,
+  form{
+    .pull-left;
+  }
+  .btn{
+    .pull-right;
+  }
+  h3{
+    margin-top: 0;
+    font-size: 24px;
+    font-family: @nsw-medium;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  input{
+    height: 36px;
+  }
+  .btn-link{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+}
+
+.not-front{
+  .modal-dialog{
+    margin-top: 80px;
   }
 }

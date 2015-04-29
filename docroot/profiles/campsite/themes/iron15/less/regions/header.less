@@ -19,30 +19,35 @@
     }
 
     .logo{
-        .square(73px);
-        position: absolute;
-        top: 8px;
-        left: 50%;
-        margin-left: -30px; // centering the element horizontally
-        border-radius: 128px;
-        text-align: center;
-        z-index: 1;
-
-        .icon-iron-logo{ //using background image - faster than inline svg
-            .square(73px);
-            display: inline-block;
-            background-size: 100%;
-        }
-
-        @media (min-width: @grid-float-breakpoint){
-            .square(148px);
-            margin-left: -74px;
-            .icon-iron-logo{
-                .square(108px);
-            }
-        }
+      z-index: 9999;
     }
 
+}
+
+
+.logo-wrap{
+    .square(73px);
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -30px; // centering the element horizontally
+    border-radius: 128px;
+    text-align: center;
+    z-index: 1;
+
+    .icon-iron-logo{ //using background image - faster than inline svg
+        .square(73px);
+        display: inline-block;
+        background-size: 100%;
+    }
+
+    @media (min-width: @grid-float-breakpoint){
+        .square(148px);
+        margin-left: -74px;
+        .icon-iron-logo{
+            .square(108px);
+        }
+    }
 }
 
 //** Graphics
