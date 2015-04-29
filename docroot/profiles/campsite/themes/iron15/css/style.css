@@ -4993,6 +4993,12 @@ button.close {
 .pmenu-left .social-menu a {
   border: 1px solid white;
 }
+.avatar .icon-drupal {
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-size: 35px;
+}
 .modal-open {
   overflow: hidden;
   padding: 0!important;
@@ -5732,7 +5738,7 @@ button.close {
   margin-top: 20px;
   margin-bottom: 45px;
 }
-.navbar .icon-login {
+.navbar .corner-button {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -5746,7 +5752,7 @@ button.close {
   top: 0;
   right: 0;
 }
-.navbar .icon-login:focus {
+.navbar .corner-button:focus {
   outline: 0;
 }
 @media (min-width: 992px) {

@@ -150,25 +150,29 @@
         </div>
       <?php endif; ?>
     </div>
-    <?php if (user_is_logged_in()) :
-      // $user = user_load($user->uid);
-      // if($user->picture){
-      //              print theme_image_style(
-      //              array(
-      //                  'style_name' => 'thumbnail',
-      //                  'path' => $user->picture->uri,
-      //                  'attributes' => array('class' => 'avatar')));
-      //            }else{
-      //           echo '<img src="replace with path to your default picture" />';
-      //       }
+
+    <?php if (user_is_logged_in()) : ?>
+      <div class="avatar corner-button">
+      <?php global $user; // load user avatar
+      $user = user_load($user->uid);
+      if($user->picture){
+                   print theme_image_style(
+                   array(
+                       'style_name' => 'thumbnail',
+                       'path' => $user->picture->uri,
+                       'attributes' => array('class' => 'avatar')));
+                 }else{
+                echo '<div class="icon-drupal"></div>';
+            }
         ?>
+      </div>
       <!-- User picture -->
       <?php else : ?>
       <!-- Button trigger login modal -->
-      <button type="button" class="login-modal-button icon-login" data-toggle="modal" data-target="#loginModal">
+      <button type="button" class="login-modal-button icon-login corner-button" data-toggle="modal" data-target="#loginModal">
         Login Modal
       </button>
-      <button id="showRightPush" type="button" class="login-pmenu icon-login">
+      <button id="showRightPush" type="button" class="login-pmenu icon-login corner-button">
         Login Menu
       </button>
     <?php endif; ?>
