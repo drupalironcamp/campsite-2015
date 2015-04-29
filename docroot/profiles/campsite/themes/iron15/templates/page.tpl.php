@@ -83,6 +83,11 @@
       <?php if (!empty($secondary_nav)): ?>
         <?php print render($secondary_nav); ?>
       <?php endif; ?>
+      <ul class="social-menu list-inline">
+        <li><a target="_blank" class="icon-facebook-white" href="https://www.facebook.com/drupalironcamp/">Facebook</a></li>
+        <li><a target="_blank" class="icon-twitter-white" href="https://twitter.com/drupalironcamp">Twitter</a></li>
+        <li><a class="icon-mail-white" href="mailto:info@drupalironcamp.com">info@drupalironcamp.com</a></li>
+      </ul>
     </nav>
   <?php endif; ?>
 
@@ -169,7 +174,7 @@
     <?php endif; ?>
   </header>
 
-  <header role="banner" id="page-header">
+  <header role="banner" id="page-header" class="site-header">
       <div class="container">
 
         <div class="logo-wrap logo-border"></div>
@@ -192,10 +197,16 @@
           </div>
         <?php endif; ?>
 
-
         <?php print render($page['header']); ?>
 
       </div>
+
+      <ul class="social-menu list-unstyled">
+        <li><a target="_blank" class="icon-facebook" href="https://www.facebook.com/drupalironcamp/">Facebook</a></li>
+        <li><a target="_blank" class="icon-twitter" href="https://twitter.com/drupalironcamp">Twitter</a></li>
+        <li><a class="icon-mail" href="mailto:info@drupalironcamp.com">info@drupalironcamp.com</a></li>
+      </ul>
+
   </header> <!-- /#page-header -->
 
   <div class="main-container container">

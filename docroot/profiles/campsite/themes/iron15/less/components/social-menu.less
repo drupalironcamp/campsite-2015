@@ -1,0 +1,37 @@
+// General styles
+.social-menu{
+  a{
+    .hide-text;
+    .square(36px);
+    display: block;
+    border: 1px solid black;
+    background-position: center;
+  }
+}
+
+// page-header style and overrides
+.site-header .social-menu{
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 135px;
+  li + li{
+    margin-top: 23px;
+  }
+  @media (min-width: @grid-float-breakpoint){
+    display: block;
+  }
+}
+
+// push menu style and overrides
+.pmenu-left .social-menu{
+  text-align: center;
+  margin: 40px 0 0 0;
+
+  li+li{
+    margin-left: 25px;
+  }
+  a{
+    border: 1px solid white;
+  }
+}

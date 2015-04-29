@@ -6,21 +6,18 @@
 	height: 100%;
 	top: 0;
 	z-index: 1000;
+
+	.nav a{
+		background: black!important;
+		color: white;
+		font-size: 24px;
+		-webkit-font-smoothing: antialiased; // uuugh shiny
+	}
 	.icon-drupal{
 		height: 60px;
 		background-position: center;
 		margin-bottom: 15px;
 	}
-	a {
-		display: block;
-		color: #fff;
-		font-size: 1.1em;
-		font-weight: 300;
-		&:hover {
-			background: black;
-		}
-	}
-
 }
 
 
@@ -29,11 +26,6 @@
 .pmenu-left {
 	left: -260px;
 	font-family: @nsw-book;
-	.nav a{
-		background: black!important;
-		font-size: 24px;
-		-webkit-font-smoothing: antialiased; // uuugh shiny
-	}
 	.dropdown-menu{
 		padding-top: 20px;
 		padding-bottom: 20px;

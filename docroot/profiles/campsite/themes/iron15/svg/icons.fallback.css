@@ -2,6 +2,8 @@
 
 .icon-drupal { background-image: url('png/drupal.png'); background-repeat: no-repeat; }
 
+.icon-facebook-white { background-image: url('png/facebook-white.png'); background-repeat: no-repeat; }
+
 .icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
 .icon-footer-background { background-image: url('png/footer-background.png'); background-repeat: no-repeat; }
@@ -12,7 +14,11 @@
 
 .icon-login { background-image: url('png/login.png'); background-repeat: no-repeat; }
 
+.icon-mail-white { background-image: url('png/mail-white.png'); background-repeat: no-repeat; }
+
 .icon-mail { background-image: url('png/mail.png'); background-repeat: no-repeat; }
+
+.icon-twitter-white { background-image: url('png/twitter-white.png'); background-repeat: no-repeat; }
 
 .icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
