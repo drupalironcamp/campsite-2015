@@ -189,10 +189,10 @@
 
         <div class="graphics">
           <div class="icon-lines" data-grunticon-embed></div>
-          <div class="icon-big-triangle01"></div>
-          <div class="icon-big-triangle02"></div>
-          <div class="icon-big-triangle03"></div>
-          <div class="icon-big-triangle04"></div>
+          <div class="icon-big-triangle01" data-stellar-ratio="0.5"></div>
+          <div class="icon-big-triangle02" data-stellar-ratio="0.5"></div>
+          <div class="icon-big-triangle03" data-stellar-ratio="1.1"></div>
+          <div class="icon-big-triangle04" data-stellar-ratio="1.1"></div>
         </div>
 
 

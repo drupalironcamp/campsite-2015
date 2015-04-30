@@ -45,9 +45,10 @@ scripts[] = 'js/tab.js'
 scripts[] = 'js/transition.js'
 scripts[] = 'js/classie.js'
 scripts[] = 'js/push-menu.js'
+scripts[] = 'js/stellar.js'
 scripts[] = 'js/script.js'
 
-; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+; Disable BootstrapCDN
 settings[bootstrap_cdn] = ''
 
 ; Navbar
