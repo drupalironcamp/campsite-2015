@@ -187,6 +187,14 @@
             <a href="/" class="icon-iron-logo"></a>
         </div>
 
+        <div class="graphics">
+          <div class="icon-lines" data-grunticon-embed></div>
+          <div class="icon-big-triangle01"></div>
+          <div class="icon-big-triangle02"></div>
+          <div class="icon-big-triangle03"></div>
+          <div class="icon-big-triangle04"></div>
+        </div>
+
 
         <div class="banner-img">
             <img src="<?php print base_path() . path_to_theme() ?>/images/nga.png"/>
@@ -257,8 +265,12 @@
     </div>
   </div>
   <footer class="footer">
+
       <div class="container icon-footer-background">
          <?php print render($page['footer']); ?>
+         <div class="icon-big-triangle01"></div>
+         <div class="icon-big-triangle01 copy"></div>
+         <div class="icon-big-triangle02"></div>
       </div>
   </footer>
 </div>
