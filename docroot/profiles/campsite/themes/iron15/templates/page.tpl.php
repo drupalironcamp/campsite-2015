@@ -223,8 +223,8 @@
         <div class="lead-buttons">
 
           <?php
-            print l(t('<span>Buy your</span>Ticket'), '#', array('html' => TRUE, 'attributes' => array('class' => array('btn', 'btn-danger', 'btn-lg')))).
-               l(t('<span>Become our</span>Sponsor'), '#', array('html' => TRUE, 'attributes' => array('class' => array('btn', 'btn-primary', 'btn-lg'))));
+            print l(t('<span>Buy your</span>Ticket'), 'buy-a-ticket', array('html' => TRUE, 'attributes' => array('class' => array('btn', 'btn-danger', 'btn-lg')))).
+               l(t('<span>Become our</span>Sponsor'), 'become-a-sponsor', array('html' => TRUE, 'attributes' => array('class' => array('btn', 'btn-primary', 'btn-lg'))));
           ?>
 
         </div>

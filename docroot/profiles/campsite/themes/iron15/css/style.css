@@ -2231,7 +2231,7 @@ select[multiple].form-group-lg .form-control {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   white-space: nowrap;
   padding: 6px 20px;
   font-size: 22px;
@@ -2295,8 +2295,8 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #ffffff;
-  background-color: #a71240;
-  border-color: #9e113d;
+  background-color: #e9316a;
+  border-color: #e9316a;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2331,7 +2331,11 @@ fieldset[disabled] .btn-default.active {
 .btn-default.hollow {
   background-color: white;
   color: #d51752;
-  border-width: 2px;
+}
+.btn-default.hollow:hover {
+  background-color: #d51752;
+  border-color: #d51752;
+  color: white;
 }
 .btn-primary {
   color: #ffffff;
@@ -2345,8 +2349,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #a71240;
-  border-color: #9e113d;
+  background-color: #e9316a;
+  border-color: #e9316a;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2381,7 +2385,11 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary.hollow {
   background-color: white;
   color: #d51752;
-  border-width: 2px;
+}
+.btn-primary.hollow:hover {
+  background-color: #d51752;
+  border-color: #d51752;
+  color: white;
 }
 .btn-success {
   color: #ffffff;
@@ -2395,8 +2403,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #449d44;
-  border-color: #419641;
+  background-color: #7cc67c;
+  border-color: #7cc67c;
 }
 .btn-success:active,
 .btn-success.active,
@@ -2428,6 +2436,15 @@ fieldset[disabled] .btn-success.active {
   color: #5cb85c;
   background-color: #ffffff;
 }
+.btn-success.hollow {
+  background-color: white;
+  color: #5cb85c;
+}
+.btn-success.hollow:hover {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  color: white;
+}
 .btn-info {
   color: #ffffff;
   background-color: #ec4034;
@@ -2440,8 +2457,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #d92114;
-  border-color: #cf2013;
+  background-color: #f0675e;
+  border-color: #f0675e;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2473,6 +2490,15 @@ fieldset[disabled] .btn-info.active {
   color: #ec4034;
   background-color: #ffffff;
 }
+.btn-info.hollow {
+  background-color: white;
+  color: #ec4034;
+}
+.btn-info.hollow:hover {
+  background-color: #ec4034;
+  border-color: #ec4034;
+  color: white;
+}
 .btn-warning {
   color: #000000;
   background-color: #fff000;
@@ -2485,8 +2511,8 @@ fieldset[disabled] .btn-info.active {
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   color: #000000;
-  background-color: #ccc000;
-  border-color: #c2b600;
+  background-color: #fff32e;
+  border-color: #fff32e;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -2518,6 +2544,15 @@ fieldset[disabled] .btn-warning.active {
   color: #fff000;
   background-color: #000000;
 }
+.btn-warning.hollow {
+  background-color: white;
+  color: #fff000;
+}
+.btn-warning.hollow:hover {
+  background-color: #fff000;
+  border-color: #fff000;
+  color: white;
+}
 .btn-danger {
   color: #ffffff;
   background-color: #ff841c;
@@ -2530,8 +2565,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #e86a00;
-  border-color: #de6600;
+  background-color: #ff9d4a;
+  border-color: #ff9d4a;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -2566,7 +2601,11 @@ fieldset[disabled] .btn-danger.active {
 .btn-danger.hollow {
   background-color: white;
   color: #ff841c;
-  border-width: 2px;
+}
+.btn-danger.hollow:hover {
+  background-color: #ff841c;
+  border-color: #ff841c;
+  color: white;
 }
 .btn-link {
   color: #d51752;
@@ -6438,7 +6477,7 @@ button.close {
   width: 100%;
   position: absolute;
   bottom: -40px;
-  z-index: 90;
+  z-index: 60;
 }
 @media (max-width: 767px) {
   .front .lead-buttons {
