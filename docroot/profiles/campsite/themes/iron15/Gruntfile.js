@@ -107,7 +107,10 @@ module.exports = function (grunt) {
                 dest: "svg"
             }],
             options: {
-                enhanceSVG: true
+                enhanceSVG: true,
+                customselectors: {
+                 "breadcrumb": [".breadcrumb > .first > a:before"],
+               }
             }
         }
     }

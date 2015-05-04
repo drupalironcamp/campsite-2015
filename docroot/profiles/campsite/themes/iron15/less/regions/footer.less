@@ -15,6 +15,45 @@
         background-position: top right;
         background-color: @gray;
         position: relative;
+        background-size: 1360px;
+        text-align: right;
+
+        @media (max-width: @screen-xs-max){
+          height: 604px;
+          background-position: top center;
+          width: 100%;
+          text-align: center;
+        }
+    }
+
+    .footer-message{
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+      @media (min-width: @screen-sm){
+        bottom: 50px;
+        .footer-links{
+          display: inline;
+        }
+      }
+    }
+
+    .footer-logo{
+      width: 125px;
+      padding-top: 75px;
+      background-size: 60px;
+      background-position: top center;
+      float: right;
+      margin-top: 160px;
+      font-size: 16px;
+      font-family: @nsw-normal;
+      .title{
+        font-size: 22px;
+        font-family: @nsw-bookbold;
+      }
     }
 
 }

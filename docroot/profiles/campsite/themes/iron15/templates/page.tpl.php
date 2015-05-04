@@ -265,12 +265,21 @@
     </div>
   </div>
   <footer class="footer">
-
       <div class="container icon-footer-background">
          <?php print render($page['footer']); ?>
          <div class="icon-big-triangle01"></div>
          <div class="icon-big-triangle01 copy"></div>
          <div class="icon-big-triangle02"></div>
+
+         <div class="footer-logo icon-iron-logo">
+           <div class="title">IRON CAMP</div>
+           2015
+         </div>
+         <div class="footer-message">2015 @ Built by the community
+           <div class="footer-links">
+             <a href="/node/16">Disclaimer.</a>&nbsp;<a href="/node/16">Code of conduct.</a>
+          </div>
+        </div>
       </div>
   </footer>
 </div>
