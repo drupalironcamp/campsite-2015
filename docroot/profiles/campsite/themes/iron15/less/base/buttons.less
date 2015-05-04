@@ -60,6 +60,7 @@
   span{
       font-size: @font-size-base;
       font-family: @nsw-book;
+      display: block;
   }
 
 }
@@ -138,7 +139,8 @@
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; 42px; 30px; 30px; 0);
+  .button-size(@padding-large-vertical; 22px; 30px; 30px; 0);
+  min-width: 192px;
   span{
       font-size: 24px;
       font-family: @nsw-book;
@@ -164,6 +166,10 @@
 // Vertically space out multiple block buttons
 .btn-block + .btn-block {
   margin-top: 5px;
+}
+
+.btn + .btn {
+  margin-left: 20px;
 }
 
 // Specificity overrides
