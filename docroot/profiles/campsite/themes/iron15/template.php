@@ -19,7 +19,7 @@
        unset($element['#below']['#theme_wrappers']);
        $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
        // Generate as standard dropdown.
-       $element['#title'] .= ' <span class="caret icon-caret"></span>';
+       $element['#title'] .= ' <span class="caret svg-caret"></span>';
        $element['#attributes']['class'][] = 'dropdown';
        $element['#localized_options']['html'] = TRUE;
 

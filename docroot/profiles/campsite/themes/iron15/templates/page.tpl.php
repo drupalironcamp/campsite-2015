@@ -77,15 +77,15 @@
   <!-- Push mobile menu -->
   <?php if (!empty($primary_nav)): ?>
     <nav class="pmenu pmenu-left" id="pmenu-s1">
-      <div class="icon-white-comet"></div>
+      <div class="svg-white-comet"></div>
       <?php print render($primary_nav); ?>
       <?php if (!empty($secondary_nav)): ?>
         <?php print render($secondary_nav); ?>
       <?php endif; ?>
       <ul class="social-menu list-inline">
-        <li><a target="_blank" class="icon-facebook-white" href="https://www.facebook.com/drupalironcamp/">Facebook</a></li>
-        <li><a target="_blank" class="icon-twitter-white" href="https://twitter.com/drupalironcamp">Twitter</a></li>
-        <li><a class="icon-mail-white" href="mailto:info@drupalironcamp.com">info@drupalironcamp.com</a></li>
+        <li><a target="_blank" class="svg-facebook-white" href="https://www.facebook.com/drupalironcamp/">Facebook</a></li>
+        <li><a target="_blank" class="svg-twitter-white" href="https://twitter.com/drupalironcamp">Twitter</a></li>
+        <li><a class="svg-mail-white" href="mailto:info@drupalironcamp.com">info@drupalironcamp.com</a></li>
       </ul>
     </nav>
   <?php endif; ?>
@@ -94,7 +94,7 @@
   <!-- Login Modal and login mobile menu -->
   <?php if (!user_is_logged_in()) : ?>
     <nav class="pmenu pmenu-right" id="pmenu-s2">
-      <div class="icon-drupal"></div>
+      <div class="svg-drupal"></div>
       <p class="text-center"><?php print t("DRUPAL LOGIN") ?></p class="text-center">
       <?php  $elements = drupal_get_form("user_login");
         $form = drupal_render($elements);
@@ -161,17 +161,17 @@
                        'path' => $user->picture->uri,
                        'attributes' => array('class' => 'avatar')));
                  }else{
-                echo '<div class="icon-drupal"></div>';
+                echo '<div class="svg-drupal"></div>';
             }
         ?>
       </div>
       <!-- User picture -->
       <?php else : ?>
       <!-- Button trigger login modal -->
-      <button type="button" class="login-modal-button icon-login corner-button" data-toggle="modal" data-target="#loginModal">
+      <button type="button" class="login-modal-button svg-login corner-button" data-toggle="modal" data-target="#loginModal">
         Login Modal
       </button>
-      <button id="showRightPush" type="button" class="login-pmenu icon-login corner-button">
+      <button id="showRightPush" type="button" class="login-pmenu svg-login corner-button">
         Login Menu
       </button>
     <?php endif; ?>
@@ -183,15 +183,15 @@
         <div class="logo-wrap logo-border"></div>
 
         <div class="logo-wrap logo">
-            <a href="/" class="icon-iron-logo"></a>
+            <a href="/" class="svg-iron-logo"></a>
         </div>
 
         <div class="graphics">
-          <div class="icon-lines" data-grunticon-embed></div>
-          <div class="icon-big-triangle01" data-stellar-ratio="0.5"></div>
-          <div class="icon-big-triangle02" data-stellar-ratio="0.5"></div>
-          <div class="icon-big-triangle03" data-stellar-ratio="1.1"></div>
-          <div class="icon-big-triangle04" data-stellar-ratio="1.1"></div>
+          <div class="svg-lines" data-grunticon-embed></div>
+          <div class="svg-big-triangle01" data-stellar-ratio="0.5"></div>
+          <div class="svg-big-triangle02" data-stellar-ratio="0.5"></div>
+          <div class="svg-big-triangle03" data-stellar-ratio="1.1"></div>
+          <div class="svg-big-triangle04" data-stellar-ratio="1.1"></div>
         </div>
 
 
@@ -213,9 +213,9 @@
       </div>
 
       <ul class="social-menu list-unstyled">
-        <li><a target="_blank" class="icon-facebook" href="https://www.facebook.com/drupalironcamp/">Facebook</a></li>
-        <li><a target="_blank" class="icon-twitter" href="https://twitter.com/drupalironcamp">Twitter</a></li>
-        <li><a class="icon-mail" href="mailto:info@drupalironcamp.com">info@drupalironcamp.com</a></li>
+        <li><a target="_blank" class="svg-facebook" href="https://www.facebook.com/drupalironcamp/">Facebook</a></li>
+        <li><a target="_blank" class="svg-twitter" href="https://twitter.com/drupalironcamp">Twitter</a></li>
+        <li><a class="svg-mail" href="mailto:info@drupalironcamp.com">info@drupalironcamp.com</a></li>
       </ul>
 
   </header> <!-- /#page-header -->
@@ -258,13 +258,13 @@
     </div>
   </div>
   <footer class="footer">
-      <div class="container icon-footer-background">
+      <div class="container svg-footer-background">
          <?php print render($page['footer']); ?>
-         <div class="icon-big-triangle01"></div>
-         <div class="icon-big-triangle01 copy"></div>
-         <div class="icon-big-triangle02"></div>
+         <div class="svg-big-triangle01"></div>
+         <div class="svg-big-triangle01 copy"></div>
+         <div class="svg-big-triangle02"></div>
 
-         <div class="footer-logo icon-iron-logo">
+         <div class="footer-logo svg-iron-logo">
            <div class="title">IRON CAMP</div>
            2015
          </div>

@@ -108,6 +108,7 @@ module.exports = function (grunt) {
             }],
             options: {
                 enhanceSVG: true,
+                cssprefix: ".svg-",
                 customselectors: {
                  "breadcrumb": [".breadcrumb > .first > a:before"],
                }
