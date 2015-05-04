@@ -9,8 +9,6 @@
 .breadcrumb > .first > a:before,
 .icon-breadcrumb { background-image: url('png/breadcrumb.png'); background-repeat: no-repeat; }
 
-.icon-caret-0 { background-image: url('png/caret-0.png'); background-repeat: no-repeat; }
-
 .icon-caret { background-image: url('png/caret.png'); background-repeat: no-repeat; }
 
 .icon-drupal { background-image: url('png/drupal.png'); background-repeat: no-repeat; }

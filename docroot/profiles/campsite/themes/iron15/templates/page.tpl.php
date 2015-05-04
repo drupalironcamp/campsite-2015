@@ -152,7 +152,7 @@
     </div>
 
     <?php if (user_is_logged_in()) : ?>
-      <div class="avatar corner-button">
+      <div class="user-pic corner-button">
       <?php global $user; // load user avatar
       $user = user_load($user->uid);
       if($user->picture){
