@@ -1751,9 +1751,6 @@ input[type="checkbox"] {
   margin-top: 1px \9;
   line-height: normal;
 }
-input[type="file"] {
-  display: block;
-}
 input[type="range"] {
   display: block;
   width: 100%;
@@ -1818,6 +1815,14 @@ fieldset[disabled] .form-control {
 }
 textarea.form-control {
   height: auto;
+}
+.form-submit {
+  height: 48px;
+}
+.form-file {
+  display: inline-block;
+  width: 340px;
+  vertical-align: top;
 }
 input[type="search"] {
   -webkit-appearance: none;
@@ -5303,6 +5308,9 @@ button.close {
   bottom: 30px;
   left: 30px;
 }
+.login-modal .help-block {
+  display: none !important;
+}
 .not-front .modal-dialog {
   margin-top: 80px;
 }
@@ -6276,7 +6284,7 @@ button.close {
 @media (min-width: 992px) {
   #page-header .container {
     height: 300px;
-    padding-top: 130px;
+    padding-top: 125px;
   }
 }
 #page-header .logo {
@@ -6357,10 +6365,17 @@ button.close {
   line-height: 34px;
 }
 .main-container {
-  min-height: 600px;
+  min-height: 640px;
 }
 #wrapper {
   overflow: hidden;
+}
+#main-content + .page-header {
+  margin-top: 70px;
+  margin-bottom: 55px;
+}
+.region-content {
+  margin-bottom: 30px;
 }
 .footer {
   position: relative;
