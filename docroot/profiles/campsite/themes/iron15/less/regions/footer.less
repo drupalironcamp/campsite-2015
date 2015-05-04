@@ -1,27 +1,36 @@
 // Insert your styling here.
 .footer{
     position: relative;
-    background: #000000; /* Old browsers */
-    background: -moz-linear-gradient(-90deg,  #000000 0%, #000000 40%, @gray 40%, @gray 40%, @gray 100%);
-    background: -webkit-gradient(-90deg, linear, left top, right bottom, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,@gray), color-stop(40%,@gray), color-stop(100%,@gray));
-    background: -o-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
-    background: -ms-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
-    background: linear-gradient(90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='@gray',GradientType=1 );
+    background: @gray;
+
+    @media (min-width: 1260px){
+      background: -moz-linear-gradient(-90deg,  #000000 0%, #000000 40%, @gray 40%, @gray 40%, @gray 100%);
+      background: -webkit-gradient(-90deg, linear, left top, right bottom, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,@gray), color-stop(40%,@gray), color-stop(100%,@gray));
+      background: -o-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
+      background: -ms-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
+      background: linear-gradient(90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='@gray',GradientType=1 );
+    }
+
+    .svg-footer-background{
+      width: 100%;
+      max-width: 1260px;
+      background-position: top center;
+      background-size: 1360px;
+      position: relative;
+      .center-block();
+      @media (min-width: @screen-sm){
+        background-position: top right;
+      }
+    }
 
     .container{
-        height: 380px;
-        background-position: top right;
-        background-color: @gray;
         position: relative;
-        background-size: 1360px;
-        text-align: right;
-
-        @media (max-width: @screen-xs-max){
-          height: 604px;
-          background-position: top center;
-          width: 100%;
-          text-align: center;
+        height: 604px;
+        text-align: center;
+        @media (min-width: @screen-sm){
+          height: 380px;
+          text-align: right;
         }
     }
 

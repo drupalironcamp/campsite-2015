@@ -258,11 +258,9 @@
     </div>
   </div>
   <footer class="footer">
-      <div class="container svg-footer-background">
+    <div class="svg-footer-background">
+      <div class="container">
          <?php print render($page['footer']); ?>
-         <div class="svg-big-triangle01"></div>
-         <div class="svg-big-triangle01 copy"></div>
-         <div class="svg-big-triangle02"></div>
 
          <div class="footer-logo svg-iron-logo">
            <div class="title">IRON CAMP</div>
@@ -274,5 +272,9 @@
           </div>
         </div>
       </div>
+      <div class="svg-big-triangle01"></div>
+      <div class="svg-big-triangle01 copy"></div>
+      <div class="svg-big-triangle02"></div>
+    </div>
   </footer>
 </div>

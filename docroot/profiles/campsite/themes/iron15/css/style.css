@@ -6301,29 +6301,42 @@ button.close {
 }
 .footer {
   position: relative;
-  background: #000000;
-  /* Old browsers */
-  background: -moz-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
-  background: -webkit-gradient(-90deg, linear, left top, right bottom, color-stop(0%, #000000), color-stop(40%, #000000), color-stop(40%, #d8d8d8), color-stop(40%, #d8d8d8), color-stop(100%, #d8d8d8));
-  background: -o-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
-  background: -ms-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
-  background: linear-gradient(90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='@gray', GradientType=1);
+  background: #d8d8d8;
+}
+@media (min-width: 1260px) {
+  .footer {
+    background: -moz-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
+    background: -webkit-gradient(-90deg, linear, left top, right bottom, color-stop(0%, #000000), color-stop(40%, #000000), color-stop(40%, #d8d8d8), color-stop(40%, #d8d8d8), color-stop(100%, #d8d8d8));
+    background: -o-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
+    background: -ms-linear-gradient(-90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
+    background: linear-gradient(90deg, #000000 0%, #000000 40%, #d8d8d8 40%, #d8d8d8 40%, #d8d8d8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='@gray', GradientType=1);
+  }
+}
+.footer .svg-footer-background {
+  width: 100%;
+  max-width: 1260px;
+  background-position: top center;
+  background-size: 1360px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .footer .svg-footer-background {
+    background-position: top right;
+  }
 }
 .footer .container {
-  height: 380px;
-  background-position: top right;
-  background-color: #d8d8d8;
   position: relative;
-  background-size: 1360px;
-  text-align: right;
+  height: 604px;
+  text-align: center;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .footer .container {
-    height: 604px;
-    background-position: top center;
-    width: 100%;
-    text-align: center;
+    height: 380px;
+    text-align: right;
   }
 }
 .footer .footer-message {
