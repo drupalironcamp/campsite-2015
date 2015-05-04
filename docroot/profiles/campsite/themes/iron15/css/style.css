@@ -2328,6 +2328,11 @@ fieldset[disabled] .btn-default.active {
   color: #d51752;
   background-color: #ffffff;
 }
+.btn-default.hollow {
+  background-color: white;
+  color: #d51752;
+  border-width: 2px;
+}
 .btn-primary {
   color: #ffffff;
   background-color: #d51752;
@@ -2372,6 +2377,11 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary .badge {
   color: #d51752;
   background-color: #ffffff;
+}
+.btn-primary.hollow {
+  background-color: white;
+  color: #d51752;
+  border-width: 2px;
 }
 .btn-success {
   color: #ffffff;
@@ -2552,6 +2562,11 @@ fieldset[disabled] .btn-danger.active {
 .btn-danger .badge {
   color: #ff841c;
   background-color: #ffffff;
+}
+.btn-danger.hollow {
+  background-color: white;
+  color: #ff841c;
+  border-width: 2px;
 }
 .btn-link {
   color: #d51752;
