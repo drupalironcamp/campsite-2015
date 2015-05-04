@@ -38,3 +38,47 @@
    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
  }
+
+
+ function iron15_preprocess_page(&$variables) {
+   // add different classes depending if sidebar is present
+   if (!empty($variables['page']['sidebar'])) {
+     $variables['content_column_class'] = ' class="col-sm-6 col-sm-offset-1"';
+   }
+   else {
+     $variables['content_column_class'] = ' class="col-sm-10 col-sm-offset-1"';
+   }
+
+   // Primary nav.
+   $variables['primary_nav'] = FALSE;
+   if ($variables['main_menu']) {
+     // Build links.
+     $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+     // Provide default theme wrapper function.
+     $variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
+   }
+
+   // Secondary nav.
+   $variables['secondary_nav'] = FALSE;
+   if ($variables['secondary_menu']) {
+     // Build links.
+     $variables['secondary_nav'] = menu_tree(variable_get('menu_secondary_links_source', 'user-menu'));
+     // Provide default theme wrapper function.
+     $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
+   }
+
+   $variables['navbar_classes_array'] = array('navbar');
+
+   if (theme_get_setting('bootstrap_navbar_position') !== '') {
+     $variables['navbar_classes_array'][] = 'navbar-' . theme_get_setting('bootstrap_navbar_position');
+   }
+   else {
+     $variables['navbar_classes_array'][] = 'container';
+   }
+   if (theme_get_setting('bootstrap_navbar_inverse')) {
+     $variables['navbar_classes_array'][] = 'navbar-inverse';
+   }
+   else {
+     $variables['navbar_classes_array'][] = 'navbar-default';
+   }
+ }

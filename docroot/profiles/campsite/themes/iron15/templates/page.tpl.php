@@ -58,8 +58,7 @@
  * - $page['help']: Dynamic help text, mostly for admin pages.
  * - $page['highlighted']: Items for the highlighted content region.
  * - $page['content']: The main content of the current page.
- * - $page['sidebar_first']: Items for the first sidebar.
- * - $page['sidebar_second']: Items for the second sidebar.
+ * - $page['sidebar']: Items for the sidebar.
  * - $page['header']: Items for the header region.
  * - $page['footer']: Items for the footer region.
  *
@@ -225,14 +224,7 @@
 
     <div class="row">
 
-      <?php if (!empty($page['sidebar_first'])): ?>
-        <aside class="col-sm-3" role="complementary">
-          <?php print render($page['sidebar_first']); ?>
-        </aside>  <!-- /#sidebar-first -->
-      <?php endif; ?>
-
-
-      <section<?php print $content_column_class; ?>>
+      <section<?php if(!$is_front) : print $content_column_class; endif; ?>>
         <?php if (!empty($page['highlighted'])): ?>
           <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
         <?php endif; ?>
@@ -256,11 +248,12 @@
         <?php print render($page['content']); ?>
       </section>
 
-      <?php if (!empty($page['sidebar_second'])): ?>
+      <?php if (!empty($page['sidebar']) && (!$is_front)): ?>
         <aside class="col-sm-3" role="complementary">
-          <?php print render($page['sidebar_second']); ?>
-        </aside>  <!-- /#sidebar-second -->
+          <?php print render($page['sidebar']); ?>
+        </aside>  <!-- /#sidebar -->
       <?php endif; ?>
+
 
     </div>
   </div>
