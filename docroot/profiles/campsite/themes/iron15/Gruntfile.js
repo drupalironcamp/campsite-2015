@@ -97,7 +97,7 @@ module.exports = function (grunt) {
     },
 
 
-    //icons
+    //svgs
     grunticon: {
         icons: {
             files: [{
@@ -111,11 +111,33 @@ module.exports = function (grunt) {
                 cssprefix: ".svg-",
                 customselectors: {
                  "breadcrumb": [".breadcrumb > .first > a:before"],
+                 "arrow-2": [".read-more:before"],
+                 "arrow-white": [".read-more:hover:before"],
                }
             }
         }
-    }
+    },
 
+    // glyphs
+    webfont: {
+      icons: {
+          src: 'svg/glyphs/*.svg',
+          dest: 'fonts/glyphs',
+          destCss: 'less/components/',
+          options: {
+            stylesheet: 'less',
+            font: 'iron-glyphs',
+            relativeFontPath: '../fonts/glyphs',
+            htmlDemo: false,
+            engine: 'node',
+            templateOptions: {
+                baseClass: 'glyph',
+                classPrefix: 'glyph-',
+                mixinPrefix: 'glyph-mix-'
+            }
+          }
+      }
+    }
 
 
   });
@@ -129,6 +151,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'webfont',
     'less',
     'autoprefixer',
     'svgmin',
