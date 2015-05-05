@@ -189,8 +189,8 @@
 
         <div class="graphics">
           <div class="svg-lines" data-grunticon-embed></div>
-          <div class="svg-big-triangle01" data-stellar-ratio="0.5"></div>
-          <div class="svg-big-triangle02" data-stellar-ratio="0.5"></div>
+          <div class="svg-big-triangle01" data-stellar-ratio="0.7"></div>
+          <div class="svg-big-triangle02" data-stellar-ratio="0.7"></div>
           <div class="svg-big-triangle03" data-stellar-ratio="1.1"></div>
           <div class="svg-big-triangle04" data-stellar-ratio="1.1"></div>
         </div>
