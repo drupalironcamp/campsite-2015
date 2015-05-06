@@ -13,8 +13,7 @@ regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
+regions[sidebar]        = 'Sidebar'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
@@ -43,8 +42,12 @@ scripts[] = 'js/popover.js'
 scripts[] = 'js/scrollspy.js'
 scripts[] = 'js/tab.js'
 scripts[] = 'js/transition.js'
+scripts[] = 'js/classie.js'
+scripts[] = 'js/push-menu.js'
+scripts[] = 'js/stellar.js'
+scripts[] = 'js/script.js'
 
-; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+; Disable BootstrapCDN
 settings[bootstrap_cdn] = ''
 
 ; Navbar

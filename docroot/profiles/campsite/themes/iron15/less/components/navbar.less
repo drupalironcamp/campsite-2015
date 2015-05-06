@@ -129,7 +129,7 @@
 // Static top (unfixed, but 100% wide) navbar
 .navbar-static-top {
   z-index: @zindex-navbar;
-  border-width: 0 0 1px;
+  border-width: 0;
 
   @media (min-width: @grid-float-breakpoint) {
     border-radius: 0;
@@ -195,7 +195,7 @@
 .navbar-toggle {
   position: relative;
   float: left;
-  margin-left: @navbar-padding-horizontal;
+  margin-left: 20px;
   padding: 9px 10px;
   margin-top: 5px;
   margin-bottom: 7px;
@@ -232,7 +232,7 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+  // margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
     padding-top:    10px;
@@ -396,6 +396,14 @@
 .navbar-default {
   background-color: @navbar-default-bg;
 
+  @media (max-width: @grid-float-breakpoint-max) {
+    overflow: hidden;
+    .container{
+      width: 100%;
+      padding: 0;
+    }
+  }
+
   .navbar-brand {
     color: @navbar-default-brand-color;
     &:hover,
@@ -445,12 +453,13 @@
 
   .navbar-toggle {
     border-color: @navbar-default-toggle-border-color;
-    &:hover,
-    &:focus {
-      background-color: @navbar-default-toggle-hover-bg;
-    }
+    // &:hover,
+    // &:focus {
+    //   background-color: @navbar-default-toggle-hover-bg;
+    // }
     .icon-bar {
       background-color: @navbar-default-toggle-icon-bar-bg;
+      transition: 0.3s;
     }
   }
 
@@ -476,6 +485,8 @@
     }
 
     @media (max-width: @grid-float-breakpoint-max) {
+      display: none;
+
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {

@@ -10,6 +10,7 @@
 // Kill the scroll on the body
 .modal-open {
   overflow: hidden;
+  padding: 0!important;
 }
 
 // Container that the modal scrolls within
@@ -51,9 +52,6 @@
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
-  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid @modal-content-border-color;
-  border-radius: @border-radius-large;
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
@@ -68,7 +66,9 @@
   bottom: 0;
   left: 0;
   z-index: @zindex-modal-background;
-  background-color: @modal-backdrop-bg;
+  background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0.50196) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0.50196) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0.50196) 100%);
   // Fade for backdrop
   &.fade { .opacity(0); }
   &.in { .opacity(@modal-backdrop-opacity); }
@@ -147,4 +147,47 @@
 
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
+}
+
+//
+// Login Modal
+// --------------------------------------------------
+.login-modal{
+  .modal-dialog{
+    margin-top: 300px;
+  }
+  p,
+  form{
+    .pull-left;
+  }
+  .btn{
+    .pull-right;
+  }
+  h3{
+    margin-top: 0;
+    font-size: 24px;
+    font-family: @nsw-medium;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  input{
+    height: 36px;
+  }
+  .btn-link{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  .help-block{
+    .hide;
+  }
+}
+
+.not-front{
+  .modal-dialog{
+    margin-top: 80px;
+  }
 }

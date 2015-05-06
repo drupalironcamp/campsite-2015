@@ -4,7 +4,8 @@
       float: left; /* LTR */
       padding: .5em 1em 0 0; /* LTR */
       .form-submit {
-        margin-top: 1.2em;
+        height: 48px;
+        margin-top: 30px;
       }
     }
 
@@ -28,7 +29,6 @@
 
 
 
-
 /* table style column align */
 .views-align-left {
   text-align: left;
@@ -47,4 +47,10 @@
 
 .view .progress-disabled {
   float: none;
+}
+
+/* We do not need bullets, don't we? */
+.view .item-list ul{
+  list-style: none;
+  padding-left: 0;
 }

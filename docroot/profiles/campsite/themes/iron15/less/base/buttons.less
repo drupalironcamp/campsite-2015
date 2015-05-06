@@ -16,13 +16,13 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @btn-font-size; @btn-line-height; @border-radius-base);
+  .transition(all 0.2s ease-in-out);
+  .button-size(@padding-base-vertical; 20px; @btn-font-size; @btn-line-height; @border-radius-base);
   .user-select(none);
 
   // overrides for bad font
-  min-width: 160px;
   padding-bottom: 8px;
 
   &,
@@ -61,6 +61,7 @@
   span{
       font-size: @font-size-base;
       font-family: @nsw-book;
+      display: block;
   }
 
 }
@@ -139,10 +140,10 @@
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; 42px; 30px; 30px; 0);
+  .button-size(@padding-large-vertical; 22px; 30px; 30px; 0);
+  min-width: 192px;
   span{
       font-size: 24px;
-      font-family: @nsw-book;
   }
 }
 .btn-sm {
@@ -165,6 +166,10 @@
 // Vertically space out multiple block buttons
 .btn-block + .btn-block {
   margin-top: 5px;
+}
+
+.btn + .btn {
+  margin-left: 20px;
 }
 
 // Specificity overrides
