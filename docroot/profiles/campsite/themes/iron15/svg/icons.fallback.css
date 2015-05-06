@@ -1,3 +1,27 @@
+.more-danger,
+.svg-arrow-circled-danger { background-image: url('png/arrow-circled-danger.png'); background-repeat: no-repeat; }
+
+.more-danger:hover,
+.svg-arrow-circled-hover-danger { background-image: url('png/arrow-circled-hover-danger.png'); background-repeat: no-repeat; }
+
+.more-info:hover,
+.svg-arrow-circled-hover-info { background-image: url('png/arrow-circled-hover-info.png'); background-repeat: no-repeat; }
+
+.more-primary:hover,
+.svg-arrow-circled-hover-primary { background-image: url('png/arrow-circled-hover-primary.png'); background-repeat: no-repeat; }
+
+.svg-arrow-circled-hover { background-image: url('png/arrow-circled-hover.png'); background-repeat: no-repeat; }
+
+.more-info,
+.svg-arrow-circled-info { background-image: url('png/arrow-circled-info.png'); background-repeat: no-repeat; }
+
+.more-primary,
+.svg-arrow-circled-primary { background-image: url('png/arrow-circled-primary.png'); background-repeat: no-repeat; }
+
+.svg-arrow-circled { background-image: url('png/arrow-circled.png'); background-repeat: no-repeat; }
+
+.svg-arrow { background-image: url('png/arrow.png'); background-repeat: no-repeat; }
+
 .svg-big-triangle01 { background-image: url('png/big-triangle01.png'); background-repeat: no-repeat; }
 
 .svg-big-triangle02 { background-image: url('png/big-triangle02.png'); background-repeat: no-repeat; }

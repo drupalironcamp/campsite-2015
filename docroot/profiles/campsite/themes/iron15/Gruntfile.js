@@ -107,36 +107,24 @@ module.exports = function (grunt) {
                 dest: "svg"
             }],
             options: {
+               colors: {
+                    primary: "#cb085e",
+                    info: "#ec4034",
+                    danger: "#ff6600",
+                },
                 enhanceSVG: true,
                 cssprefix: ".svg-",
                 customselectors: {
                  "breadcrumb": [".breadcrumb > .first > a:before"],
-                 "arrow-2": [".read-more:before"],
-                 "arrow-white": [".read-more:hover:before"],
+                 "arrow-circled-primary": [".more-primary"],
+                 "arrow-circled-hover-primary": [".more-primary:hover"],
+                 "arrow-circled-info": [".more-info"],
+                 "arrow-circled-hover-info": [".more-info:hover"],
+                 "arrow-circled-danger": [".more-danger"],
+                 "arrow-circled-hover-danger": [".more-danger:hover"],
                }
             }
         }
-    },
-
-    // glyphs
-    webfont: {
-      icons: {
-          src: 'svg/glyphs/*.svg',
-          dest: 'fonts/glyphs',
-          destCss: 'less/components/',
-          options: {
-            stylesheet: 'less',
-            font: 'iron-glyphs',
-            relativeFontPath: '../fonts/glyphs',
-            htmlDemo: false,
-            engine: 'node',
-            templateOptions: {
-                baseClass: 'glyph',
-                classPrefix: 'glyph-',
-                mixinPrefix: 'glyph-mix-'
-            }
-          }
-      }
     }
 
 
@@ -151,7 +139,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'webfont',
     'less',
     'autoprefixer',
     'svgmin',
