@@ -207,8 +207,8 @@ function campsite_sponsor_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = '<a href="#" class="btn btn-primary"><span>Become our</span>Sponsor<a/>
-<a href="/sponsors" class="btn btn-primary hollow"><span>See all</span>Sponsors<a/>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="#" class="btn btn-primary"><span>Become our</span>Sponsor</a>
+<a href="/sponsors" class="btn btn-primary hollow"><span>See all</span>Sponsors</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
