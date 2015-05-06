@@ -97,7 +97,7 @@ module.exports = function (grunt) {
     },
 
 
-    //icons
+    //svgs
     grunticon: {
         icons: {
             files: [{
@@ -107,11 +107,25 @@ module.exports = function (grunt) {
                 dest: "svg"
             }],
             options: {
-                enhanceSVG: true
+               colors: {
+                    primary: "#cb085e",
+                    info: "#ec4034",
+                    danger: "#ff6600",
+                },
+                enhanceSVG: true,
+                cssprefix: ".svg-",
+                customselectors: {
+                 "breadcrumb": [".breadcrumb > .first > a:before"],
+                 "arrow-circled-primary": [".more-primary"],
+                 "arrow-circled-hover-primary": [".more-primary:hover"],
+                 "arrow-circled-info": [".more-info"],
+                 "arrow-circled-hover-info": [".more-info:hover"],
+                 "arrow-circled-danger": [".more-danger"],
+                 "arrow-circled-hover-danger": [".more-danger:hover"],
+               }
             }
         }
     }
-
 
 
   });

@@ -1,4 +1,5 @@
 // Core variables and mixins
+@charset "UTF-8";
 @import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "utilities/mixins.less";
 
@@ -6,8 +7,12 @@
 @import "utilities/normalize.less";
 @import "utilities/print.less";
 
-// Core CSS
+// Fonts and Glyphs
 @import "base/fonts.less";
+@import "components/iron-glyphs.less";
+
+
+// Core CSS
 @import "base/scaffolding.less";
 @import "base/type.less";
 @import "base/code.less";
@@ -19,7 +24,6 @@
 
 // Components
 @import "components/component-animations.less";
-// @import "components/glyphicons.less";
 @import "components/dropdowns.less";
 @import "components/button-groups.less";
 @import "components/input-groups.less";
@@ -40,27 +44,36 @@
 @import "components/wells.less";
 @import "components/close.less";
 
+@import "components/social-menu.less";
+@import "components/user-pic.less";
+@import "components/graphics.less";
+
 // Components w/ JavaScript
 @import "components/modals.less";
 @import "components/tooltip.less";
 @import "components/popovers.less";
 @import "components/carousel.less";
+@import "components/push-menu.less";
 
 // Module components
+@import "components/more-links.less";
 @import "components/views.less";
 
 // Utility classes
 @import "utilities/utilities.less";
 @import "utilities/responsive-utilities.less";
 
+// Nodes
+@import "ctypes/sponsors.less";
+@import "ctypes/news.less";
+
 // Regions
 @import "regions/header.less";
 @import "regions/content.less";
 @import "regions/footer.less";
 
-
 // Pages
 @import "pages/front.less";
 
-
+// Theme overrides
 @import "overrides.less";

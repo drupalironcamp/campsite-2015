@@ -7,8 +7,17 @@
   padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
   margin-bottom: @line-height-computed;
   list-style: none;
-  background-color: @breadcrumb-bg;
-  border-radius: @border-radius-base;
+  font-family: @nsw-book;
+
+  a{
+    color: #F1632A;
+  }
+
+  > li > a:before{
+    content: "";
+    display: inline-block;
+    .size(15px, 8px);
+  }
 
   > li {
     display: inline-block;
@@ -20,7 +29,4 @@
     }
   }
 
-  > .active {
-    color: @breadcrumb-active-color;
-  }
 }

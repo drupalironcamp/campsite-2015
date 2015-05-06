@@ -1,0 +1,185 @@
+// General styles for all menus
+.pmenu {
+	background: #000;
+	position: fixed;
+	width: 260px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+
+	.nav a{
+		background: black!important;
+		color: white;
+		font-size: 24px;
+		-webkit-font-smoothing: antialiased; // uuugh shiny
+	}
+	.svg-drupal{
+		height: 60px;
+		background-position: center;
+		margin-bottom: 15px;
+	}
+}
+
+
+
+// styles and overrides for the mobile push menu
+.pmenu-left {
+	left: -260px;
+	font-family: @nsw-book;
+	.dropdown-menu{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		a{
+			font-size: 20px;
+			color: #f66227;
+			padding-top: 10px!important;
+			padding-bottom: 10px!important;
+			&:hover{
+				color: #f66227;
+			}
+		}
+	}
+	.caret{
+		.square(12px);
+		border: 0;
+	}
+	.open .caret{
+		transform: rotate(90deg);
+	}
+}
+
+
+// styles and overrides for the login mobile push menu
+.pmenu-right {
+	padding: 30px;
+	background-color: #f66227;
+	right: -260px;
+	font-family: @nsw-book;
+	font-size: 18px;
+	color: white;
+	p{
+		margin-bottom: 35px;
+	}
+	.form-item{
+		margin-bottom: 25px;
+	}
+	label{
+		font-size: 18px;
+		color: black;
+	}
+	.form-control,
+	.form-submit{
+		width: 100%;
+		height: 36px;
+		background: white;
+		border: white;
+	}
+	.form-control{ // overrides cause - bad font
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	}
+	.form-submit{
+		background: black;
+		border: black;
+		margin-top: 10px;
+	}
+	.form-required{
+		display: none;
+	}
+}
+
+/* Push classes applied to the body */
+.pmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.pmenu-push-toright,
+.pmenu-push-toleft{
+	overflow: hidden; // to override for mobile
+}
+
+
+
+@media (max-width: @grid-float-breakpoint-max){
+	.pmenu-left.pmenu-open {
+		left: 0px;
+	}
+
+	.pmenu-right.pmenu-open {
+		right: 0px;
+	}
+
+	.pmenu-push-toright {
+		left: 260px;
+	}
+
+	.pmenu-push-toleft {
+		left: -260px;
+	}
+}
+
+
+// animations
+.pmenu,
+.pmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+// toggler animation
+.pmenu-push-toright{
+	.navbar-toggle .icon-bar{
+		-webkit-transform-origin: 1px center;
+		transform-origin: 1px center;
+		-webkit-transform: rotate3d(0,0,1,0);
+		transform: rotate3d(0,0,1,0);
+		background-color: #f66227;
+
+		&:nth-of-type(1) {
+			-webkit-transform: rotate3d(0,0,1,35deg);
+			transform: rotate3d(0,0,1,35deg);
+		}
+		&:nth-of-type(2) {
+				opacity: 0;
+		}
+
+		&:nth-of-type(3) {
+			-webkit-transform: rotate3d(0,0,1,-35deg);
+			transform: rotate3d(0,0,1,-35deg);
+		}
+	}
+}
+
+// menu
+.svg-white-comet{
+	display: block;
+	height: 50px;
+	background-position: center;
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+
+// login
+.navbar .corner-button{
+  .text-hide;
+  .pull-right;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background-color: #f66227;
+	position: absolute;
+	top: 0;
+	right: 0;
+  &:focus{
+    outline: 0;
+  }
+}
+
+
+
+@media (min-width: @grid-float-breakpoint){
+	.login-modal-button{
+		z-index: 10; // on desktop screens modal toggler is visible
+	}
+}

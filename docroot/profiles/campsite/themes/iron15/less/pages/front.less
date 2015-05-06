@@ -1,8 +1,27 @@
 .front{
 
+  .region-content{
+    .pane-title{
+      .text-center;
+    }
+    .panel-pane{
+      .container;
+    }
+  }
+
+  .lead-buttons{
+    .hidden-xs;
+    .hidden-sm;
+    .text-center;
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    z-index: 60;
+  }
+
     // Header
+    @media (min-width: @grid-float-breakpoint){
     #page-header{
-        @media (min-width: @grid-float-breakpoint){
             .container{
                 height: 630px;
                 padding-top: 350px;
@@ -12,20 +31,17 @@
                 top: 10px;
                 padding-top: 15px; // adjust the image canvas
             }
-            .logo{
-                top: 50%;
-                margin-top: -115px; // adjusting the logot to match the design
-                padding-top: 20px; // border spacing
-                margin-left: -60px;
-                z-index: 60;
-            }
         }
 
-        .logo{
+        .logo-wrap{
+            top: 50%;
+            margin-top: -115px; // tweeking the logo to match the design
+            padding-top: 20px; // border spacing
+            margin-left: -60px;
+        }
+        .logo-border{
             // border around the logo
-            @media (min-width: @screen-sm){
                 background-color: #1b1b1b;
-            }
         }
     }
 }

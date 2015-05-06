@@ -15,8 +15,8 @@
   &.active,
   .open > .dropdown-toggle& {
     color: @color;
-    background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    background-color: lighten(@background, 9%);
+        border-color: lighten(@border, 9%);
   }
   &:active,
   &.active,
@@ -41,6 +41,17 @@
     color: @background;
     background-color: @color;
   }
+
+  &.hollow{
+    background-color: white;
+    color: @background;
+    &:hover{
+      background-color: @background;
+      border-color: @background;
+      color: white;
+    }
+  }
+
 }
 
 // Button sizes

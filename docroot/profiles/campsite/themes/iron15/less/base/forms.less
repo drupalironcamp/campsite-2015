@@ -32,8 +32,9 @@ legend {
 label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  font-family: @nsw-medium;
+  font-size: 18px;
   margin-bottom: 5px;
-  font-weight: bold;
 }
 
 
@@ -57,9 +58,9 @@ input[type="checkbox"] {
 }
 
 // Set the height of file controls to match text inputs
-input[type="file"] {
-  display: block;
-}
+// input[type="file"] {
+//   display: block;
+// }
 
 // Make range inputs behave like textual form controls
 input[type="range"] {
@@ -155,6 +156,16 @@ output {
   }
 }
 
+// long shoot but should make the buttons nicer
+.form-submit {
+  height: 48px;
+}
+
+.form-file{
+  display: inline-block;
+  width: 340px;
+  vertical-align: top;
+}
 
 // Search inputs in iOS
 //
