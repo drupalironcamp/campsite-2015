@@ -186,6 +186,8 @@ function campsite_sponsor_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Gold', 'panel_pane_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Gold Sponsors';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'gold';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
@@ -205,8 +207,8 @@ function campsite_sponsor_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = '<a href="#" class="btn btn-danger"><span>Become our</span> </br>Sponsor<a/>
-<a href="/sponsors" class="btn btn-danger hollow"><span>See all</span> </br>Sponsors<a/>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="#" class="btn btn-primary"><span>Become our</span>Sponsor</a>
+<a href="/sponsors" class="btn btn-primary hollow"><span>See all</span>Sponsors</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;

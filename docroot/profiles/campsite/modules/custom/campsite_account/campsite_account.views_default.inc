@@ -117,6 +117,13 @@ function campsite_account_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Featured attendees', 'panel_pane_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Featured attendees';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Flags: featured_attendees */
   $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
@@ -126,6 +133,62 @@ function campsite_account_views_default_views() {
   $handler->display->display_options['relationships']['flag_content_rel']['required'] = 0;
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'featured_attendees';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['field_user_picture']['id'] = 'field_user_picture';
+  $handler->display->display_options['fields']['field_user_picture']['table'] = 'field_data_field_user_picture';
+  $handler->display->display_options['fields']['field_user_picture']['field'] = 'field_user_picture';
+  $handler->display->display_options['fields']['field_user_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_user_picture']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_user_picture']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_user_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_picture']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_user_picture']['element_wrapper_class'] = 'user-image';
+  $handler->display->display_options['fields']['field_user_picture']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_user_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_user_picture']['type'] = 'image_link_formatter';
+  $handler->display->display_options['fields']['field_user_picture']['settings'] = array(
+    'image_style' => 'users_attendee',
+    'image_link' => 'content',
+  );
+  /* Field: User: First name */
+  $handler->display->display_options['fields']['field_user_first_name']['id'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['table'] = 'field_data_field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['field'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_first_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_user_first_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_user_first_name']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_user_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_first_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_user_first_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_user_first_name']['type'] = 'text_plain';
+  /* Field: User: Last name */
+  $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_last_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_user_last_name']['alter']['text'] = '[field_user_first_name] [field_user_last_name]';
+  $handler->display->display_options['fields']['field_user_last_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_user_last_name']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_class'] = 'user-fullname';
+  $handler->display->display_options['fields']['field_user_last_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_user_last_name']['type'] = 'text_plain';
+  /* Field: User: Organization */
+  $handler->display->display_options['fields']['field_user_organization']['id'] = 'field_user_organization';
+  $handler->display->display_options['fields']['field_user_organization']['table'] = 'field_data_field_user_organization';
+  $handler->display->display_options['fields']['field_user_organization']['field'] = 'field_user_organization';
+  $handler->display->display_options['fields']['field_user_organization']['label'] = '';
+  $handler->display->display_options['fields']['field_user_organization']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_user_organization']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_user_organization']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_organization']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_user_organization']['element_wrapper_class'] = 'user-organization';
+  $handler->display->display_options['fields']['field_user_organization']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_user_organization']['type'] = 'text_plain';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: User: Active */
