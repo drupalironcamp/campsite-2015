@@ -10,7 +10,6 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-grunticon": "~2.1.6",
     "grunt-svgmin": "~2.0.1",
-    "grunt-webfont": "^0.4.8",
     "load-grunt-tasks": "~3.1.0",
     "time-grunt": "~1.1.0"
   },
