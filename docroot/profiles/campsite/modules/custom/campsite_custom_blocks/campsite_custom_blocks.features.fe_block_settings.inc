@@ -32,5 +32,25 @@ function campsite_custom_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['block-map_venue_location'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'map_venue_location',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'iron15' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'iron15',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }
