@@ -6152,11 +6152,12 @@ button.close {
   text-align: center;
 }
 .view-sponsor .view-content {
-  margin-top: 50px;
-  margin-bottom: 90px;
+  margin: 50px 0;
 }
 .view-sponsor .view-content > div {
   display: inline-block;
+  margin-bottom: 40px;
+  font-size: 0;
 }
 .view-sponsor .view-content > div + div {
   margin-left: 20px;
@@ -6164,8 +6165,8 @@ button.close {
 .node-sponsor .img-circle {
   overflow: hidden;
   background-color: #d8d8d8;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
 }
 .gold .img-circle {
   width: 140px;

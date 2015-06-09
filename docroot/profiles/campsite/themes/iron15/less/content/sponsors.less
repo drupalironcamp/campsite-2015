@@ -1,10 +1,12 @@
 .view-sponsor{
   .text-center;
   .view-content{
-    margin-top: 50px;
-    margin-bottom: 90px;
-    > div{
+    margin: 50px 0;
+
+     > div{
       display: inline-block;
+      margin-bottom: 40px;
+      font-size: 0; // remove the inline block space
       + div{
         margin-left: 20px;
       }
@@ -17,7 +19,7 @@
     .img-circle{
       overflow: hidden;
       background-color: @gray;
-      .square(200px);
+      .square(220px);
   }
 }
 
