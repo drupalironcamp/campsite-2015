@@ -138,6 +138,7 @@ function campsite_news_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
@@ -151,6 +152,7 @@ function campsite_news_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_type'] = 'div';
   $handler->display->display_options['fields']['body']['element_class'] = 'slide-body';
   $handler->display->display_options['fields']['body']['element_label_type'] = '0';
@@ -167,10 +169,12 @@ function campsite_news_views_default_views() {
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['path']['alter']['text'] = '<a href="[path]">More info<span class="more-info"></span></a>';
+  $handler->display->display_options['fields']['path']['alter']['text'] = '<div class="slide-title">[title]</div>
+<div class="slide-body">[body]</div>
+<div class="slide-more"><a href="[path]">More info<span class="more-info"></span></a></div>';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['path']['element_wrapper_class'] = 'slide-more';
+  $handler->display->display_options['fields']['path']['element_wrapper_class'] = 'slideshow-wrapper';
   $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
