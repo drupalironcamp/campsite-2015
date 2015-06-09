@@ -23,6 +23,8 @@ dependencies[] = admin_menu
 dependencies[] = ckeditor
 dependencies[] = features
 dependencies[] = jquery_update
+dependencies[] = context
+dependencies[] = menu_block
 
 ; Custom.
 dependencies[] = campsite_codesprint
