@@ -1,0 +1,56 @@
+
+// newsletter signup
+.pane-signup{
+    background-image: url("../images/signup.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    padding: 40px 40px 0 40px;
+    min-height: 255px;
+
+   > .pane-title,
+    .pane-content{
+        max-width: 940px;
+        margin: 0 auto;
+        text-align: left!important;
+    }
+
+    .pane-title{
+        font-family: @nsw-medium;
+        color: white;
+        margin-bottom: 60px;
+    }
+
+    .form-signup{
+         > div{
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 25px;
+        }
+        .mc-field-group{
+            width: 95%;
+            @media (min-width: @screen-sm){
+                max-width: 220px;
+                + .mc-field-group{
+                   margin-left: 16px;
+                }
+            }
+        }
+    }
+
+    input{
+        height: 48px;
+        width: 100%;
+        background-color: @gray;
+        border: 1px solid @gray;
+        padding: 15px;
+
+        &.button{
+            .btn;
+            .btn-danger;
+            border: 0;
+            @media (min-width: @screen-md){
+                margin-left: 16px;
+            }
+        }
+    }
+}

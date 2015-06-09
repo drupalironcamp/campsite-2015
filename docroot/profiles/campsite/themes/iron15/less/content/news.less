@@ -24,7 +24,7 @@
 }
 
 
-.view-news{
+.view-news:not(.news-slider){
   .clearfix;
   margin-top: 60px;
   margin-bottom: 90px;
@@ -55,5 +55,20 @@
       .text-center;
       float: left;
       width: 100%;
+    }
+}
+
+
+// news slideshow
+.news-slider{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    .slick-slider{
+        width: 100%;
+    }
+    .slide img{
+        width: 100%;
+        height: auto;
     }
 }
