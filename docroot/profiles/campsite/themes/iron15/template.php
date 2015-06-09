@@ -26,7 +26,7 @@
        // Set dropdown trigger element to # to prevent inadvertant page loading
        // when a submenu link is clicked.
        $element['#localized_options']['attributes']['data-target'] = '#';
-       $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+       $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle disable';
        $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
      }
    }
