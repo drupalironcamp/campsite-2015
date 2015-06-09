@@ -5945,26 +5945,26 @@ button.close {
   background: black;
 }
 .view-circled-teasers,
-.view-sponsor,
-.front .view-user-list {
+.front .view-user-list,
+.view-sponsor {
   text-align: center;
 }
 .view-circled-teasers .view-content,
-.view-sponsor .view-content,
-.front .view-user-list .view-content {
+.front .view-user-list .view-content,
+.view-sponsor .view-content {
   margin: 50px 0;
 }
 .view-circled-teasers .view-content > div,
-.view-sponsor .view-content > div,
-.front .view-user-list .view-content > div {
+.front .view-user-list .view-content > div,
+.view-sponsor .view-content > div {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 40px;
   font-size: 0;
 }
 .view-circled-teasers .view-content > div + div,
-.view-sponsor .view-content > div + div,
-.front .view-user-list .view-content > div + div {
+.front .view-user-list .view-content > div + div,
+.view-sponsor .view-content > div + div {
   margin-left: 20px;
 }
 @-ms-viewport {
@@ -6177,6 +6177,29 @@ button.close {
     display: none !important;
   }
 }
+.front .view-user-list .view-content > div {
+  width: 160px;
+}
+.front .view-user-list .user-fullname {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: 'novecento_sans_widemedium';
+  line-height: 1.2;
+}
+.front .view-user-list .user-organization {
+  font-size: 12px;
+}
+.front .view-user-list .user-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
 .node-sponsor .img-circle {
   overflow: hidden;
   background-color: #d8d8d8;
@@ -6304,27 +6327,169 @@ button.close {
   width: 100%;
   height: auto;
 }
-.front .view-user-list .view-content > div {
-  width: 160px;
+.pane-signup {
+  background-image: url("../images/signup.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  padding: 40px 40px 0 40px;
+  min-height: 255px;
 }
-.front .view-user-list .user-fullname {
-  font-size: 14px;
-  margin-bottom: 20px;
+.pane-signup > .pane-title,
+.pane-signup .pane-content {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: left!important;
+}
+.pane-signup .pane-title {
   font-family: 'novecento_sans_widemedium';
+  color: white;
+  margin-bottom: 60px;
 }
-.front .view-user-list .user-organization {
-  font-size: 12px;
+.pane-signup .form-signup > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 25px;
 }
-.front .view-user-list .user-image {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+.pane-signup .form-signup .mc-field-group {
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .pane-signup .form-signup .mc-field-group {
+    max-width: 220px;
+  }
+  .pane-signup .form-signup .mc-field-group + .mc-field-group {
+    margin-left: 16px;
+  }
+}
+.pane-signup input {
+  height: 48px;
+  width: 100%;
+  background-color: #d8d8d8;
+  border: 1px solid #d8d8d8;
+  padding: 15px;
+}
+.pane-signup input.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: 'novecento_sans_widemedium';
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 6px 20px;
+  font-size: 22px;
+  line-height: 1;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 8px;
+  color: #ffffff;
+  background-color: #ff841c;
+  border-color: #ff841c;
+  border: 0;
+}
+.pane-signup input.button:focus,
+.pane-signup input.button:active:focus,
+.pane-signup input.button.active:focus,
+.pane-signup input.button.focus,
+.pane-signup input.button:active.focus,
+.pane-signup input.button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.pane-signup input.button:hover,
+.pane-signup input.button:focus,
+.pane-signup input.button.focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.pane-signup input.button:active,
+.pane-signup input.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.pane-signup input.button.disabled,
+.pane-signup input.button[disabled],
+fieldset[disabled] .pane-signup input.button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.pane-signup input.button span {
+  font-size: 16px;
+  font-family: 'novecento_sans_widebook';
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid white;
-  overflow: hidden;
-  margin-bottom: 20px;
+}
+.pane-signup input.button:hover,
+.pane-signup input.button:focus,
+.pane-signup input.button.focus,
+.pane-signup input.button:active,
+.pane-signup input.button.active,
+.open > .dropdown-toggle.pane-signup input.button {
+  color: #ffffff;
+  background-color: #ff9d4a;
+  border-color: #ff9d4a;
+}
+.pane-signup input.button:active,
+.pane-signup input.button.active,
+.open > .dropdown-toggle.pane-signup input.button {
+  background-image: none;
+}
+.pane-signup input.button.disabled,
+.pane-signup input.button[disabled],
+fieldset[disabled] .pane-signup input.button,
+.pane-signup input.button.disabled:hover,
+.pane-signup input.button[disabled]:hover,
+fieldset[disabled] .pane-signup input.button:hover,
+.pane-signup input.button.disabled:focus,
+.pane-signup input.button[disabled]:focus,
+fieldset[disabled] .pane-signup input.button:focus,
+.pane-signup input.button.disabled.focus,
+.pane-signup input.button[disabled].focus,
+fieldset[disabled] .pane-signup input.button.focus,
+.pane-signup input.button.disabled:active,
+.pane-signup input.button[disabled]:active,
+fieldset[disabled] .pane-signup input.button:active,
+.pane-signup input.button.disabled.active,
+.pane-signup input.button[disabled].active,
+fieldset[disabled] .pane-signup input.button.active {
+  background-color: #ff841c;
+  border-color: #ff841c;
+}
+.pane-signup input.button .badge {
+  color: #ff841c;
+  background-color: #ffffff;
+}
+.pane-signup input.button.hollow {
+  background-color: white;
+  color: #ff841c;
+}
+.pane-signup input.button.hollow:hover {
+  background-color: #ff841c;
+  border-color: #ff841c;
+  color: white;
+}
+@media (min-width: 992px) {
+  .pane-signup input.button {
+    margin-left: 16px;
+  }
 }
 #page-header {
   position: relative;
