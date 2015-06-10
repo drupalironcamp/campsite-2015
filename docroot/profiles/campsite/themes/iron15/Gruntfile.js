@@ -116,12 +116,12 @@ module.exports = function (grunt) {
                 cssprefix: ".svg-",
                 customselectors: {
                  "breadcrumb": [".breadcrumb > .first > a:before"],
-                 "arrow-circled-primary": [".more-primary"],
-                 "arrow-circled-hover-primary": [".more-primary:hover"],
-                 "arrow-circled-info": [".more-info"],
-                 "arrow-circled-hover-info": [".more-info:hover"],
-                 "arrow-circled-danger": [".more-danger"],
-                 "arrow-circled-hover-danger": [".more-danger:hover"],
+                 "arrow-circled-primary": [".more-primary:before"],
+                 "arrow-circled-hover-primary": [".more-primary:hover:before"],
+                 "arrow-circled-info": [".more-info:before"],
+                 "arrow-circled-hover-info": [".more-info:hover:before"],
+                 "arrow-circled-danger": [".more-danger:before"],
+                 "arrow-circled-hover-danger": [".more-danger:hover:before"],
                }
             }
         }

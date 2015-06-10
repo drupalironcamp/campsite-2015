@@ -13,5 +13,10 @@ jQuery(function ($) {
    $.stellar({
     horizontalScrolling: false  });
 
+   $('.news-slider .view-content').slick({
+      dots: true,
+      arrows: false
+    });
+
 
 });
