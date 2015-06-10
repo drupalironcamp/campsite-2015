@@ -53,6 +53,10 @@
 
 .svg-mail { background-image: url('png/mail.png'); background-repeat: no-repeat; }
 
+.slick-next,
+.slick-prev,
+.svg-triangle-arrow { background-image: url('png/triangle-arrow.png'); background-repeat: no-repeat; }
+
 .svg-twitter-white { background-image: url('png/twitter-white.png'); background-repeat: no-repeat; }
 
 .svg-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }

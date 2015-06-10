@@ -122,6 +122,7 @@ module.exports = function (grunt) {
                  "arrow-circled-hover-info": [".more-info:hover:before"],
                  "arrow-circled-danger": [".more-danger:before"],
                  "arrow-circled-hover-danger": [".more-danger:hover:before"],
+                 "triangle-arrow": [".slick-next", ".slick-prev"],
                }
             }
         }

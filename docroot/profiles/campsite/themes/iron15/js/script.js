@@ -15,7 +15,16 @@ jQuery(function ($) {
 
    $('.news-slider .view-content').slick({
       dots: true,
-      arrows: false
+      fade: true,
+      autoplay: true    
+   });
+
+    // add image to background image
+    $('.news-slider .slide-item').each(function(){
+
+        var imageUrl = $(this).find('.slide-image img').attr('src');
+        $(this).css('background-image', 'url(' + imageUrl + ')');
+
     });
 
 
