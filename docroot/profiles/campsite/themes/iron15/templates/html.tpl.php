@@ -63,6 +63,7 @@
                  "<?php print base_path() . path_to_theme() ?>/svg/icons.data.png.css",
                  "<?php print base_path() . path_to_theme() ?>/svg/icons.fallback.css"], grunticon.svgLoadedCallback );
   </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 </head>
 <body class="<?php print $classes; ?> pmenu-push" <?php print $attributes;?>>
   <div id="skip-link">

@@ -108,21 +108,25 @@ module.exports = function (grunt) {
             }],
             options: {
                colors: {
-                    primary: "#cb085e",
-                    info: "#ec4034",
-                    danger: "#ff6600",
+                    primary:   "#cb085e",
+                    info:      "#ec4034",
+                    danger:    "#ff6600",
+                    gray:      "#7d7d7d",
+                    dangeralt: "#f66227",
                 },
                 enhanceSVG: true,
                 cssprefix: ".svg-",
                 customselectors: {
-                 "breadcrumb": [".breadcrumb > .first > a:before"],
-                 "arrow-circled-primary": [".more-primary:before"],
-                 "arrow-circled-hover-primary": [".more-primary:hover:before"],
-                 "arrow-circled-info": [".more-info:before"],
-                 "arrow-circled-hover-info": [".more-info:hover:before"],
-                 "arrow-circled-danger": [".more-danger:before"],
-                 "arrow-circled-hover-danger": [".more-danger:hover:before"],
-                 "triangle-arrow": [".slick-next", ".slick-prev"],
+                 "breadcrumb":                  [".breadcrumb > .first > a:before"],
+                 "arrow-circled":               [".more-link span"],
+                 "arrow-circled-primary":       [".more-link.primary span"],
+                 "arrow-circled-hover-primary": [".more-link.primary:hover span"],
+                 "arrow-circled-info":          [".more-link.info span"],
+                 "arrow-circled-hover-info":    [".more-link.info:hover span"],
+                 "arrow-circled-danger":        [".more-link.danger span"],
+                 "arrow-circled-hover-danger":  [".more-link.danger:hover span"],
+                 "triangle-arrow":              [".slick-next", ".slick-prev"],
+                 "white-comet":                 [".with-logo:before"],
                }
             }
         }

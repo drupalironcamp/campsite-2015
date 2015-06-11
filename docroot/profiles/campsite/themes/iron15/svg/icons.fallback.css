@@ -1,23 +1,24 @@
-.more-danger:before,
+.more-link.danger span,
 .svg-arrow-circled-danger { background-image: url('png/arrow-circled-danger.png'); background-repeat: no-repeat; }
 
-.more-danger:hover:before,
+.more-link.danger:hover span,
 .svg-arrow-circled-hover-danger { background-image: url('png/arrow-circled-hover-danger.png'); background-repeat: no-repeat; }
 
-.more-info:hover:before,
+.more-link.info:hover span,
 .svg-arrow-circled-hover-info { background-image: url('png/arrow-circled-hover-info.png'); background-repeat: no-repeat; }
 
-.more-primary:hover:before,
+.more-link.primary:hover span,
 .svg-arrow-circled-hover-primary { background-image: url('png/arrow-circled-hover-primary.png'); background-repeat: no-repeat; }
 
 .svg-arrow-circled-hover { background-image: url('png/arrow-circled-hover.png'); background-repeat: no-repeat; }
 
-.more-info:before,
+.more-link.info span,
 .svg-arrow-circled-info { background-image: url('png/arrow-circled-info.png'); background-repeat: no-repeat; }
 
-.more-primary:before,
+.more-link.primary span,
 .svg-arrow-circled-primary { background-image: url('png/arrow-circled-primary.png'); background-repeat: no-repeat; }
 
+.more-link span,
 .svg-arrow-circled { background-image: url('png/arrow-circled.png'); background-repeat: no-repeat; }
 
 .svg-arrow { background-image: url('png/arrow.png'); background-repeat: no-repeat; }
@@ -32,6 +33,10 @@
 
 .breadcrumb > .first > a:before,
 .svg-breadcrumb { background-image: url('png/breadcrumb.png'); background-repeat: no-repeat; }
+
+.svg-caret-dangeralt { background-image: url('png/caret-dangeralt.png'); background-repeat: no-repeat; }
+
+.svg-caret-gray { background-image: url('png/caret-gray.png'); background-repeat: no-repeat; }
 
 .svg-caret { background-image: url('png/caret.png'); background-repeat: no-repeat; }
 
@@ -53,6 +58,8 @@
 
 .svg-mail { background-image: url('png/mail.png'); background-repeat: no-repeat; }
 
+.svg-pin { background-image: url('png/pin.png'); background-repeat: no-repeat; }
+
 .slick-next,
 .slick-prev,
 .svg-triangle-arrow { background-image: url('png/triangle-arrow.png'); background-repeat: no-repeat; }
@@ -61,5 +68,6 @@
 
 .svg-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
+.with-logo:before,
 .svg-white-comet { background-image: url('png/white-comet.png'); background-repeat: no-repeat; }
 
