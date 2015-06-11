@@ -91,7 +91,10 @@ function campsite_pages_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'bg-gray',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
@@ -133,7 +136,10 @@ function campsite_pages_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-signup',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();

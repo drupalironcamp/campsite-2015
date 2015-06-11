@@ -155,17 +155,19 @@
       <div class="user-pic corner-button">
         <?php global $user; // load user avatar
         $user = user_load($user->uid);
+        $link = drupal_get_path_alias('user/' . $user->uid);
         if($user->field_user_picture){
-                     print theme_image_style(
-                     array(
-                         'style_name' => 'thumbnail',
-                         'path' => $user->field_user_picture['und'][0]['uri'],
-                         'attributes' => array('class' => 'avatar'),
-                         "height" => NULL,
-                         "width" => NULL
-                         ));
+          print l(theme_image_style(
+              array(
+                'style_name' => 'thumbnail',
+                'path' => $user->field_user_picture['und'][0]['uri'],
+                'attributes' => array('class' => 'avatar'),
+                "height" => NULL,
+                "width" => NULL
+              )),
+            $link, array('html'=>TRUE));
                    }else{
-                  echo '<div class="svg-drupal"></div>';
+          print l('<div class="svg-drupal"></div>', $link, array('class' => 'svg-drupal', 'html'=>TRUE));
               }
           ?>
       </div>
