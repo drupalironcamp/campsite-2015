@@ -1,0 +1,56 @@
+.page-user{
+
+  .wrapper{
+
+    .field-type-image{
+      .field-label{
+        display: none;
+
+      }
+      .field-items{
+        img{
+          display: block;
+          max-width: 100px;
+          max-height: 100px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .field-type-text,
+    .field-type-country,
+    .field-type-link-field{
+      display: table;
+      padding: 15px 0 10px;
+      .field-label,
+      .field-items{
+        display: table-cell;
+      }
+    }
+    .field-type-text-long,
+    .field-type-link-field,
+    .field-type-list-text{
+      padding: 15px 0 10px;
+    }
+    .field-name-field-user-about-me{
+      .field-items{
+        line-height: 25px;
+      }
+    }
+
+    .col-sm-4{
+      padding: 20px;
+
+      @media screen and (min-width: @screen-sm-min) {
+        font-size: 14px;
+      }
+
+      .field-items{
+        line-height: 25px;
+      }
+    }
+    .field-label{
+      white-space: nowrap;
+    }
+  }
+
+}
