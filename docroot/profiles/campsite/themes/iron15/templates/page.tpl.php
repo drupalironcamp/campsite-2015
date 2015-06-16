@@ -285,7 +285,7 @@
          </a>
          <div class="footer-message">2015 @ Built by the community
            <div class="footer-links">
-            <?php print l(t('Disclaimer. '), 'buy-a-ticket') . l(t('Code of conduct.'), 'node/16'); ?>
+            <?php print l(t('Disclaimer.'), 'buy-a-ticket') . l(t('Code of conduct.'), 'node/16'); ?>
           </div>
         </div>
       </div>

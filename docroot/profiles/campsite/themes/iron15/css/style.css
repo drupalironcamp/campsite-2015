@@ -759,6 +759,11 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.submitted {
+  font-size: 12px;
+  color: #ff841c;
+  margin-bottom: 20px;
+}
 code,
 kbd,
 pre,
@@ -3944,7 +3949,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   list-style: none;
   font-family: 'novecento_sans_widebook';
   position: relative;
-  z-index: 80;
+  z-index: 60;
 }
 .breadcrumb a {
   color: #f66227;
@@ -6086,7 +6091,7 @@ a.list-group-item-danger.active:focus {
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: 'novecento_sans_widedemibold';
 }
 .more-link span {
@@ -6098,7 +6103,7 @@ a.list-group-item-danger.active:focus {
 }
 .more-link.down {
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .more-link.down span {
   transform: rotate(90deg);
@@ -6483,8 +6488,17 @@ a.list-group-item-danger.active:focus {
     display: none !important;
   }
 }
+.front .view-user-list {
+  margin-bottom: 80px;
+}
+.front .view-user-list .view-content {
+  margin-bottom: 5px;
+}
 .front .view-user-list .view-content > div {
   width: 160px;
+}
+.front .view-user-list .view-footer {
+  padding-bottom: 25px;
 }
 .front .view-user-list .user-fullname {
   font-size: 14px;
@@ -6527,11 +6541,6 @@ a.list-group-item-danger.active:focus {
 }
 .node-news.node-teaser h2 {
   font-size: 18px;
-}
-.node-news .submitted {
-  font-size: 12px;
-  color: #ff841c;
-  margin-bottom: 20px;
 }
 .front .view-news:not(.news-slider) {
   margin-top: 60px;
@@ -6594,6 +6603,12 @@ a.list-group-item-danger.active:focus {
   .front .view-news:not(.news-slider) .views-row-1 {
     margin-left: 8.33333333%;
   }
+}
+.front .view-news:not(.news-slider) .views-row-1 h2 {
+  line-height: 48px;
+}
+.front .view-news:not(.news-slider) .views-row-1 h2 a {
+  color: black;
 }
 .front .view-news:not(.news-slider) .views-row-2,
 .front .view-news:not(.news-slider) .views-row-3 {
@@ -6676,6 +6691,7 @@ a.list-group-item-danger.active:focus {
   background-position: bottom center;
   padding: 40px 30px 0 30px;
   min-height: 255px;
+  margin-bottom: 90px;
 }
 .pane-signup > .pane-title,
 .pane-signup .pane-content {
@@ -6697,6 +6713,9 @@ a.list-group-item-danger.active:focus {
 }
 .pane-signup .form-signup .mc-field-group {
   width: 100%;
+}
+.pane-signup .form-signup .mc-field-group .email {
+  background-image: none!important;
 }
 @media (min-width: 768px) {
   .pane-signup .form-signup .mc-field-group {
@@ -6993,6 +7012,12 @@ fieldset[disabled] .pane-signup input.button.active {
   padding-right: 15px;
   font-size: 14px;
 }
+.footer .footer-message .footer-links a {
+  text-decoration: underline;
+}
+.footer .footer-message .footer-links a + a {
+  margin-left: 4px;
+}
 @media (min-width: 768px) {
   .footer .footer-message {
     bottom: 50px;
@@ -7019,11 +7044,19 @@ fieldset[disabled] .pane-signup input.button.active {
   font-size: 22px;
   font-family: 'novecento_sans_wide_bookbold';
 }
+.footer .region-footer {
+  max-width: 480px;
+  float: left;
+  font-size: 22px;
+  color: white;
+  text-align: left;
+}
 .front .region-content {
   padding: 0 15px;
 }
 .front .region-content .pane-title {
   text-align: center;
+  padding: 0 5px;
 }
 .front .lead-buttons {
   text-align: center;
@@ -7044,6 +7077,10 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .front .panel-pane.bg-gray {
   padding-top: 45px;
+}
+.front .view-footer .btn {
+  margin: 10px;
+  min-width: 160px;
 }
 @media (min-width: 992px) {
   .front #page-header .container {

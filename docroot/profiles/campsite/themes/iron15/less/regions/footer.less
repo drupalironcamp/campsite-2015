@@ -41,6 +41,12 @@
       bottom: 15px;
       padding-right: 15px;
       font-size: 14px;
+      .footer-links a{
+          text-decoration: underline;
+          + a{
+              margin-left: 4px;
+          }
+      }
       @media (min-width: @screen-sm){
         bottom: 50px;
         .footer-links{
@@ -66,6 +72,14 @@
         font-size: 22px;
         font-family: @nsw-bookbold;
       }
+    }
+
+    .region-footer{
+        max-width: 480px;
+        float: left;
+        font-size:22px;
+        color: white;
+        text-align: left;
     }
 
 }
