@@ -127,6 +127,8 @@ module.exports = function (grunt) {
                  "arrow-circled-hover-danger":  [".more-link.danger:hover span"],
                  "triangle-arrow":              [".slick-next", ".slick-prev"],
                  "white-comet":                 [".with-logo:before"],
+                 "caret-dangeralt":             [".region-sidebar .menu-level-2 li a:after"],
+                 "caret-gray":                  [".region-sidebar .menu-level-2 li.active a:after"],
                }
             }
         }
