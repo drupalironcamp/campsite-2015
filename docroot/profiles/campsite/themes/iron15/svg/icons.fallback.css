@@ -34,8 +34,10 @@
 .breadcrumb > .first > a:before,
 .svg-breadcrumb { background-image: url('png/breadcrumb.png'); background-repeat: no-repeat; }
 
+.region-sidebar .menu-level-2 li a:after,
 .svg-caret-dangeralt { background-image: url('png/caret-dangeralt.png'); background-repeat: no-repeat; }
 
+.region-sidebar .menu-level-2 li.active a:after,
 .svg-caret-gray { background-image: url('png/caret-gray.png'); background-repeat: no-repeat; }
 
 .svg-caret { background-image: url('png/caret.png'); background-repeat: no-repeat; }
@@ -64,6 +66,7 @@
 .slick-prev,
 .svg-triangle-arrow { background-image: url('png/triangle-arrow.png'); background-repeat: no-repeat; }
 
+.footer .region-footer .block,
 .svg-twitter-white { background-image: url('png/twitter-white.png'); background-repeat: no-repeat; }
 
 .svg-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
