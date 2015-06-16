@@ -8,7 +8,7 @@
     "grunt-contrib-jshint": "~0.11.1",
     "grunt-contrib-less": "~1.0.0",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-grunticon": "~2.1.6",
+    "grunt-grunticon": "~2.1.7",
     "grunt-svgmin": "~2.0.1",
     "load-grunt-tasks": "~3.1.0",
     "time-grunt": "~1.1.0"

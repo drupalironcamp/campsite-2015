@@ -81,3 +81,42 @@
         visibility: hidden;
     }
 }
+
+.slick-prev,
+.slick-next{
+    .text-hide();
+    display: block;
+    width: 23px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    border: 0;
+    background-color: transparent;
+}
+.slick-prev{
+    left: calc(~"(100% - 980px) / 2"); ;
+    transform: rotate(180deg);
+}
+.slick-next{
+    right: calc(~"(100% - 980px) / 2"); ;
+}
+
+.slick-dots{
+    .list-inline;
+    .text-center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    button{
+        .text-hide();
+        .square(20px);
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: transparent;
+    }
+    button:hover,
+    .slick-active button{
+        background-color: black;
+    }
+}
