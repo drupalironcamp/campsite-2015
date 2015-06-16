@@ -19,15 +19,15 @@
        unset($element['#below']['#theme_wrappers']);
        $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
        // Generate as standard dropdown.
-       $element['#title'] .= ' <span class="caret svg-caret"></span>';
+       $element['#title'] .= ' <a href="#" class="toggle-arrows" data-toggle="dropdown"><span class="caret svg-caret"></span></a>';
        $element['#attributes']['class'][] = 'dropdown';
        $element['#localized_options']['html'] = TRUE;
 
        // Set dropdown trigger element to # to prevent inadvertant page loading
        // when a submenu link is clicked.
-       $element['#localized_options']['attributes']['data-target'] = '#';
-       $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle disable';
-       $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+       //  $element['#localized_options']['attributes']['data-target'] = '#';
+        $element['#localized_options']['attributes']['class'][] = 'has-toggle';
+       //  $element['#localized_options']['attributes']['data-toggle'] = 'dropdown'; we do not need this
      }
    }
    // On primary navigation menu, class 'active' is not set on active menu item.

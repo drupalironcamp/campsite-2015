@@ -26,6 +26,7 @@
 .pmenu-left {
 	left: -260px;
 	font-family: @nsw-book;
+	overflow: hidden;
 	.dropdown-menu{
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -45,6 +46,15 @@
 	}
 	.open .caret{
 		transform: rotate(90deg);
+	}
+	.navbar-nav .dropdown{
+		white-space: nowrap; // just to be sure it won't break
+		a{
+			display: inline-block;
+			&.has-toggle{
+				padding-right: 0;
+			}
+		}
 	}
 }
 
