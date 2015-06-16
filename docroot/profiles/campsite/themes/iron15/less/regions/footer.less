@@ -60,10 +60,12 @@
       padding-top: 75px;
       background-size: 60px;
       background-position: top center;
-      float: right;
-      margin-top: 160px;
+      position: absolute;
+      bottom: 90px;
+      right: 35px;
       font-size: 16px;
       font-family: @nsw-normal;
+      text-align: right;
       color: black;
       &:hover{
         text-decoration: none;
@@ -72,14 +74,38 @@
         font-size: 22px;
         font-family: @nsw-bookbold;
       }
+      @media (min-width: @screen-sm){
+          right: 0;
+      }
+      @media (min-width: @screen-sm) and (max-width: @screen-md-max){
+          right: 15px;
+      }
     }
 
     .region-footer{
-        max-width: 480px;
-        float: left;
-        font-size:22px;
-        color: white;
         text-align: left;
+        .block{
+            margin: 40px auto 0 auto;
+            padding-left: 0;
+            background-size: 30px;
+            padding-top: 30px;
+            background-position: 5px 10px;
+            @media (min-width: @screen-sm){
+                margin-top: 60px;
+                padding-top: 0;
+                padding-left: 58px;
+            }
+            @media (min-width: @screen-md){
+                margin-left: 150px;
+            }
+            iframe{
+                max-width: 590px!important; // i hate you!
+                width: 100%!important;
+            }
+        }
+        .block-title{
+            display: none;
+        }
     }
 
 }

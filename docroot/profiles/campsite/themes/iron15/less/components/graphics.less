@@ -76,16 +76,29 @@
 
 // footer
 .footer{
-  .svg-big-triangle01 {
-    right: 380px;
-    top: 272px;
-  }
-  .svg-big-triangle02 {
-    right: -16px;
-    top: -65px;
-  }
-  .svg-big-triangle01.copy {
-    left: -130px;
-    top: -30px;
-  }
+    .svg-big-triangle01 {
+        right: 210px;
+        top: 300px;
+        @media (min-width: @screen-md){
+            right: 380px;
+            top: 272px;
+        }
+    }
+    .svg-big-triangle02 {
+        right: -90px;
+        top: -150px;
+        @media (min-width: @screen-md){
+            right: -16px;
+            top: -65px;
+        }
+    }
+    .svg-big-triangle01.copy {
+        .hidden-xs;
+        left: -235px;
+        top: -90px;
+        @media (min-width: @screen-md){
+            left: -130px;
+            top: -30px;
+        }
+    }
 }

@@ -1,0 +1,34 @@
+
+@font-face {
+  font-family: 'novecento_sans_widemedium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('Novecentosanswide-Medium-webfont.eot');
+  src: local('@fontFamily'), url('../fonts/novecento_sans_widemedium/Novecentosanswide-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/novecento_sans_widemedium/Novecentosanswide-Medium-webfont.woff') format('woff'), url('../fonts/novecento_sans_widemedium/Novecentosanswide-Medium-webfont.ttf') format('truetype'), url('../fonts/novecento_sans_widemedium/Novecentosanswide-Medium-webfont.svg#novecento_sans_widemedium') format('svg'), url("../fonts/novecento_sans_widemedium/Novecentosanswide-Medium-webfont.otf") format('opentype');
+}
+
+.stream .h-feed .e-entry-title{
+    font-family: 'novecento_sans_widemedium';
+    font-size: 22px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 10px;
+}
+.tweet .header{
+    min-height: 0!important;
+    padding: 0!important;
+}
+.stream .h-entry.tweet{
+    padding-left: 0;
+}
+.permalink{
+    float: left;
+    color: #ff841c!important;
+}
+.footer,
+.header .p-author{
+    display: none!important;
+}
+.retweet-credit .profile.h-card{
+    color: #ff841c!important;
+}

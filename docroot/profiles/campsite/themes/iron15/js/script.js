@@ -16,7 +16,7 @@ jQuery(function ($) {
    $('.news-slider .view-content').slick({
       dots: true,
       fade: true,
-      autoplay: true    
+      autoplay: true
    });
 
     // add image to background image

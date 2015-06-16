@@ -46,6 +46,7 @@ scripts[] = 'js/transition.js'
 scripts[] = 'js/classie.js'
 scripts[] = 'js/push-menu.js'
 scripts[] = 'js/stellar.js'
+scripts[] = 'js/twitter.js'
 scripts[] = 'js/script.js'
 
 ; Disable BootstrapCDN
