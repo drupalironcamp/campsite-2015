@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the CampSite - Custom blocks feature.
  */
+
+include_once 'campsite_custom_blocks.features.inc';

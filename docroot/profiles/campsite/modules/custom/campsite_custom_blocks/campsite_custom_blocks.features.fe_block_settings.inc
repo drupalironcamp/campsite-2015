@@ -25,7 +25,7 @@ function campsite_custom_blocks_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'iron15',
-        'weight' => 0,
+        'weight' => -6,
       ),
     ),
     'title' => 'Sign up for updates:',
@@ -45,10 +45,30 @@ function campsite_custom_blocks_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'iron15',
-        'weight' => 0,
+        'weight' => -3,
       ),
     ),
     'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['block-twitter'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'twitter',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'iron15' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'iron15',
+        'weight' => -12,
+      ),
+    ),
+    'title' => 'Twitter',
     'visibility' => 0,
   );
 

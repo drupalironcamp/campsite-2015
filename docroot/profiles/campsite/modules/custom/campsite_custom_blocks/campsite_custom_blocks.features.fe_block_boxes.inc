@@ -44,10 +44,7 @@ function campsite_custom_blocks_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Map - Venue Location';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'map_venue_location';
-  $fe_block_boxes->body = '<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-<h2 class="pane-title">Map</h2>
-<div style="height: 500px;" id="map"></div>
+  $fe_block_boxes->body = '<div style="height: 445px;" id="map"></div>
 <script>
 var map = L.map(\'map\').setView([47.494539, 19.043300], 18);
 
@@ -57,10 +54,9 @@ maxZoom: 20,
 }).addTo(map);
 
 var IronIcon = L.divIcon({
-    className: \'svg-iron-logo\',
-    html: \'<div>Hello World</div>\',
+    className: \'svg-pin with-logo\',
     iconAnchor: null,
-iconSize:     [20, 20]
+iconSize:     [81, 120]
 });
 L.marker([47.494539, 19.043300], {
     icon: IronIcon
@@ -73,6 +69,30 @@ map.scrollWheelZoom.disable();
 </script>';
 
   $export['map_venue_location'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Latest tweet embed';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'twitter';
+  $fe_block_boxes->body = '<a class="twitter-timeline" 
+href="https://twitter.com/drupalironcamp" 
+data-widget-id="610774996525412352"
+data-chrome="nofooter noheader transparent norscrollbar noborders"
+data-cards="hidden"
+hide_media="true"
+align="left"
+data-tweet-limit="1">
+</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+    js.src="//platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js,fjs);}
+}(document,"script","twitter-wjs");
+</script>
+';
+
+  $export['twitter'] = $fe_block_boxes;
 
   return $export;
 }
