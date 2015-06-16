@@ -34,6 +34,12 @@ function campsite_pages_context_default_contexts() {
           'region' => 'sidebar',
           'weight' => '-10',
         ),
+        'block-3' => array(
+          'module' => 'block',
+          'delta' => '3',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
