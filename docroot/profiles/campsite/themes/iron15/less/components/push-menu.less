@@ -26,16 +26,17 @@
 .pmenu-left {
 	left: -260px;
 	font-family: @nsw-book;
+	overflow: hidden;
 	.dropdown-menu{
 		padding-top: 20px;
 		padding-bottom: 20px;
 		a{
 			font-size: 20px;
-			color: #f66227;
+			color: @brand-danger-alt;
 			padding-top: 10px!important;
 			padding-bottom: 10px!important;
 			&:hover{
-				color: #f66227;
+				color: @brand-danger-alt;
 			}
 		}
 	}
@@ -46,13 +47,22 @@
 	.open .caret{
 		transform: rotate(90deg);
 	}
+	.navbar-nav .dropdown{
+		white-space: nowrap; // just to be sure it won't break
+		a{
+			display: inline-block;
+			&.has-toggle{
+				padding-right: 0;
+			}
+		}
+	}
 }
 
 
 // styles and overrides for the login mobile push menu
 .pmenu-right {
 	padding: 30px;
-	background-color: #f66227;
+	background-color: @brand-danger-alt;
 	right: -260px;
 	font-family: @nsw-book;
 	font-size: 18px;
@@ -134,7 +144,7 @@
 		transform-origin: 1px center;
 		-webkit-transform: rotate3d(0,0,1,0);
 		transform: rotate3d(0,0,1,0);
-		background-color: #f66227;
+		background-color: @brand-danger-alt;
 
 		&:nth-of-type(1) {
 			-webkit-transform: rotate3d(0,0,1,35deg);
@@ -167,7 +177,7 @@
   width: 60px;
   height: 60px;
   border: 0;
-  background-color: #f66227;
+  background-color: @brand-danger-alt;
 	position: absolute;
 	top: 0;
 	right: 0;
