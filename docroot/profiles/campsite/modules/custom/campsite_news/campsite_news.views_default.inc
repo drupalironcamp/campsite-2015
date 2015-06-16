@@ -94,7 +94,7 @@ function campsite_news_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/news">More News<span class="more-danger down"></span></a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="more-link danger down" href="/news">More News<span></span></a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
 
   /* Display: News (slideshow) */
@@ -171,7 +171,7 @@ function campsite_news_views_default_views() {
   $handler->display->display_options['fields']['path']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['path']['alter']['text'] = '<div class="slide-title">[title]</div>
 <div class="slide-body">[body]</div>
-<div class="slide-more"><a href="[path]">More info<span class="more-info"></span></a></div>';
+<div class="slide-more"><a class="more-link info" href="[path]">More info<span></span></a></div>';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['path']['element_wrapper_class'] = 'slideshow-wrapper';
