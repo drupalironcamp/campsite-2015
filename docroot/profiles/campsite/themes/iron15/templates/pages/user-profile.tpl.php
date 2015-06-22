@@ -18,6 +18,11 @@
     }else {
         print l('<div class="svg-drupal"></div>', $link, array('class' => 'svg-drupal', 'html'=>TRUE));
     } ?></div>
+    <?php if (isset($variables['elements']['#account']->name
+    )) {
+        print $variables['elements']['#account']->name;?>
+        <?php
+    } ?>
         <div class="name">
             <?php print render($user_profile['field_user_first_name']);  ?>
             <?php print render($user_profile['field_user_last_name']);  ?>

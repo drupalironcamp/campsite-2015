@@ -3389,8 +3389,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border: 1px solid transparent;
 }
 @media (min-width: 992px) {
-  .navbar {
-    border-radius: 0;
+  .front .navbar {
     position: fixed;
     width: 100%;
   }
@@ -6953,8 +6952,8 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 @media (min-width: 992px) {
   #page-header .container {
-    height: 300px;
-    padding-top: 125px;
+    height: 240px;
+    padding-top: 70px;
   }
 }
 #page-header .logo {
@@ -6979,6 +6978,7 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 @media (min-width: 992px) {
   .logo-wrap {
+    top: -52px;
     width: 148px;
     height: 148px;
     margin-left: -74px;
@@ -6996,7 +6996,7 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 @media (min-width: 992px) {
   .banner-img {
-    top: -220px;
+    top: -260px;
     margin-left: -220px;
   }
 }
