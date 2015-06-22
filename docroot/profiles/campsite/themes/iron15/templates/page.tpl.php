@@ -242,9 +242,6 @@
     <div class="row">
 
       <section<?php if(!$is_front) : print $content_column_class; endif; ?>>
-        <?php if (!empty($page['highlighted'])): ?>
-          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-        <?php endif; ?>
         <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
@@ -261,6 +258,9 @@
         <?php endif; ?>
         <?php if (!empty($action_links)): ?>
           <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+        <?php if (!empty($page['highlighted'])): ?>
+          <?php print render($page['highlighted']); ?>
         <?php endif; ?>
         <?php print render($page['content']); ?>
       </section>
@@ -285,7 +285,7 @@
          </a>
          <div class="footer-message">2015 @ Built by the community
            <div class="footer-links">
-            <?php print l(t('Disclaimer. '), 'buy-a-ticket') . l(t('Code of conduct.'), 'node/16'); ?>
+            <?php print l(t('Disclaimer.'), 'buy-a-ticket') . l(t('Code of conduct.'), 'node/16'); ?>
           </div>
         </div>
       </div>
@@ -293,5 +293,11 @@
       <div class="svg-big-triangle01 copy"></div>
       <div class="svg-big-triangle02"></div>
     </div>
+    <script>
+        var options = {
+            "url": "<?php print base_path() . path_to_theme() ?>/css/twitter.css"
+        };
+        CustomizeTwitterWidget(options);
+    </script>
   </footer>
 </div>
