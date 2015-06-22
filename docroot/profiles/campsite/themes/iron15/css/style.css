@@ -7377,14 +7377,14 @@ fieldset[disabled] .pane-signup input.button.active {
 .page-community-volunteers .pane-content:hover .user-attendee,
 .page-sponsors .pane-content:hover .user-attendee {
   opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .page-community-attendees .pane-content .user-attendee:hover,
 .page-community-volunteers .pane-content .user-attendee:hover,
 .page-sponsors .pane-content .user-attendee:hover {
   opacity: 1;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 .page-community-attendees .pane-content .field-type-text .field-label,
 .page-community-volunteers .pane-content .field-type-text .field-label,
@@ -7444,12 +7444,9 @@ fieldset[disabled] .pane-signup input.button.active {
 .page-sponsors .pane-content .views-row .name {
   text-align: center;
 }
-.page-community-attendees .pane-content .views-row .name .field-name-field-user-first-name,
-.page-community-volunteers .pane-content .views-row .name .field-name-field-user-first-name,
-.page-sponsors .pane-content .views-row .name .field-name-field-user-first-name,
-.page-community-attendees .pane-content .views-row .name .field-name-field-user-last-name,
-.page-community-volunteers .pane-content .views-row .name .field-name-field-user-last-name,
-.page-sponsors .pane-content .views-row .name .field-name-field-user-last-name {
+.page-community-attendees .pane-content .views-row .name .field,
+.page-community-volunteers .pane-content .views-row .name .field,
+.page-sponsors .pane-content .views-row .name .field {
   margin: 0 auto;
   color: #cb085e;
   font-weight: 600;
