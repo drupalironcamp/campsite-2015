@@ -2787,7 +2787,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #ff841c;
+  background-color: #f66227;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -3746,8 +3746,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #000000;
 }
 .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active-trail > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active-trail > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active-trail > a:focus {
   color: #ffffff;
   background-color: #000000;
 }
@@ -3807,9 +3810,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     color: #cccccc;
     background-color: transparent;
   }
-}
-.navbar-default .navbar-nav.secondary .dropdown-menu > li > a:hover {
-  background: #cb085e;
 }
 .navbar-default .navbar-nav .caret {
   display: none;
@@ -4941,6 +4941,7 @@ a.list-group-item-danger.active:focus {
 }
 .leaflet-right {
   right: 0;
+  display: none;
 }
 .leaflet-bottom {
   bottom: 0;
@@ -5280,6 +5281,32 @@ a.list-group-item-danger.active:focus {
 }
 .front .pane-map .pane-title {
   margin-bottom: 30px;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  margin-left: 5px;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
 .social-menu a {
   font: 0/0 a;
@@ -7039,7 +7066,6 @@ fieldset[disabled] .pane-signup input.button.active {
   position: absolute;
   left: 0;
   bottom: 15px;
-  padding-right: 15px;
   font-size: 14px;
 }
 .footer .footer-message .footer-links a {
@@ -7155,6 +7181,13 @@ fieldset[disabled] .pane-signup input.button.active {
     position: absolute;
     top: 10px;
     padding-top: 15px;
+  }
+  .front #page-header .alert {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    z-index: 80;
+    opacity: .9;
   }
   .front .logo-wrap {
     top: 50%;
