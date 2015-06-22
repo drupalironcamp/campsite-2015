@@ -80,6 +80,7 @@ data-widget-id="610774996525412352"
 data-chrome="nofooter noheader transparent norscrollbar noborders"
 data-cards="hidden"
 hide_media="true"
+data-link-color="#da1d4c"
 align="left"
 data-tweet-limit="1">
 </a>
