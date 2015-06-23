@@ -1,0 +1,49 @@
+
+.page-program-sessions{
+  form {
+    #edit-uid-wrapper,
+    #edit-field-session-type-target-id-wrapper,
+    #edit-field-session-experience-level-target-id-wrapper,
+    #edit-field-session-track-target-id-wrapper,
+    #edit-body-value-wrapper,
+    .views-submit-button {
+      width: 100%;
+
+      @media screen and (min-width: @screen-sm-min) {
+        width: 50%;
+      }
+
+      .input-group-addon {
+        display: none;
+      }
+      label {
+        white-space: nowrap;
+      }
+      .form-type-select{
+        height: 48px;
+        select{
+          line-height: 40px;
+        }
+      }
+    }
+    #edit-uid-wrapper{
+      .input-group{
+        width: 100%;
+      }
+    }
+
+  }
+  table{
+    margin-top: 50px;
+    th {
+      white-space: nowrap;
+    }
+
+    td {
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}
