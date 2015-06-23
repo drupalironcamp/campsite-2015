@@ -6712,6 +6712,9 @@ button.close {
 .front .view-news:not(.news-slider) .views-row {
   padding: 0;
 }
+.front .view-news:not(.news-slider) .views-row-2 h2 {
+  margin-top: 0;
+}
 .front .view-news:not(.news-slider) .view-footer {
   text-align: center;
   float: left;
@@ -7188,12 +7191,13 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .region-sidebar .menu.nav {
   border-top: 2px solid #242424;
+  border-bottom: 2px solid #242424;
   padding: 20px 0;
+  margin-bottom: 35px;
 }
 @media screen and (min-width: 768px) {
   .region-sidebar .menu.nav {
     margin-top: 200px;
-    border-bottom: 2px solid #242424;
   }
 }
 .region-sidebar .menu.nav li a {
@@ -7224,6 +7228,7 @@ fieldset[disabled] .pane-signup input.button.active {
 .front .region-content .pane-title {
   text-align: center;
   padding: 0 5px;
+  text-transform: uppercase;
 }
 .front .lead-buttons {
   text-align: center;
