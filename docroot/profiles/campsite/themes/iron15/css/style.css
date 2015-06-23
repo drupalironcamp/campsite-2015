@@ -2787,7 +2787,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #ff841c;
+  background-color: #f66227;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -3389,8 +3389,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border: 1px solid transparent;
 }
 @media (min-width: 992px) {
-  .navbar {
-    border-radius: 0;
+  .front .navbar {
     position: fixed;
     width: 100%;
   }
@@ -3746,8 +3745,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #000000;
 }
 .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active-trail > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active-trail > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active-trail > a:focus {
   color: #ffffff;
   background-color: #000000;
 }
@@ -3807,9 +3809,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     color: #cccccc;
     background-color: transparent;
   }
-}
-.navbar-default .navbar-nav.secondary .dropdown-menu > li > a:hover {
-  background: #cb085e;
 }
 .navbar-default .navbar-nav .caret {
   display: none;
@@ -4941,6 +4940,7 @@ a.list-group-item-danger.active:focus {
 }
 .leaflet-right {
   right: 0;
+  display: none;
 }
 .leaflet-bottom {
   bottom: 0;
@@ -5281,6 +5281,32 @@ a.list-group-item-danger.active:focus {
 .front .pane-map .pane-title {
   margin-bottom: 30px;
 }
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  margin-left: 5px;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
 .social-menu a {
   font: 0/0 a;
   color: transparent;
@@ -5308,7 +5334,7 @@ a.list-group-item-danger.active:focus {
   }
 }
 .not-front .site-header .social-menu {
-  top: 100px;
+  top: 40px;
 }
 .pmenu-left .social-menu {
   text-align: center;
@@ -6572,17 +6598,12 @@ a.list-group-item-danger.active:focus {
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-category {
   display: none;
 }
-.page-sponsors .pane-content .item-list .content .img-sponsors {
-  width: 280px;
-  height: 200px;
-  overflow: hidden;
-}
 .page-sponsors .pane-content .item-list .content .img-sponsors img {
   margin: 0 auto;
 }
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-link {
+  margin-top: 10px;
   text-align: center;
-  padding-top: 15px;
 }
 .node-news.node-promoted h2 a,
 .node-news.node-teaser h2 a {
@@ -6686,6 +6707,9 @@ a.list-group-item-danger.active:focus {
 }
 .front .view-news:not(.news-slider) .views-row {
   padding: 0;
+}
+.front .view-news:not(.news-slider) .views-row-2 h2 {
+  margin-top: 0;
 }
 .front .view-news:not(.news-slider) .view-footer {
   text-align: center;
@@ -6927,8 +6951,8 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 @media (min-width: 992px) {
   #page-header .container {
-    height: 300px;
-    padding-top: 125px;
+    height: 240px;
+    padding-top: 70px;
   }
 }
 #page-header .logo {
@@ -6953,6 +6977,7 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 @media (min-width: 992px) {
   .logo-wrap {
+    top: -52px;
     width: 148px;
     height: 148px;
     margin-left: -74px;
@@ -6970,7 +6995,7 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 @media (min-width: 992px) {
   .banner-img {
-    top: -220px;
+    top: -260px;
     margin-left: -220px;
   }
 }
@@ -7085,7 +7110,6 @@ fieldset[disabled] .pane-signup input.button.active {
   position: absolute;
   left: 0;
   bottom: 15px;
-  padding-right: 15px;
   font-size: 14px;
 }
 .footer .footer-message .footer-links a {
@@ -7163,12 +7187,13 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .region-sidebar .menu.nav {
   border-top: 2px solid #242424;
+  border-bottom: 2px solid #242424;
   padding: 20px 0;
+  margin-bottom: 35px;
 }
 @media screen and (min-width: 768px) {
   .region-sidebar .menu.nav {
     margin-top: 200px;
-    border-bottom: 2px solid #242424;
   }
 }
 .region-sidebar .menu.nav li a {
@@ -7199,6 +7224,7 @@ fieldset[disabled] .pane-signup input.button.active {
 .front .region-content .pane-title {
   text-align: center;
   padding: 0 5px;
+  text-transform: uppercase;
 }
 .front .lead-buttons {
   text-align: center;
@@ -7233,6 +7259,13 @@ fieldset[disabled] .pane-signup input.button.active {
     position: absolute;
     top: 10px;
     padding-top: 15px;
+  }
+  .front #page-header .alert {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    z-index: 80;
+    opacity: .9;
   }
   .front .logo-wrap {
     top: 50%;
@@ -7345,14 +7378,14 @@ fieldset[disabled] .pane-signup input.button.active {
 .page-community-volunteers .pane-content:hover .user-attendee,
 .page-sponsors .pane-content:hover .user-attendee {
   opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .page-community-attendees .pane-content .user-attendee:hover,
 .page-community-volunteers .pane-content .user-attendee:hover,
 .page-sponsors .pane-content .user-attendee:hover {
   opacity: 1;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 .page-community-attendees .pane-content .field-type-text .field-label,
 .page-community-volunteers .pane-content .field-type-text .field-label,
@@ -7412,12 +7445,9 @@ fieldset[disabled] .pane-signup input.button.active {
 .page-sponsors .pane-content .views-row .name {
   text-align: center;
 }
-.page-community-attendees .pane-content .views-row .name .field-name-field-user-first-name,
-.page-community-volunteers .pane-content .views-row .name .field-name-field-user-first-name,
-.page-sponsors .pane-content .views-row .name .field-name-field-user-first-name,
-.page-community-attendees .pane-content .views-row .name .field-name-field-user-last-name,
-.page-community-volunteers .pane-content .views-row .name .field-name-field-user-last-name,
-.page-sponsors .pane-content .views-row .name .field-name-field-user-last-name {
+.page-community-attendees .pane-content .views-row .name .field,
+.page-community-volunteers .pane-content .views-row .name .field,
+.page-sponsors .pane-content .views-row .name .field {
   margin: 0 auto;
   color: #cb085e;
   font-weight: 600;

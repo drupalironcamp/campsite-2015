@@ -249,7 +249,7 @@ function campsite_account_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'above',
@@ -431,7 +431,7 @@ function campsite_account_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => 'users_attendee',
         ),
         'type' => 'image',
