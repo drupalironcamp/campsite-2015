@@ -225,6 +225,7 @@
       </ul>
 
       <?php if($is_front) :?>
+        <?php print $messages; ?>
         <div class="lead-buttons">
 
           <?php
@@ -249,7 +250,9 @@
           <h1 class="page-header"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php print render($title_suffix); ?>
+        <?php if(!$is_front): ?>
         <?php print $messages; ?>
+        <?php endif; ?>
         <?php if (!empty($tabs)): ?>
           <?php print render($tabs); ?>
         <?php endif; ?>
