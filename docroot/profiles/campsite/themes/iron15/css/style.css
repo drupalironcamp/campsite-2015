@@ -6598,15 +6598,11 @@ button.close {
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-category {
   display: none;
 }
-.page-sponsors .pane-content .item-list .content .img-sponsors {
-  width: 280px;
-  height: 200px;
-  overflow: hidden;
-}
 .page-sponsors .pane-content .item-list .content .img-sponsors img {
   margin: 0 auto;
 }
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-link {
+  margin-top: 10px;
   text-align: center;
 }
 .node-news.node-promoted h2 a,
@@ -6711,6 +6707,9 @@ button.close {
 }
 .front .view-news:not(.news-slider) .views-row {
   padding: 0;
+}
+.front .view-news:not(.news-slider) .views-row-2 h2 {
+  margin-top: 0;
 }
 .front .view-news:not(.news-slider) .view-footer {
   text-align: center;
@@ -7188,12 +7187,13 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .region-sidebar .menu.nav {
   border-top: 2px solid #242424;
+  border-bottom: 2px solid #242424;
   padding: 20px 0;
+  margin-bottom: 35px;
 }
 @media screen and (min-width: 768px) {
   .region-sidebar .menu.nav {
     margin-top: 200px;
-    border-bottom: 2px solid #242424;
   }
 }
 .region-sidebar .menu.nav li a {
@@ -7224,6 +7224,7 @@ fieldset[disabled] .pane-signup input.button.active {
 .front .region-content .pane-title {
   text-align: center;
   padding: 0 5px;
+  text-transform: uppercase;
 }
 .front .lead-buttons {
   text-align: center;
