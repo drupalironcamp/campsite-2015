@@ -1,4 +1,4 @@
-<?php //dsm($user_profile) ?>
+<?php //dsm($user_profile); ?>
 
 <?php if ($variables['elements']['#view_mode'] == 'attendee'): ?>
     <div class="user-attendee">
@@ -18,11 +18,22 @@
     }else {
         print l('<div class="svg-drupal"></div>', $link, array('class' => 'svg-drupal', 'html'=>TRUE));
     } ?></div>
+
+
+
         <div class="name">
             <?php print render($user_profile['field_user_first_name']);  ?>
             <?php print render($user_profile['field_user_last_name']);  ?>
+
+                <div class="user-name">
+                    <?php if (isset($variables['elements']['#account']->name
+                )) {
+                    print l($variables['elements']['#account']->name, $link);
+
+                } ?>
+               </div>
         </div>
-        <?php print render($user_profile['field_user_job_title']);  ?>
+
         <br>
     </div>
 
