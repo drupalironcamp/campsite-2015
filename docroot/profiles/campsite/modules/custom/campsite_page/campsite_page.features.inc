@@ -1,8 +1,17 @@
 <?php
 /**
  * @file
- * campsite_node_page.features.inc
+ * campsite_page.features.inc
  */
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function campsite_page_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+}
 
 /**
  * Implements hook_node_info().

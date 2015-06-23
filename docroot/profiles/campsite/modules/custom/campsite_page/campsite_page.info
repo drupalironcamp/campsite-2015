@@ -7,6 +7,7 @@ project = campsite_page
 dependencies[] = campsite_core
 dependencies[] = features
 dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_instance][] = node-page-body
 features[node][] = page

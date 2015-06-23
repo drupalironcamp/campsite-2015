@@ -29,7 +29,7 @@ function campsite_sponsor_strongarm() {
         'custom_settings' => FALSE,
       ),
       'list' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'revision' => array(
         'custom_settings' => FALSE,

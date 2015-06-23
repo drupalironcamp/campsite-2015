@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * campsite_node_page.features.field_instance.inc
+ * campsite_page.features.field_instance.inc
  */
 
 /**
@@ -17,6 +17,12 @@ function campsite_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
