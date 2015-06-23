@@ -17,6 +17,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -61,6 +67,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'date',
@@ -122,6 +134,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -165,6 +183,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'file',
@@ -208,6 +232,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -256,6 +286,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -300,13 +336,20 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'attendee',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -346,6 +389,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -390,6 +439,12 @@ function campsite_session_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'another_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
