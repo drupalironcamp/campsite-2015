@@ -1,0 +1,113 @@
+
+.node-news{
+  &.node-promoted,
+  &.node-teaser{
+    h2 a{
+      color: black;
+      text-transform: uppercase;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  &.node-teaser h2{
+    font-size: 18px;
+  }
+
+
+}
+
+
+.front .view-news:not(.news-slider){
+  .clearfix;
+  margin-top: 60px;
+  margin-bottom: 90px;
+
+    .view-content{
+      .clearfix;
+      .center-block;
+      max-width: 980px;
+      margin-bottom: 90px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .views-row-1{
+      .make-sm-column(4);
+      .make-sm-column-offset(1);
+      h2{
+          line-height: 48px;
+          a{
+              color: black;
+          }
+      }
+    }
+
+    .views-row-2,
+    .views-row-3{
+      .make-sm-column(4);
+      .make-sm-column-offset(2);
+    }
+
+    .views-row{
+      padding: 0;
+    }
+
+    .views-row-2 h2{
+        margin-top: 0;
+    }
+
+    .view-footer{
+      .text-center;
+      float: left;
+      width: 100%;
+    }
+}
+
+
+// news slideshow
+.news-slider{
+    background-color: #f2f2f2;
+    margin-top: 0;
+    .slick-slider{
+        width: 100%;
+    }
+    .slick-slide{
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slideshow-wrapper{
+        .center-block;
+        position: relative;
+        max-width: 840px;
+        min-height: 300px;
+        padding: 40px 30px 90px 30px;
+        @media (min-width: @screen-sm){
+            padding: 100px 30px;
+            min-height: 400px;
+        }
+    }
+
+    .slide-title a{
+        color: black;
+        font-family: @nsw-demibold;
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .slide-more{
+        text-align: right;
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        @media (min-width: @screen-sm){
+            bottom: 80px;
+        }
+    }
+    .slide-image{
+        display: none;
+    }
+
+}
