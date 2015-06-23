@@ -6598,15 +6598,11 @@ button.close {
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-category {
   display: none;
 }
-.page-sponsors .pane-content .item-list .content .img-sponsors {
-  width: 280px;
-  height: 200px;
-  overflow: hidden;
-}
 .page-sponsors .pane-content .item-list .content .img-sponsors img {
   margin: 0 auto;
 }
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-link {
+  margin-top: 10px;
   text-align: center;
 }
 .node-news.node-promoted h2 a,
