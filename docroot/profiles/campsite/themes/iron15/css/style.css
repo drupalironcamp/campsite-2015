@@ -6582,6 +6582,7 @@ a.list-group-item-danger.active:focus {
 }
 .page-sponsors .pane-content .item-list .content .field-name-field-sponsor-link {
   text-align: center;
+  padding-top: 15px;
 }
 .node-news.node-promoted h2 a,
 .node-news.node-teaser h2 a {
