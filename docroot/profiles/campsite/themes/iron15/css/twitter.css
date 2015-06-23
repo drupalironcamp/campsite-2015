@@ -22,7 +22,7 @@
     padding-left: 0;
 }
 .permalink{
-    float: left;
+    float: left!important;
     color: #ff841c!important;
 }
 .footer,

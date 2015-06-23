@@ -18,9 +18,10 @@
   &:extend(.clearfix all);
 
   @media (min-width: @grid-float-breakpoint) {
-    border-radius: @navbar-border-radius;
-    position: fixed;
-    width: 100%;
+      .front &{
+          position: fixed;
+          width: 100%;
+      }
   }
 }
 
@@ -437,7 +438,8 @@
         background-color: @navbar-default-link-hover-bg;
       }
     }
-    > .active > a {
+    > .active > a,
+    > .active-trail > a {
       &,
       &:hover,
       &:focus {
@@ -522,11 +524,6 @@
           }
         }
       }
-    }
-
-    //secondary menu color
-    &.secondary .dropdown-menu > li > a:hover{
-        background: @brand-primary;
     }
 
     .caret{

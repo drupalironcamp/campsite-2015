@@ -115,13 +115,11 @@
     &:hover {
       .user-attendee{
         opacity: 0.5;
-      }
-    }
-    .user-attendee{
-      &:hover{
-        opacity: 1;
         .transition(all 0.2s ease-in-out);
       }
+    }
+    .user-attendee:hover{
+        opacity: 1;
     }
 
     .field-type-text {
@@ -162,8 +160,7 @@
       .name {
         text-align: center;
 
-        .field-name-field-user-first-name,
-        .field-name-field-user-last-name {
+        .field {
           margin: 0 auto;
           color: @brand-primary;
           font-weight: 600;
