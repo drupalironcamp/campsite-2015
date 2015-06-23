@@ -43,7 +43,7 @@
  function iron15_preprocess_page(&$variables) {
    // add different classes depending if sidebar is present
    if (!empty($variables['page']['sidebar'])) {
-     $variables['content_column_class'] = ' class="col-sm-6 col-sm-offset-1"';
+     $variables['content_column_class'] = ' class="col-md-6 col-md-offset-1 col-sm-8"';
    }
    else {
      $variables['content_column_class'] = ' class="col-sm-10 col-sm-offset-1"';

@@ -266,7 +266,7 @@
       </section>
 
       <?php if (!empty($page['sidebar']) && (!$is_front)): ?>
-        <aside class="col-sm-3" role="complementary">
+        <aside class="col-md-3 col-sm-4" role="complementary">
           <?php print render($page['sidebar']); ?>
         </aside>  <!-- /#sidebar -->
       <?php endif; ?>
