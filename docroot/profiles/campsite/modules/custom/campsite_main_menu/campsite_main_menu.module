@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the CampSite - Main menu feature.
  */
+
+include_once 'campsite_main_menu.features.inc';
