@@ -127,11 +127,10 @@ function campsite_session_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_session_speakers']['delta_offset'] = '0';
-  /* Field: Content: Body */
+  /* Field: Content: Abstract */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = 'Abstract';
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '200',
@@ -258,7 +257,7 @@ function campsite_session_views_default_views() {
     4 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Body (body) */
+  /* Filter criterion: Content: Abstract (body) */
   $handler->display->display_options['filters']['body_value']['id'] = 'body_value';
   $handler->display->display_options['filters']['body_value']['table'] = 'field_data_body';
   $handler->display->display_options['filters']['body_value']['field'] = 'body_value';
@@ -390,11 +389,10 @@ function campsite_session_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_session_speakers']['delta_offset'] = '0';
-  /* Field: Content: Body */
+  /* Field: Content: Abstract */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = 'Abstract';
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '200',
