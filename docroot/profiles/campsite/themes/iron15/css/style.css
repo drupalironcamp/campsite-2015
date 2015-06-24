@@ -6594,14 +6594,17 @@ button.close {
   font-size: 18px;
   margin: 15px 15px 10px;
 }
-.page-sponsors .pane-content .item-list .field-type-text-with-summary,
-.page-sponsors .pane-content .item-list .field-name-field-sponsor-category {
+.page-sponsors .pane-content .item-list .views-row {
+  height: 300px;
+}
+.page-sponsors .pane-content .item-list .views-row .field-type-text-with-summary,
+.page-sponsors .pane-content .item-list .views-row .field-name-field-sponsor-category {
   display: none;
 }
-.page-sponsors .pane-content .item-list .img-sponsors img {
+.page-sponsors .pane-content .item-list .views-row .img-sponsors img {
   margin: 0 auto;
 }
-.page-sponsors .pane-content .item-list .field-name-field-sponsor-link {
+.page-sponsors .pane-content .item-list .views-row .field-name-field-sponsor-link {
   margin-top: 10px;
   text-align: center;
 }
