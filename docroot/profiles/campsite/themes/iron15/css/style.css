@@ -3394,6 +3394,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: 100%;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .container {
+    padding-right: 60px;
+  }
+}
 @media (min-width: 992px) {
   .navbar-header {
     float: left;
