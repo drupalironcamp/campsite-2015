@@ -115,12 +115,17 @@
     &:hover {
       .user-attendee{
         opacity: 0.5;
-        .transition(all 0.2s ease-in-out);
       }
     }
-    .user-attendee:hover{
-        opacity: 1;
+    .user-attendee{
+      .transition(all 0.2s ease-in-out);
     }
+    .user-attendee:hover{
+      .transition(all 0.2s ease-in-out);
+      opacity: 1;
+    }
+
+
 
     .field-type-text {
       .field-label {
@@ -129,7 +134,7 @@
     }
     .views-row {
       margin-bottom: 20px;
-      height: 400px;
+      height: 200px;
       overflow: hidden;
       .make-xs-column(6);
       .make-md-column(4);

@@ -269,7 +269,7 @@
       </section>
 
       <?php if (!empty($page['sidebar']) && (!$is_front)): ?>
-        <aside class="col-sm-3" role="complementary">
+        <aside class="col-md-3 col-sm-4" role="complementary">
           <?php print render($page['sidebar']); ?>
         </aside>  <!-- /#sidebar -->
       <?php endif; ?>
@@ -288,7 +288,7 @@
          </a>
          <div class="footer-message">2015 @ Built by the community
            <div class="footer-links">
-            <?php print l(t('Disclaimer.'), 'buy-a-ticket') . l(t('Code of conduct.'), 'node/16'); ?>
+            <?php print l(t('Disclaimer.'), 'disclaimer') . l(t('Code of conduct.'), 'node/16'); ?>
           </div>
         </div>
       </div>
