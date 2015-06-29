@@ -3394,6 +3394,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: 100%;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .container {
+    padding-right: 60px;
+  }
+}
 @media (min-width: 992px) {
   .navbar-header {
     float: left;
@@ -6620,6 +6625,12 @@ button.close {
 .node-news.node-teaser h2 {
   font-size: 18px;
 }
+.node-type-news .field-name-field-news-link {
+  margin-top: 15px;
+}
+.node-type-news .field-type-image {
+  margin: 15px 0;
+}
 .front .view-news:not(.news-slider) {
   margin-top: 60px;
   margin-bottom: 90px;
@@ -7046,19 +7057,27 @@ fieldset[disabled] .pane-signup input.button.active {
   margin-top: 70px;
   margin-bottom: 55px;
 }
+.node-type-news .region-content,
 .node-type-page .region-content {
   padding-bottom: 30px;
 }
+.node-type-news .region-content .content p,
 .node-type-page .region-content .content p {
   font-size: 22px;
   line-height: 35px;
 }
+.node-type-news .region-content .content ul,
 .node-type-page .region-content .content ul {
   list-style: none;
 }
+.node-type-news .region-content .content ul li,
 .node-type-page .region-content .content ul li {
   font-size: 20px;
   margin-bottom: 7px;
+}
+.node-type-news .region-content > .block-sharethis .sharethis-wrapper,
+.node-type-page .region-content > .block-sharethis .sharethis-wrapper {
+  margin: 35px 0 20px;
 }
 .sharethis-wrapper {
   margin: 10px 0;
