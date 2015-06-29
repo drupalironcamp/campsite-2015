@@ -45,12 +45,12 @@ function campsite_sponsor_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_sponsor_logo',
-        1 => 'title',
+        1 => 'field_sponsor_link',
       ),
     ),
     'fields' => array(
       'field_sponsor_logo' => 'ds_content',
-      'title' => 'ds_content',
+      'field_sponsor_link' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -2,22 +2,22 @@
 
 <?php if ($variables['elements']['#view_mode'] == 'attendee'): ?>
     <div class="user-attendee">
-    <div class= "user-image">
+      <div class="user-image">
         <?php
         $link = drupal_get_path_alias('user/' .$variables['elements']['#account']->uid);
          if (!empty($user_profile['field_user_picture'][0]['#item']['uri'])){
-        print l(theme_image_style(
-            array(
-                'style_name' => 'thumbnail',
-                'path' => $user_profile['field_user_picture'][0]['#item']['uri'],
-                'attributes' => array('class' => 'avatar'),
-                "height" => NULL,
-                "width" => NULL
-            )),
-            $link, array('html'=>TRUE));
-    }else {
-        print l('<div class="svg-drupal"></div>', $link, array('class' => 'svg-drupal', 'html'=>TRUE));
-    } ?></div>
+            print l(theme_image_style(
+                array(
+                    'style_name' => 'thumbnail',
+                    'path' => $user_profile['field_user_picture'][0]['#item']['uri'],
+                    "height" => NULL,
+                    "width" => NULL
+                )),
+                $link, array('html'=>TRUE));
+        }else {
+            print l('<div class="svg-drupal"></div>', $link, array('class' => 'svg-drupal', 'html'=>TRUE));
+        } ?>
+        </div>
         <div class="name">
             <?php print render($user_profile['field_user_first_name']);  ?>
             <?php print render($user_profile['field_user_last_name']);  ?>
@@ -54,6 +54,16 @@
                <?php print render($user_profile); ?>
            </div>
         </div>
-    <a href="/user/logout" class="btn btn-default logout">Log out</a>
+
+        <?php
+        // DISPLAY LOGGIN BUTTON IF CURRENT USER PAGE IS VIEWED
+        global $user;
+        // get name of current user
+        $currentUser = $user->uid;
+        $profileuser = user_load(arg(1));
+        $profileuseruid = $profileuser->uid; ?>
+         <?php if($currentUser == $profileuseruid): ?>
+                <a href="/user/logout" class="btn btn-default logout">Log out</a>
+        <?php endif; ?>
     </div>
 <?php endif; ?>

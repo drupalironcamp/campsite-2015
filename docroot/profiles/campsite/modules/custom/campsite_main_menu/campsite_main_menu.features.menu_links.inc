@@ -31,27 +31,6 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_attendees:community/attendees
-  $menu_links['main-menu_attendees:community/attendees'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'community/attendees',
-    'router_path' => 'community/%',
-    'link_title' => 'Attendees',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_attendees:community/attendees',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_community:community/attendees',
-  );
   // Exported menu link: main-menu_bof:node/4
   $menu_links['main-menu_bof:node/4'] = array(
     'menu_name' => 'main-menu',
@@ -94,47 +73,6 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_code-of-conduct:node/16
-  $menu_links['main-menu_code-of-conduct:node/16'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/16',
-    'router_path' => 'node/%',
-    'link_title' => 'Code of conduct',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_code-of-conduct:node/16',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -46,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_community:community/attendees',
-  );
-  // Exported menu link: main-menu_community:community/attendees
-  $menu_links['main-menu_community:community/attendees'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'community/attendees',
-    'router_path' => 'community/%',
-    'link_title' => 'Community',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_community:community/attendees',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -47,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_going-out:node/11
   $menu_links['main-menu_going-out:node/11'] = array(
     'menu_name' => 'main-menu',
@@ -169,7 +107,7 @@ function campsite_main_menu_menu_default_menu_links() {
       'identifier' => 'main-menu_home:<front>',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
@@ -214,29 +152,8 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
-  );
-  // Exported menu link: main-menu_our-sponsors:sponsors
-  $menu_links['main-menu_our-sponsors:sponsors'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'sponsors',
-    'router_path' => 'sponsors',
-    'link_title' => 'Our sponsors',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_our-sponsors:sponsors',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_sponsors:sponsors',
   );
   // Exported menu link: main-menu_program:node/2
   $menu_links['main-menu_program:node/2'] = array(
@@ -255,29 +172,8 @@ function campsite_main_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
-  );
-  // Exported menu link: main-menu_scholarship:node/14
-  $menu_links['main-menu_scholarship:node/14'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/14',
-    'router_path' => 'node/%',
-    'link_title' => 'Scholarship',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_scholarship:node/14',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_community:community/attendees',
   );
   // Exported menu link: main-menu_sessions:program/sessions
   $menu_links['main-menu_sessions:program/sessions'] = array(
@@ -321,68 +217,6 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
   );
-  // Exported menu link: main-menu_sponsor-guide:node/13
-  $menu_links['main-menu_sponsor-guide:node/13'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/13',
-    'router_path' => 'node/%',
-    'link_title' => 'Sponsor guide',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_sponsor-guide:node/13',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_sponsors:sponsors',
-  );
-  // Exported menu link: main-menu_sponsors:sponsors
-  $menu_links['main-menu_sponsors:sponsors'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'sponsors',
-    'router_path' => 'sponsors',
-    'link_title' => 'Sponsors',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_sponsors:sponsors',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -46,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_spread-the-word:node/15
-  $menu_links['main-menu_spread-the-word:node/15'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/15',
-    'router_path' => 'node/%',
-    'link_title' => 'Spread the word',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_spread-the-word:node/15',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_community:community/attendees',
-  );
   // Exported menu link: main-menu_sprints:program/code-sprints
   $menu_links['main-menu_sprints:program/code-sprints'] = array(
     'menu_name' => 'main-menu',
@@ -403,6 +237,26 @@ function campsite_main_menu_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
+  );
+  // Exported menu link: main-menu_tickets:node/7
+  $menu_links['main-menu_tickets:node/7'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/7',
+    'router_path' => 'node/%',
+    'link_title' => 'Tickets',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_tickets:node/7',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
   );
   // Exported menu link: main-menu_timeline:node/2
   $menu_links['main-menu_timeline:node/2'] = array(
@@ -488,9 +342,195 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_volunteers:community/volunteers
-  $menu_links['main-menu_volunteers:community/volunteers'] = array(
-    'menu_name' => 'main-menu',
+  // Exported menu link: menu-secondary-menu_about:node/14
+  $menu_links['menu-secondary-menu_about:node/14'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'node/14',
+    'router_path' => 'node/%',
+    'link_title' => 'About',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_about:node/14',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-secondary-menu_attendees:community/attendees
+  $menu_links['menu-secondary-menu_attendees:community/attendees'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'community/attendees',
+    'router_path' => 'community/%',
+    'link_title' => 'Attendees',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_attendees:community/attendees',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
+  );
+  // Exported menu link: menu-secondary-menu_code-of-conduct:node/16
+  $menu_links['menu-secondary-menu_code-of-conduct:node/16'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'node/16',
+    'router_path' => 'node/%',
+    'link_title' => 'Code of conduct',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_code-of-conduct:node/16',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+    'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
+  );
+  // Exported menu link: menu-secondary-menu_community:community/attendees
+  $menu_links['menu-secondary-menu_community:community/attendees'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'community/attendees',
+    'router_path' => 'community/%',
+    'link_title' => 'Community',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_community:community/attendees',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => -47,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-secondary-menu_our-sponsors:sponsors
+  $menu_links['menu-secondary-menu_our-sponsors:sponsors'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'sponsors',
+    'router_path' => 'sponsors',
+    'link_title' => 'Our sponsors',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_our-sponsors:sponsors',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'parent_identifier' => 'menu-secondary-menu_sponsors:sponsors',
+  );
+  // Exported menu link: menu-secondary-menu_scholarship:node/14
+  $menu_links['menu-secondary-menu_scholarship:node/14'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'node/14',
+    'router_path' => 'node/%',
+    'link_title' => 'Scholarship',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_scholarship:node/14',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
+  );
+  // Exported menu link: menu-secondary-menu_sponsor-guide:node/13
+  $menu_links['menu-secondary-menu_sponsor-guide:node/13'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'node/13',
+    'router_path' => 'node/%',
+    'link_title' => 'Sponsor guide',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_sponsor-guide:node/13',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'parent_identifier' => 'menu-secondary-menu_sponsors:sponsors',
+  );
+  // Exported menu link: menu-secondary-menu_sponsors:sponsors
+  $menu_links['menu-secondary-menu_sponsors:sponsors'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'sponsors',
+    'router_path' => 'sponsors',
+    'link_title' => 'Sponsors',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_sponsors:sponsors',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => -46,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-secondary-menu_spread-the-word:node/15
+  $menu_links['menu-secondary-menu_spread-the-word:node/15'] = array(
+    'menu_name' => 'menu-secondary-menu',
+    'link_path' => 'node/15',
+    'router_path' => 'node/%',
+    'link_title' => 'Spread the word',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-secondary-menu_spread-the-word:node/15',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+    'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
+  );
+  // Exported menu link: menu-secondary-menu_volunteers:community/volunteers
+  $menu_links['menu-secondary-menu_volunteers:community/volunteers'] = array(
+    'menu_name' => 'menu-secondary-menu',
     'link_path' => 'community/volunteers',
     'router_path' => 'community/%',
     'link_title' => 'Volunteers',
@@ -498,7 +538,7 @@ function campsite_main_menu_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_volunteers:community/volunteers',
+      'identifier' => 'menu-secondary-menu_volunteers:community/volunteers',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -507,10 +547,11 @@ function campsite_main_menu_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_community:community/attendees',
+    'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('About');
   t('Accomodation');
   t('Attendees');
   t('BoF');
@@ -530,6 +571,7 @@ function campsite_main_menu_menu_default_menu_links() {
   t('Sponsors');
   t('Spread the word');
   t('Sprints');
+  t('Tickets');
   t('Timeline');
   t('Travel');
   t('Useful tips');
