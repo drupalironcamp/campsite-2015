@@ -5477,6 +5477,22 @@ button.close {
     top: -30px;
   }
 }
+.front .region-content .pane-content .form-signup {
+  position: relative;
+}
+.front .region-content .pane-content .form-signup #mce-responses {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .front .region-content .pane-content .form-signup #mce-responses {
+    top: 70px;
+    left: 20px;
+    font-size: 18px;
+  }
+}
 .modal-open {
   overflow: hidden;
   padding: 0!important;
