@@ -5501,6 +5501,9 @@ button.close {
 .front .region-content .pane-content .slick-slider .slide-title {
   margin-bottom: 15px;
 }
+.site-name:hover {
+  text-decoration: none;
+}
 .modal-open {
   overflow: hidden;
   padding: 0!important;
