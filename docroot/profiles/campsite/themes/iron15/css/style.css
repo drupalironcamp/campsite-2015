@@ -5493,6 +5493,14 @@ button.close {
     font-size: 18px;
   }
 }
+.front .region-content .pane-content .slick-slider .slide-body,
+.front .region-content .pane-content .slick-slider .slide-title a {
+  background: #d8d8d8;
+  padding: 8px 10px;
+}
+.front .region-content .pane-content .slick-slider .slide-title {
+  margin-bottom: 15px;
+}
 .modal-open {
   overflow: hidden;
   padding: 0!important;
