@@ -207,8 +207,9 @@
 
         <?php if (!empty($site_name)): ?>
           <div class="lead">
-              <span class="site-name"><?php print $site_name; ?></span>
-              <div class="divider"></div>
+            <?php print l("<span class='site-name'>".$site_name."</span>", "<front>", array('html'=>TRUE)); ?>
+
+            <div class="divider"></div>
               <div class="camp-location"><?php print t('Budapest, Hungary');?></div>
               <div class="btn btn-sm btn-warning"><?php print t('26-30th October, 2015');?></div>
           </div>
