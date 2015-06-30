@@ -2233,6 +2233,52 @@ select[multiple].form-group-lg .form-control {
     padding-top: 6px;
   }
 }
+#user-register-form {
+  margin-bottom: 45px;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #000000;
+  background-color: #d8d8d8;
+  background-image: none;
+  border: 1px solid #d8d8d8;
+  border-radius: 0;
+  -webkit-transition: border-color ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s;
+  transition: border-color ease-in-out .15s;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select:focus {
+  border-color: #000000;
+  outline: 0;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select:-ms-input-placeholder {
+  color: #000000;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select::-webkit-input-placeholder {
+  color: #000000;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select[disabled],
+#user-register-form #field_user_country-und-0-iso-wrapper select[readonly],
+fieldset[disabled] #user-register-form #field_user_country-und-0-iso-wrapper select {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+#user-register-form #field_user_country-und-0-iso-wrapper select[disabled],
+fieldset[disabled] #user-register-form #field_user_country-und-0-iso-wrapper select {
+  cursor: not-allowed;
+}
+textarea#user-register-form #field_user_country-und-0-iso-wrapper select {
+  height: auto;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
