@@ -46,7 +46,7 @@ function campsite_custom_blocks_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'map_venue_location';
   $fe_block_boxes->body = '<div style="height: 445px;" id="map"></div>
 <script>
-var map = L.map(\'map\').setView([47.494539, 19.043300], 18);
+var map = L.map(\'map\').setView([47.494539, 19.043300], 14);
 
 
 L.tileLayer(\'http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}\', {

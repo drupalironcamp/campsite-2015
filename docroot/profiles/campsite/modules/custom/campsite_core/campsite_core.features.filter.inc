@@ -39,6 +39,11 @@ function campsite_core_filter_default_formats() {
           'filter_url_length' => 72,
         ),
       ),
+      'filter_autop' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
     ),
   );
 
