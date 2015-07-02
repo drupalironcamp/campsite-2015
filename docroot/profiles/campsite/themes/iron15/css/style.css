@@ -5547,8 +5547,12 @@ button.close {
 .front .region-content .pane-content .slick-slider .slide-title {
   margin-bottom: 15px;
 }
-.site-name:hover {
-  text-decoration: none;
+.lead a {
+  text-decoration: none !important;
+}
+.node-type-news .field-type-image img {
+  width: 100%;
+  height: auto;
 }
 .modal-open {
   overflow: hidden;
@@ -6702,7 +6706,7 @@ button.close {
   margin-top: 15px;
 }
 .node-type-news .field-type-image {
-  margin: 15px 0;
+  margin: 15px auto;
 }
 .front .view-news:not(.news-slider) {
   margin-top: 60px;
