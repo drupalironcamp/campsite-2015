@@ -5551,8 +5551,10 @@ button.close {
   text-decoration: none !important;
 }
 .node-type-news .field-type-image img {
-  width: 100%;
+  width: auto;
   height: auto;
+  margin: 0 auto;
+  display: block;
 }
 .modal-open {
   overflow: hidden;
