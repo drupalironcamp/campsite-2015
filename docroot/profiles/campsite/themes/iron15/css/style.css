@@ -8109,3 +8109,8 @@ table .checkbox input[type="checkbox"] {
 .links a {
   color: #ec4034;
 }
+.page-node-18 .main-container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
