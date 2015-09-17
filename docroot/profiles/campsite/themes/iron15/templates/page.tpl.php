@@ -211,7 +211,7 @@
 
             <div class="divider"></div>
               <div class="camp-location"><?php print t('Budapest, Hungary');?></div>
-              <div class="btn btn-sm btn-warning"><?php print t('26-30th October, 2015');?></div>
+              <!-- <div class="btn btn-sm btn-warning"><?php print t('26-30th October, 2015');?></div> -->
           </div>
         <?php endif; ?>
 
