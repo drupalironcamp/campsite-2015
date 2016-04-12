@@ -1,3 +1,3 @@
-### Development info, branches, etc
+### Obsolete repository
 
-Please see the [WIKI](https://github.com/drupalironcamp/campsite-2015/wiki) for development information.
+pls check (the website repository)[https://github.com/drupalironcamp/website] for new stuff.
