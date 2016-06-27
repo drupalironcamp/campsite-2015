@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campsite - Content types & Users Importers feature.
+ */
+
+include_once 'campsite_content_types_users_importers.features.inc';
